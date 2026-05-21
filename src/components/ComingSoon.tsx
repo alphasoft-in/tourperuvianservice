@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence, type Variants } from 'framer-motion';
 import { ArrowRight, MapPin } from 'lucide-react';
-import { FaInstagram, FaFacebook, FaTiktok } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 
 type Language = 'es' | 'en';
 
@@ -205,14 +205,17 @@ export default function ComingSoon() {
           transition={{ duration: 1.5, delay: 1.2 }}
           className="flex space-x-6"
         >
-          <a href="#" className="text-white/60 hover:text-orange-500 transition-colors">
+          <a href="https://www.facebook.com/agenciadeviajesperuvianservice/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-orange-500 transition-colors">
             <FaFacebook className="w-5 h-5" />
           </a>
-          <a href="#" className="text-white/60 hover:text-orange-500 transition-colors">
+          <a href="https://www.instagram.com/peruvianservice/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-orange-500 transition-colors">
             <FaInstagram className="w-5 h-5" />
           </a>
-          <a href="#" className="text-white/60 hover:text-orange-500 transition-colors">
-            <FaTiktok className="w-5 h-5" />
+          <a href="https://www.youtube.com/channel/UCTqaPQt2jpXy9nmguzR9dtQ" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-orange-500 transition-colors">
+            <FaYoutube className="w-5 h-5" />
+          </a>
+          <a href="https://wa.me/51966638693" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-orange-500 transition-colors">
+            <FaWhatsapp className="w-5 h-5" />
           </a>
         </motion.div>
       </footer>

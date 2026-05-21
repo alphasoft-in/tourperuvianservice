@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MapPin, Compass, Mountain, Send, Instagram, Facebook, Twitter, Globe } from 'lucide-react';
+import { MapPin, Compass, Mountain, Send, Globe } from 'lucide-react';
+import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
 
 type Language = 'es' | 'en';
 
@@ -171,13 +172,13 @@ export default function ComingSoon() {
           {/* Social / Info Links */}
           <motion.div variants={itemVariants} className="flex justify-center space-x-6">
             <a href="#" className="p-3 bg-slate-800/60 rounded-full text-slate-400 hover:text-emerald-400 hover:bg-slate-700/80 transition-all border border-slate-700 hover:border-emerald-500/50">
-              <Instagram className="w-5 h-5" />
+              <FaInstagram className="w-5 h-5" />
             </a>
             <a href="#" className="p-3 bg-slate-800/60 rounded-full text-slate-400 hover:text-emerald-400 hover:bg-slate-700/80 transition-all border border-slate-700 hover:border-emerald-500/50">
-              <Facebook className="w-5 h-5" />
+              <FaFacebook className="w-5 h-5" />
             </a>
             <a href="#" className="p-3 bg-slate-800/60 rounded-full text-slate-400 hover:text-emerald-400 hover:bg-slate-700/80 transition-all border border-slate-700 hover:border-emerald-500/50">
-              <Twitter className="w-5 h-5" />
+              <FaTwitter className="w-5 h-5" />
             </a>
             <div className="flex items-center space-x-2 text-slate-400 px-3 bg-slate-800/60 rounded-full border border-slate-700">
               <MapPin className="w-5 h-5 text-amber-400" />

@@ -47,14 +47,24 @@ export default function ComingSoon() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#F8F9FA] p-6 font-['Montserrat']">
+    <div className="relative min-h-screen flex items-center justify-center p-6 font-['Montserrat'] overflow-hidden">
       
+      {/* Background Image of Trujillo / Peruvian Coast with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1577085732168-524f2b5a1b3f?q=80&w=2070&auto=format&fit=crop')" }}
+        />
+        {/* Navy blue overlay with slight blur to make the card pop */}
+        <div className="absolute inset-0 bg-[#1E2B4D]/60 backdrop-blur-[4px]"></div>
+      </div>
+
       {/* Main Container */}
       <motion.div 
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="w-full max-w-lg bg-white rounded-xl shadow-[0_10px_40px_rgba(30,43,77,0.08)] overflow-hidden flex flex-col"
+        className="relative z-10 w-full max-w-lg bg-white rounded-xl shadow-2xl overflow-hidden flex flex-col"
       >
         {/* Top Header Bar */}
         <div className="h-2 w-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500"></div>

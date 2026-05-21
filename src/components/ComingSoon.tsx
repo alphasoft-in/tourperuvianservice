@@ -69,14 +69,14 @@ export default function ComingSoon() {
         {/* Top Header Bar */}
         <div className="h-2 w-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500"></div>
 
-        <div className="p-8 md:p-12">
+        <div className="p-6 sm:p-8 md:p-12">
           
           {/* Logo / Agency Name & Lang Toggle */}
-          <div className="flex justify-between items-center mb-10">
+          <div className="flex justify-between items-start mb-8 md:mb-10">
             <img 
-              src="/logo.jpeg" 
+              src="/logo.jpg" 
               alt="Tour Peruvian Service" 
-              className="h-16 w-auto object-contain mix-blend-multiply" 
+              className="h-20 md:h-28 w-auto object-contain mix-blend-multiply" 
             />
             <button 
               onClick={toggleLanguage}
@@ -155,8 +155,8 @@ export default function ComingSoon() {
 
           {/* Footer inside card */}
           <div className="flex flex-col space-y-6">
-            <div className="flex items-center justify-between text-slate-400">
-              <div className="flex space-x-4">
+            <div className="flex flex-col sm:flex-row items-center justify-between text-slate-400 gap-4 sm:gap-0">
+              <div className="flex space-x-6 sm:space-x-4">
                 <a href="https://www.facebook.com/agenciadeviajesperuvianservice/" target="_blank" rel="noopener noreferrer" className="hover:text-orange-500 transition-colors">
                   <FaFacebook className="w-4 h-4" />
                 </a>

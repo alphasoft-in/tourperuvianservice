@@ -53,7 +53,7 @@ export default function ComingSoon() {
       <div className="absolute inset-0 z-0">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1577085732168-524f2b5a1b3f?q=80&w=2070&auto=format&fit=crop')" }}
+          style={{ backgroundImage: "url('/trujillo.webp')" }}
         />
         {/* Navy blue overlay with slight blur to make the card pop */}
         <div className="absolute inset-0 bg-[#1E2B4D]/60 backdrop-blur-[4px]"></div>
@@ -73,9 +73,11 @@ export default function ComingSoon() {
           
           {/* Logo / Agency Name & Lang Toggle */}
           <div className="flex justify-between items-center mb-10">
-            <h2 className="text-[11px] font-bold tracking-widest text-[#1E2B4D]">
-              TOUR PERUVIAN<br />SERVICE
-            </h2>
+            <img 
+              src="/logo.jpeg" 
+              alt="Tour Peruvian Service" 
+              className="h-16 w-auto object-contain mix-blend-multiply" 
+            />
             <button 
               onClick={toggleLanguage}
               className="text-[10px] font-medium text-slate-400 hover:text-[#1E2B4D] transition-colors uppercase tracking-wider"

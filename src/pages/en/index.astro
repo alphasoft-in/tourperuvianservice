@@ -1,0 +1,10 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import HeroSlider from '../../components/HeroSlider';
+import FeaturedPackages from '../../components/FeaturedPackages';
+---
+
+<Layout>
+	<HeroSlider client:load lang="en" />
+	<FeaturedPackages client:load lang="en" />
+</Layout>

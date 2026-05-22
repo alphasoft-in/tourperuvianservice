@@ -1,0 +1,47 @@
+export const languages = {
+  es: 'Español',
+  en: 'English',
+};
+
+export const defaultLang = 'es';
+
+export const ui = {
+  es: {
+    'nav.home': 'Inicio',
+    'nav.destinations': 'Destinos',
+    'nav.packages': 'Paquetes',
+    'nav.about': 'Nosotros',
+    'nav.contact': 'Contacto',
+    'slider.slide1.title': 'Descubre la Belleza de Cascas',
+    'slider.slide1.desc': 'Disfruta del sol eterno, sus famosos viñedos y paisajes inolvidables.',
+    'slider.slide2.title': 'Salpo, el Balcón del Cielo',
+    'slider.slide2.desc': 'Maravíllate con las impresionantes vistas y la historia de este pueblo andino.',
+    'slider.slide3.title': 'Aventura en Jequetepeque',
+    'slider.slide3.desc': 'Explora su fértil valle, cultura milenaria y naturaleza exuberante.',
+    'slider.btn': 'Ver Destinos',
+    'packages.title': 'Paquetes Recomendados',
+    'packages.subtitle': 'Descubre nuestros destinos más solicitados y vive una aventura inolvidable en Perú.',
+    'packages.days': 'Días',
+    'packages.nights': 'Noches',
+    'packages.btn': 'Ver Detalles',
+  },
+  en: {
+    'nav.home': 'Home',
+    'nav.destinations': 'Destinations',
+    'nav.packages': 'Packages',
+    'nav.about': 'About Us',
+    'nav.contact': 'Contact',
+    'slider.slide1.title': 'Discover the Beauty of Cascas',
+    'slider.slide1.desc': 'Enjoy the eternal sun, its famous vineyards and unforgettable landscapes.',
+    'slider.slide2.title': 'Salpo, the Balcony of Heaven',
+    'slider.slide2.desc': 'Marvel at the breathtaking views and history of this Andean town.',
+    'slider.slide3.title': 'Adventure in Jequetepeque',
+    'slider.slide3.desc': 'Explore its fertile valley, ancient culture and exuberant nature.',
+    'slider.btn': 'View Destinations',
+    'packages.title': 'Recommended Packages',
+    'packages.subtitle': 'Discover our most requested destinations and live an unforgettable adventure in Peru.',
+    'packages.days': 'Days',
+    'packages.nights': 'Nights',
+    'packages.btn': 'View Details',
+  },
+} as const;

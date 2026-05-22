@@ -1,9 +1,14 @@
 ---
 import '../styles/global.css';
+import Navbar from '../components/Navbar';
+import { getLangFromUrl, getRouteFromUrl } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const currentRoute = getRouteFromUrl(Astro.url);
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,9 +19,10 @@ import '../styles/global.css';
 		<meta name="description" content="Tour Peruvian Service - Agencia de viajes. Descubre la magia de Perú con nosotros. Próximamente." />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	</head>
-	<body class="antialiased text-slate-900 bg-slate-50 dark:text-slate-50 dark:bg-slate-900">
+	<body class="bg-[#F8F9FA] text-slate-800 antialiased font-['Montserrat'] m-0 p-0">
+		<Navbar lang={lang} currentRoute={currentRoute} client:load />
 		<slot />
 	</body>
 </html>

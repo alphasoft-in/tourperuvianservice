@@ -1,8 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ComingSoon from '../components/ComingSoon';
+import HeroSlider from '../components/HeroSlider';
+import FeaturedPackages from '../components/FeaturedPackages';
 ---
 
 <Layout>
-	<ComingSoon client:load />
+	<HeroSlider client:load lang="es" />
+	<FeaturedPackages client:load lang="es" />
 </Layout>

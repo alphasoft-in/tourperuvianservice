@@ -18,10 +18,10 @@ export default function Footer({ lang }: Props) {
           
           {/* Brand & About */}
           <div className="col-span-1 lg:col-span-1">
-            <a href={lang === 'es' ? '/' : '/en/'} className="inline-block mb-6">
-              <img src="/logo.png" alt="Tour Peruvian Service" className="h-16 brightness-0 invert opacity-90" />
+            <a href={lang === 'es' ? '/' : '/en/'} className="inline-block mb-4 md:mb-6">
+              <img src="/logo.png" alt="Tour Peruvian Service" className="h-12 md:h-16 brightness-0 invert opacity-90" />
             </a>
-            <p className="text-white/70 text-sm leading-relaxed mb-6">
+            <p className="text-white/70 text-xs md:text-sm leading-relaxed mb-6">
               {t('footer.about')}
             </p>
             <div className="flex space-x-4">
@@ -39,46 +39,49 @@ export default function Footer({ lang }: Props) {
 
           {/* Quick Links */}
           <div className="col-span-1">
-            <h4 className="text-lg font-bold mb-6 flex items-center">
+            <h4 className="text-base md:text-lg font-bold mb-4 md:mb-6 flex items-center">
               <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
               {t('footer.links')}
             </h4>
-            <ul className="space-y-4">
-              <li><a href={lang === 'es' ? '/' : '/en/'} className="text-white/70 hover:text-orange-400 transition-colors text-sm">{t('nav.home')}</a></li>
-              <li><a href={lang === 'es' ? '/destinos' : '/en/destinations'} className="text-white/70 hover:text-orange-400 transition-colors text-sm">{t('nav.destinations')}</a></li>
-              <li><a href={lang === 'es' ? '/paquetes' : '/en/packages'} className="text-white/70 hover:text-orange-400 transition-colors text-sm">{t('nav.packages')}</a></li>
-              <li><a href={lang === 'es' ? '/nosotros' : '/en/about'} className="text-white/70 hover:text-orange-400 transition-colors text-sm">{t('nav.about')}</a></li>
+            <ul className="space-y-3 md:space-y-4">
+              <li><a href={lang === 'es' ? '/' : '/en/'} className="text-white/70 hover:text-orange-400 transition-colors text-xs md:text-sm">{t('nav.home')}</a></li>
+              <li><a href={lang === 'es' ? '/destinos' : '/en/destinations'} className="text-white/70 hover:text-orange-400 transition-colors text-xs md:text-sm">{t('nav.destinations')}</a></li>
+              <li><a href={lang === 'es' ? '/paquetes' : '/en/packages'} className="text-white/70 hover:text-orange-400 transition-colors text-xs md:text-sm">{t('nav.packages')}</a></li>
+              <li><a href={lang === 'es' ? '/nosotros' : '/en/about'} className="text-white/70 hover:text-orange-400 transition-colors text-xs md:text-sm">{t('nav.about')}</a></li>
+              <li><a href="#" className="text-white/70 hover:text-orange-400 transition-colors text-xs md:text-sm">{t('nav.esnna')}</a></li>
+              <li><a href="#" className="text-white/70 hover:text-orange-400 transition-colors text-xs md:text-sm">{t('nav.complaints')}</a></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div className="col-span-1 md:col-span-2 lg:col-span-2">
-            <h4 className="text-lg font-bold mb-6 flex items-center">
+            <h4 className="text-base md:text-lg font-bold mb-4 md:mb-6 flex items-center">
               <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
               {t('footer.contact')}
             </h4>
-            <div className="space-y-4">
+            <div className="space-y-3 md:space-y-4">
               <div className="flex items-start">
-                <MapPin className="w-5 h-5 text-orange-400 mr-4 mt-1 flex-shrink-0" />
-                <p className="text-white/70 text-sm leading-relaxed">
+                <MapPin className="w-4 h-4 md:w-5 md:h-5 text-orange-400 mr-3 md:mr-4 mt-0.5 flex-shrink-0" />
+                <p className="text-white/70 text-xs md:text-sm leading-relaxed">
                   Jr San Martin 541<br />
                   Trujillo – La Libertad
                 </p>
               </div>
               <div className="flex items-center">
-                <Phone className="w-5 h-5 text-orange-400 mr-4 flex-shrink-0" />
-                <p className="text-white/70 text-sm">966638693</p>
+                <Phone className="w-4 h-4 md:w-5 md:h-5 text-orange-400 mr-3 md:mr-4 flex-shrink-0" />
+                <p className="text-white/70 text-xs md:text-sm">966638693</p>
+              </div>
+              <div className="flex items-center">
+                <Mail className="w-4 h-4 md:w-5 md:h-5 text-orange-400 mr-3 md:mr-4 flex-shrink-0" />
+                <p className="text-white/70 text-xs md:text-sm">info@toursperuvianservice.com</p>
+              </div>
+              <div className="flex items-center">
+                <Mail className="w-4 h-4 md:w-5 md:h-5 text-orange-400 mr-3 md:mr-4 flex-shrink-0" />
+                <p className="text-white/70 text-xs md:text-sm">tours.peruvianservice@gmail.com</p>
               </div>
               <div className="flex items-start">
-                <Mail className="w-5 h-5 text-orange-400 mr-4 mt-1 flex-shrink-0" />
-                <div className="text-white/70 text-sm leading-relaxed">
-                  <p>info@toursperuvianservice.com</p>
-                  <p>tours.peruvianservice@gmail.com</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <Clock className="w-5 h-5 text-orange-400 mr-4 mt-1 flex-shrink-0" />
-                <div className="text-white/70 text-sm leading-relaxed">
+                <Clock className="w-4 h-4 md:w-5 md:h-5 text-orange-400 mr-3 md:mr-4 mt-0.5 flex-shrink-0" />
+                <div className="text-white/70 text-xs md:text-sm leading-relaxed">
                   <p>{lang === 'es' ? 'Lunes a viernes: 9:30am - 1:00pm y 4:00pm - 8:00pm' : 'Monday to Friday: 9:30am - 1:00pm and 4:00pm - 8:00pm'}</p>
                   <p>{lang === 'es' ? 'Sábado: 9:30am - 1:00pm' : 'Saturday: 9:30am - 1:00pm'}</p>
                 </div>
@@ -89,13 +92,13 @@ export default function Footer({ lang }: Props) {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/50 text-sm mb-4 md:mb-0">
+        <div className="border-t border-white/10 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+          <p className="text-white/50 text-xs md:text-sm mb-4 md:mb-0">
             &copy; {currentYear} Tour Peruvian Service. {t('footer.rights')}
           </p>
           <div className="flex space-x-6">
-            <a href="#" className="text-white/50 hover:text-white/80 text-sm transition-colors">Privacidad</a>
-            <a href="#" className="text-white/50 hover:text-white/80 text-sm transition-colors">Términos</a>
+            <a href="#" className="text-white/50 hover:text-white/80 text-xs md:text-sm transition-colors">Privacidad</a>
+            <a href="#" className="text-white/50 hover:text-white/80 text-xs md:text-sm transition-colors">Términos</a>
           </div>
         </div>
       </div>

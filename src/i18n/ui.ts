@@ -24,6 +24,10 @@ export const ui = {
     'packages.days': 'Días',
     'packages.nights': 'Noches',
     'packages.btn': 'Ver Detalles',
+    'footer.about': 'Descubre la magia de Perú con nosotros. Ofrecemos experiencias únicas y personalizadas para que tu viaje sea inolvidable.',
+    'footer.links': 'Enlaces Rápidos',
+    'footer.contact': 'Contacto',
+    'footer.rights': 'Todos los derechos reservados.',
   },
   en: {
     'nav.home': 'Home',
@@ -43,5 +47,9 @@ export const ui = {
     'packages.days': 'Days',
     'packages.nights': 'Nights',
     'packages.btn': 'View Details',
+    'footer.about': 'Discover the magic of Peru with us. We offer unique and personalized experiences to make your trip unforgettable.',
+    'footer.links': 'Quick Links',
+    'footer.contact': 'Contact Us',
+    'footer.rights': 'All rights reserved.',
   },
 } as const;

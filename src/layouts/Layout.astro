@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import { getLangFromUrl, getRouteFromUrl } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
@@ -24,5 +25,6 @@ const currentRoute = getRouteFromUrl(Astro.url);
 	<body class="bg-[#F8F9FA] text-slate-800 antialiased font-['Montserrat'] m-0 p-0">
 		<Navbar lang={lang} currentRoute={currentRoute} client:load />
 		<slot />
+		<Footer lang={lang} />
 	</body>
 </html>

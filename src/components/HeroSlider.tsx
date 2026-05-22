@@ -63,20 +63,20 @@ export default function HeroSlider({ lang }: Props) {
             style={{ backgroundImage: `url('${slides[current].image}')` }}
           />
           {/* Dark Overlay for Text Readability */}
-          <div className="absolute inset-0 bg-black/40 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+          <div className="absolute inset-0 bg-black/40 bg-gradient-to-b from-black/80 via-black/30 to-black/80"></div>
           
           {/* Content */}
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6 md:px-12 z-10">
+          <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-16 md:px-24 z-10">
             <motion.div
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               className="max-w-4xl flex flex-col items-center"
             >
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4 tracking-tight font-['Montserrat'] drop-shadow-xl">
+              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-3 md:mb-4 tracking-tight font-['Montserrat'] drop-shadow-2xl leading-tight">
                 {t(slides[current].titleKey)}
               </h1>
-              <p className="text-base md:text-lg text-white/95 mb-8 font-medium max-w-2xl mx-auto leading-relaxed drop-shadow-lg">
+              <p className="text-xs sm:text-sm md:text-xl text-white/95 mb-6 md:mb-8 font-medium md:font-semibold max-w-2xl mx-auto leading-relaxed drop-shadow-2xl">
                 {t(slides[current].descKey)}
               </p>
               
@@ -91,13 +91,13 @@ export default function HeroSlider({ lang }: Props) {
       {/* Navigation Arrows */}
       <button 
         onClick={prevSlide}
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm transition-all z-20"
+        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/30 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 transition-all z-20"
       >
         <ChevronLeft className="w-6 h-6 md:w-8 md:h-8" />
       </button>
       <button 
         onClick={nextSlide}
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm transition-all z-20"
+        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/30 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 transition-all z-20"
       >
         <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
       </button>

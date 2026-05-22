@@ -54,8 +54,8 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
             alt="Tour Peruvian Service" 
             className={`transition-all duration-300 object-contain ${
               isScrolled 
-                ? 'h-10' 
-                : 'h-12 md:h-16 brightness-0 invert opacity-90 group-hover:opacity-100'
+                ? 'h-12 md:h-14' 
+                : 'h-16 md:h-20 brightness-0 invert opacity-90 group-hover:opacity-100'
             }`}
           />
         </a>

@@ -38,8 +38,8 @@ export default function FeaturedPackages({ lang }: Props) {
   const t = useTranslations(lang);
 
   return (
-    <section className="py-24 bg-slate-50 font-['Montserrat']">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+    <section className="py-16 md:py-24 bg-slate-50 font-['Montserrat']">
+      <div className="max-w-7xl mx-auto px-4 md:px-12">
         {/* Section Header */}
         <div className="text-center mb-16">
           <motion.h2
@@ -47,7 +47,7 @@ export default function FeaturedPackages({ lang }: Props) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl font-extrabold text-[#1E2B4D] mb-6 tracking-tight"
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1E2B4D] mb-4 md:mb-6 tracking-tight leading-tight"
           >
             {t('packages.title')}
           </motion.h2>
@@ -63,7 +63,7 @@ export default function FeaturedPackages({ lang }: Props) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-lg text-slate-600 max-w-2xl mx-auto"
+            className="text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed px-4 md:px-0"
           >
             {t('packages.subtitle')}
           </motion.p>
@@ -81,10 +81,10 @@ export default function FeaturedPackages({ lang }: Props) {
             <motion.div
               key={pkg.id}
               variants={itemVariants}
-              className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group flex flex-col"
+              className="bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group flex flex-col"
             >
               {/* Image Container */}
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-56 md:h-64 overflow-hidden">
                 <div className="absolute inset-0 bg-slate-200 animate-pulse"></div> {/* Skeleton */}
                 <img
                   src={pkg.image}
@@ -93,23 +93,23 @@ export default function FeaturedPackages({ lang }: Props) {
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1E2B4D]/80 via-transparent to-transparent"></div>
-                <div className="absolute bottom-4 left-6 right-6 flex items-end justify-between">
-                  <h3 className="text-2xl font-bold text-white drop-shadow-md capitalize">
+                <div className="absolute bottom-3 md:bottom-4 left-4 md:left-6 right-4 md:right-6 flex items-end justify-between">
+                  <h3 className="text-xl md:text-2xl font-bold text-white drop-shadow-md capitalize">
                     {pkg.name}
                   </h3>
-                  <div className="bg-white/20 backdrop-blur-md rounded-full px-3 py-1 flex items-center shadow-sm">
-                    <MapPin className="w-3.5 h-3.5 text-orange-400 mr-1" />
-                    <span className="text-xs font-semibold text-white uppercase tracking-wider">{lang === 'es' ? 'Perú' : 'Peru'}</span>
+                  <div className="bg-white/20 backdrop-blur-md rounded-full px-2 md:px-3 py-1 flex items-center shadow-sm">
+                    <MapPin className="w-3 h-3 md:w-3.5 md:h-3.5 text-orange-400 mr-1" />
+                    <span className="text-[10px] md:text-xs font-semibold text-white uppercase tracking-wider">{lang === 'es' ? 'Perú' : 'Peru'}</span>
                   </div>
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6 md:p-8 flex-1 flex flex-col justify-between">
+              <div className="p-4 md:p-8 flex-1 flex flex-col justify-between">
                 <div>
-                  <div className="flex items-center text-slate-600 mb-6 bg-slate-50 rounded-2xl p-4 border border-slate-100">
-                    <Clock className="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" />
-                    <div className="flex space-x-2 text-sm font-bold text-[#1E2B4D]">
+                  <div className="flex items-center justify-center md:justify-start text-slate-600 mb-4 md:mb-6 bg-slate-50 rounded-xl md:rounded-2xl p-3 md:p-4 border border-slate-100">
+                    <Clock className="w-4 h-4 md:w-5 md:h-5 text-orange-500 mr-2 md:mr-3 flex-shrink-0" />
+                    <div className="flex space-x-2 text-xs md:text-sm font-bold text-[#1E2B4D]">
                       <span>{pkg.days} {t('packages.days')}</span>
                       <span className="text-slate-300">|</span>
                       <span>{pkg.nights} {t('packages.nights')}</span>
@@ -119,7 +119,7 @@ export default function FeaturedPackages({ lang }: Props) {
 
                 <a 
                   href={lang === 'es' ? `/paquetes/${pkg.id}` : `/en/packages/${pkg.id}`}
-                  className="block w-full text-center py-3.5 text-sm font-bold text-[#1E2B4D] bg-white border-2 border-slate-200 rounded-full hover:border-orange-500 hover:text-white hover:bg-gradient-to-r hover:from-yellow-400 hover:via-orange-500 hover:to-red-500 hover:shadow-lg transition-all duration-300 uppercase tracking-wider"
+                  className="block w-full text-center py-2.5 md:py-3.5 text-xs md:text-sm font-bold text-[#1E2B4D] bg-white border-2 border-slate-200 rounded-full hover:border-orange-500 hover:text-white hover:bg-gradient-to-r hover:from-yellow-400 hover:via-orange-500 hover:to-red-500 hover:shadow-lg transition-all duration-300 uppercase tracking-wider"
                 >
                   {t('packages.btn')}
                 </a>

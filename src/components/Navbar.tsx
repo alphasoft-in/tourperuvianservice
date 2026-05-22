@@ -21,6 +21,8 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
       setScrolledVal(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
+    // Check initial scroll position on mount, useful when navigating back with view transitions
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 

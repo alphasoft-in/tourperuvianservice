@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
-import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTiktok, FaTripadvisor, FaYoutube } from 'react-icons/fa';
 import { useTranslations } from '../i18n/utils';
 
 interface Props {
@@ -32,7 +32,13 @@ export default function Footer({ lang }: Props) {
                 <FaInstagram className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 hover:text-white transition-all duration-300">
-                <FaTwitter className="w-5 h-5" />
+                <FaTiktok className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 hover:text-white transition-all duration-300">
+                <FaYoutube className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 hover:text-white transition-all duration-300">
+                <FaTripadvisor className="w-5 h-5" />
               </a>
             </div>
           </div>

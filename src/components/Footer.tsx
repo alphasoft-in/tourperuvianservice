@@ -19,7 +19,7 @@ export default function Footer({ lang }: Props) {
           {/* Brand & About */}
           <div className="col-span-1 lg:col-span-1">
             <a href={lang === 'es' ? '/' : '/en/'} className="inline-block mb-4 md:mb-6">
-              <img src="/logo.png" alt="Tour Peruvian Service" className="h-12 md:h-16 brightness-0 invert opacity-90" />
+              <img src="/logo.png" alt="Turismo Peruvian Service" className="h-12 md:h-16 brightness-0 invert opacity-90" />
             </a>
             <p className="text-white/70 text-xs md:text-sm leading-relaxed mb-6">
               {t('footer.about')}
@@ -94,7 +94,7 @@ export default function Footer({ lang }: Props) {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <p className="text-white/50 text-xs md:text-sm mb-4 md:mb-0">
-            &copy; {currentYear} Tour Peruvian Service. {t('footer.rights')}
+            &copy; {currentYear} Turismo Peruvian Service - {t('footer.rights')} | RUC: 20601386144
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-white/50 hover:text-white/80 text-xs md:text-sm transition-colors">Privacidad</a>

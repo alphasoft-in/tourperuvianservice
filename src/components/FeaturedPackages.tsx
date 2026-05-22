@@ -39,7 +39,7 @@ export default function FeaturedPackages({ lang }: Props) {
 
   return (
     <section className="py-16 md:py-24 bg-slate-50 font-['Montserrat']">
-      <div className="max-w-7xl mx-auto px-4 md:px-12">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-16">
           <motion.h2
@@ -47,7 +47,7 @@ export default function FeaturedPackages({ lang }: Props) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1E2B4D] mb-4 md:mb-6 tracking-tight leading-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1E2B4D] mb-4 md:mb-6 tracking-tight leading-tight"
           >
             {t('packages.title')}
           </motion.h2>
@@ -63,7 +63,7 @@ export default function FeaturedPackages({ lang }: Props) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed px-4 md:px-0"
+            className="text-sm md:text-base lg:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed px-4 md:px-0"
           >
             {t('packages.subtitle')}
           </motion.p>
@@ -81,20 +81,20 @@ export default function FeaturedPackages({ lang }: Props) {
             <motion.div
               key={pkg.id}
               variants={itemVariants}
-              className="bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group flex flex-col"
+              className="bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group flex flex-col [transform:translateZ(0)]"
             >
               {/* Image Container */}
-              <div className="relative h-56 md:h-64 overflow-hidden">
+              <div className="relative h-56 md:h-64 overflow-hidden rounded-t-2xl md:rounded-t-3xl [transform:translateZ(0)]">
                 <div className="absolute inset-0 bg-slate-200 animate-pulse"></div> {/* Skeleton */}
                 <img
                   src={pkg.image}
                   alt={pkg.name}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-t-2xl md:rounded-t-3xl"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1E2B4D]/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-3 md:bottom-4 left-4 md:left-6 right-4 md:right-6 flex items-end justify-between">
-                  <h3 className="text-xl md:text-2xl font-bold text-white drop-shadow-md capitalize">
+                  <h3 className="text-lg md:text-xl font-bold text-white drop-shadow-md capitalize">
                     {pkg.name}
                   </h3>
                   <div className="bg-white/20 backdrop-blur-md rounded-full px-2 md:px-3 py-1 flex items-center shadow-sm">

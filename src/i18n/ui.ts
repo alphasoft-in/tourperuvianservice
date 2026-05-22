@@ -29,6 +29,8 @@ export const ui = {
     'footer.about': 'Descubre la magia de Perú con nosotros. Ofrecemos experiencias únicas y personalizadas para que tu viaje sea inolvidable.',
     'footer.links': 'Enlaces Rápidos',
     'footer.contact': 'Contacto',
+    'footer.follow': 'Síguenos',
+    'footer.accepts': 'Aceptamos',
     'footer.rights': 'Todos los derechos reservados.',
   },
   en: {
@@ -54,6 +56,8 @@ export const ui = {
     'footer.about': 'Discover the magic of Peru with us. We offer unique and personalized experiences to make your trip unforgettable.',
     'footer.links': 'Quick Links',
     'footer.contact': 'Contact Us',
+    'footer.follow': 'Follow Us',
+    'footer.accepts': 'We Accept',
     'footer.rights': 'All rights reserved.',
   },
 } as const;

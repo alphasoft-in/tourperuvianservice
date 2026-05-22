@@ -73,10 +73,10 @@ export default function HeroSlider({ lang }: Props) {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="max-w-4xl flex flex-col items-center"
             >
-              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-3 md:mb-4 tracking-tight font-['Montserrat'] drop-shadow-2xl leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 md:mb-4 tracking-tight font-['Montserrat'] drop-shadow-2xl leading-tight">
                 {t(slides[current].titleKey)}
               </h1>
-              <p className="text-xs sm:text-sm md:text-xl text-white/95 mb-6 md:mb-8 font-medium md:font-semibold max-w-2xl mx-auto leading-relaxed drop-shadow-2xl">
+              <p className="text-sm md:text-base lg:text-lg text-white/90 mb-5 md:mb-8 font-normal max-w-2xl mx-auto leading-relaxed drop-shadow-2xl">
                 {t(slides[current].descKey)}
               </p>
               

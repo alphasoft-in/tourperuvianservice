@@ -12,41 +12,24 @@ export default function Footer({ lang }: Props) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#1E2B4D] text-white pt-16 pb-8 font-['Montserrat']">
+    <footer className="bg-[#1E2B4D] text-white pt-12 md:pt-14 pb-6 font-['Montserrat']">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-12 gap-8 xl:gap-12 mb-8 md:mb-12">
           
           {/* Brand & About */}
-          <div className="col-span-1 lg:col-span-1">
+          <div className="col-span-1 sm:col-span-2 xl:col-span-4 xl:pr-6">
             <a href={lang === 'es' ? '/' : '/en/'} className="inline-block mb-4 md:mb-6">
-              <img src="/logo.png" alt="Turismo Peruvian Service" className="h-12 md:h-16 brightness-0 invert opacity-90" />
+              <img src="/logo.png" alt="Turismo Peruvian Service" className="h-14 md:h-20 lg:h-24 brightness-0 invert opacity-90 object-contain" />
             </a>
-            <p className="text-white/70 text-xs md:text-sm leading-relaxed mb-6">
+            <p className="text-white/70 text-xs md:text-sm leading-relaxed mb-6 md:mb-0">
               {t('footer.about')}
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 hover:text-white transition-all duration-300">
-                <FaFacebookF className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 hover:text-white transition-all duration-300">
-                <FaInstagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 hover:text-white transition-all duration-300">
-                <FaTiktok className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 hover:text-white transition-all duration-300">
-                <FaYoutube className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 hover:text-white transition-all duration-300">
-                <FaTripadvisor className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
-          <div className="col-span-1">
-            <h4 className="text-base md:text-lg font-bold mb-4 md:mb-6 flex items-center">
-              <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+          <div className="col-span-1 xl:col-span-2">
+            <h4 className="text-base font-bold mb-4 md:mb-6 flex items-center whitespace-nowrap">
+              <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 flex-shrink-0"></span>
               {t('footer.links')}
             </h4>
             <ul className="space-y-3 md:space-y-4">
@@ -60,9 +43,9 @@ export default function Footer({ lang }: Props) {
           </div>
 
           {/* Contact Info */}
-          <div className="col-span-1 md:col-span-2 lg:col-span-2">
-            <h4 className="text-base md:text-lg font-bold mb-4 md:mb-6 flex items-center">
-              <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+          <div className="col-span-1 xl:col-span-3">
+            <h4 className="text-base font-bold mb-4 md:mb-6 flex items-center whitespace-nowrap">
+              <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 flex-shrink-0"></span>
               {t('footer.contact')}
             </h4>
             <div className="space-y-3 md:space-y-4">
@@ -77,34 +60,75 @@ export default function Footer({ lang }: Props) {
                 <Phone className="w-4 h-4 md:w-5 md:h-5 text-orange-400 mr-3 md:mr-4 flex-shrink-0" />
                 <p className="text-white/70 text-xs md:text-sm">966638693</p>
               </div>
-              <div className="flex items-center">
-                <Mail className="w-4 h-4 md:w-5 md:h-5 text-orange-400 mr-3 md:mr-4 flex-shrink-0" />
-                <p className="text-white/70 text-xs md:text-sm">info@toursperuvianservice.com</p>
+              <div className="flex items-start">
+                <Mail className="w-4 h-4 md:w-5 md:h-5 text-orange-400 mr-3 md:mr-4 mt-0.5 flex-shrink-0" />
+                <p className="text-white/70 text-xs md:text-sm break-all">info@toursperuvianservice.com</p>
               </div>
-              <div className="flex items-center">
-                <Mail className="w-4 h-4 md:w-5 md:h-5 text-orange-400 mr-3 md:mr-4 flex-shrink-0" />
-                <p className="text-white/70 text-xs md:text-sm">tours.peruvianservice@gmail.com</p>
+              <div className="flex items-start">
+                <Mail className="w-4 h-4 md:w-5 md:h-5 text-orange-400 mr-3 md:mr-4 mt-0.5 flex-shrink-0" />
+                <p className="text-white/70 text-xs md:text-sm break-all">tours.peruvianservice@gmail.com</p>
               </div>
               <div className="flex items-start">
                 <Clock className="w-4 h-4 md:w-5 md:h-5 text-orange-400 mr-3 md:mr-4 mt-0.5 flex-shrink-0" />
                 <div className="text-white/70 text-xs md:text-sm leading-relaxed">
-                  <p>{lang === 'es' ? 'Lunes a viernes: 9:30am - 1:00pm y 4:00pm - 8:00pm' : 'Monday to Friday: 9:30am - 1:00pm and 4:00pm - 8:00pm'}</p>
-                  <p>{lang === 'es' ? 'Sábado: 9:30am - 1:00pm' : 'Saturday: 9:30am - 1:00pm'}</p>
+                  <p>{lang === 'es' ? 'L-V: 9:30am-1pm / 4pm-8pm' : 'Mon-Fri: 9:30am-1pm / 4pm-8pm'}</p>
+                  <p>{lang === 'es' ? 'Sáb: 9:30am-1pm' : 'Sat: 9:30am-1pm'}</p>
                 </div>
               </div>
             </div>
           </div>
 
+          {/* Social Media & Payments */}
+          <div className="col-span-1 sm:col-span-2 xl:col-span-3 flex flex-col sm:flex-row xl:flex-col gap-8 sm:gap-12 xl:gap-8">
+            <div className="flex-1">
+              <h4 className="text-base font-bold mb-4 md:mb-6 flex items-center whitespace-nowrap">
+                <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 flex-shrink-0"></span>
+                {t('footer.follow')}
+              </h4>
+              <div className="flex space-x-3">
+                <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-orange-500 hover:-translate-y-1 transition-all duration-300">
+                  <FaFacebookF className="w-4 h-4 text-white" />
+                </a>
+                <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-orange-500 hover:-translate-y-1 transition-all duration-300">
+                  <FaInstagram className="w-4 h-4 text-white" />
+                </a>
+                <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-orange-500 hover:-translate-y-1 transition-all duration-300">
+                  <FaTiktok className="w-4 h-4 text-white" />
+                </a>
+                <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-orange-500 hover:-translate-y-1 transition-all duration-300">
+                  <FaYoutube className="w-4 h-4 text-white" />
+                </a>
+                <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-orange-500 hover:-translate-y-1 transition-all duration-300">
+                  <FaTripadvisor className="w-4 h-4 text-white" />
+                </a>
+              </div>
+            </div>
+            
+            <div className="flex-1">
+              <h4 className="text-base font-bold mb-4 md:mb-6 flex items-center whitespace-nowrap">
+                <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 flex-shrink-0"></span>
+                {t('footer.accepts')}
+              </h4>
+              <div className="flex flex-wrap gap-3 md:gap-4 mt-2">
+                <img src="/img/pagos/visa.webp" alt="Visa" className="h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/img/pagos/mastercard.webp" alt="Mastercard" className="h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/img/pagos/amex.webp" alt="American Express" className="h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/img/pagos/dinners.webp" alt="Diners Club" className="h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/img/pagos/yape.png" alt="Yape" className="h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/img/pagos/efectivo.webp" alt="Pago en Efectivo" className="h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-          <p className="text-white/50 text-xs md:text-sm mb-4 md:mb-0">
-            &copy; {currentYear} Turismo Peruvian Service - {t('footer.rights')} | RUC: 20601386144
+        <div className="border-t border-white/10 pt-6 md:pt-8 flex flex-col xl:flex-row justify-between items-center text-center xl:text-left gap-4">
+          <p className="text-white/50 text-xs">
+            &copy; {currentYear} Turismo Peruvian Service - Todos los derechos reservados. | RUC: 20601386144
           </p>
           <div className="flex space-x-6">
-            <a href="#" className="text-white/50 hover:text-white/80 text-xs md:text-sm transition-colors">Privacidad</a>
-            <a href="#" className="text-white/50 hover:text-white/80 text-xs md:text-sm transition-colors">Términos</a>
+            <a href="#" className="text-white/50 hover:text-white/80 text-xs transition-colors">Privacidad</a>
+            <a href="#" className="text-white/50 hover:text-white/80 text-xs transition-colors">Términos</a>
           </div>
         </div>
       </div>

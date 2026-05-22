@@ -61,7 +61,7 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden xl:flex items-center space-x-8">
           {links.map((link) => (
             <a 
               key={link.name} 
@@ -80,7 +80,7 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
         </div>
 
         {/* Mobile Hamburger */}
-        <div className="md:hidden">
+        <div className="xl:hidden">
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className={`focus:outline-none transition-colors ${isScrolled ? 'text-slate-800' : 'text-white'}`}
@@ -97,7 +97,7 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#1E2B4D] border-t border-white/10"
+            className="xl:hidden bg-[#1E2B4D] border-t border-white/10"
           >
             <div className="flex flex-col px-6 py-6 space-y-4">
               {links.map((link) => (

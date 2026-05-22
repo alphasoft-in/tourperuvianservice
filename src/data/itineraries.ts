@@ -120,5 +120,92 @@ export const itineraries: Record<string, PackageDetails> = {
         }
       ]
     }
+  },
+  tarapoto: {
+    id: 'tarapoto',
+    image: '/img/paquetes_recomendados/tarapoto.png',
+    heroImage: '/img/paquetes_recomendados/tarapoto.png',
+    es: {
+      title: 'Aventura en la Selva del Alto Mayo: Rioja, Moyobamba, Tarapoto',
+      subtitle: 'Descubre la magia de la selva peruana, desde la comunidad nativa de Lamas hasta la impresionante Laguna Azul y las Cataratas de Ahuashiyacu.',
+      duration: '3 DÍAS / 2 NOCHES',
+      services: 'Traslado Trujillo-Tarapoto-Trujillo en móvil tours cuenta con, música ambiental, TV, DVD con seguro Vigente SOAT; Dos choferes profesionales conocedores de la ruta. Alimentación: 2 desayunos, un almuerzo típico en la laguna azul. 2 noches de alojamiento en habitaciones dobles, matrimoniales, triples, cuádruples con TV, baño privado el Hotel cuenta con piscina (hotel Plaza del bosque). Entradas y traslados a los lugares turísticos, Guía oficial de turismo.',
+      note: '3:00 pm Salida del Terminal Terrestre de la Av. La Marina en Empresa de Transporte GH Bus',
+      days: [
+        {
+          title: 'PRIMER DIA: LAMAS NATIVO',
+          activities: [
+            'Llegada a Tarapoto recojo del terminal terrestre e instalación en el hotel.',
+            'Desayuno en el hotel Plaza del Bosque.',
+            '3:00 p.m. Salida a la ciudad de Lamas, llamada también la ciudad de los tres pisos ecológicos, aquí visitaremos la comunidad Nativa de WAYKU, así como su Mirador y el Castillo de Lamas.',
+            'Retorno a Tarapoto y pernocte en el hotel.'
+          ]
+        },
+        {
+          title: 'SEGUNDO DÍA: LAGUNA AZUL',
+          activities: [
+            'Desayuno en el hotel y partida hacia la impresionante Laguna Azul, en el distrito de Sauce y atravesaremos los ríos Huallaga en la Balsa Cautiva en Pto. López.',
+            'Almuerzo típico en la Laguna AZUL, lugar donde disfrutaremos de un hermoso día donde se podrán bañar así como pasear en botes y trasladarnos al barrio Dos de Mayo.',
+            'Retorno a Tarapoto. Pernocte.'
+          ]
+        },
+        {
+          title: 'TERCER DÍA: CATARATAS DE AHUASHIYACU',
+          activities: [
+            'Desayuno.',
+            'Partida a las cataratas de Ahushiyacu, impresionante catarata de 40 mts. de altura donde podrán darse un chapuzón y tomarse fotos.',
+            'Retorno a Tarapoto.',
+            'Embarque en el terminal de móvil tours y retorno a Trujillo.'
+          ]
+        },
+        {
+          title: 'CUARTO DIA',
+          activities: [
+            'Llegada a Trujillo.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Alto Mayo Jungle Adventure: Rioja, Moyobamba, Tarapoto',
+      subtitle: 'Discover the magic of the Peruvian jungle, from the native community of Lamas to the impressive Blue Lagoon and Ahuashiyacu Waterfalls.',
+      duration: '3 DAYS / 2 NIGHTS',
+      services: 'Trujillo-Tarapoto-Trujillo transfer in Movil Tours with ambient music, TV, DVD, valid SOAT insurance; Two professional drivers familiar with the route. Meals: 2 breakfasts, one typical lunch at the Blue Lagoon. 2 nights accommodation in double, matrimonial, triple, or quadruple rooms with TV, private bathroom, and swimming pool (Hotel Plaza del Bosque). Entrance fees and transfers to tourist places, Official tour guide.',
+      note: '3:00 p.m. Departure from the Av. La Marina Bus Terminal on GH Bus Transport Company.',
+      days: [
+        {
+          title: 'FIRST DAY: NATIVE LAMAS',
+          activities: [
+            'Arrival in Tarapoto, pick up from the bus terminal, and installation at the hotel.',
+            'Breakfast at the Plaza del Bosque hotel.',
+            '3:00 p.m. Departure to the city of Lamas, also called the city of the three ecological floors. Here we will visit the native community of WAYKU, as well as its viewpoint and the Castle of Lamas.',
+            'Return to Tarapoto and overnight at the hotel.'
+          ]
+        },
+        {
+          title: 'SECOND DAY: BLUE LAGOON',
+          activities: [
+            'Breakfast at the hotel and departure to the impressive Blue Lagoon in the Sauce district. We will cross the Huallaga River on the Captive Raft in Pto. López.',
+            'Typical lunch at the BLUE LAGOON, where we will enjoy a beautiful day swimming, taking boat rides, and moving to the Dos de Mayo neighborhood.',
+            'Return to Tarapoto. Overnight.'
+          ]
+        },
+        {
+          title: 'THIRD DAY: AHUASHIYACU WATERFALLS',
+          activities: [
+            'Breakfast.',
+            'Departure to the Ahushiyacu waterfalls, an impressive 40-meter high waterfall where you can take a dip and take photos.',
+            'Return to Tarapoto.',
+            'Boarding at the Movil Tours terminal and return to Trujillo.'
+          ]
+        },
+        {
+          title: 'FOURTH DAY',
+          activities: [
+            'Arrival in Trujillo.'
+          ]
+        }
+      ]
+    }
   }
 };

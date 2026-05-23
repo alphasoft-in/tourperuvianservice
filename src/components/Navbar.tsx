@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { useTranslations } from '../i18n/utils';
 import LanguagePicker from './LanguagePicker';
@@ -33,14 +32,25 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
     { name: t('nav.destinations'), href: lang === 'es' ? '/destinos' : '/en/destinations' },
     { name: t('nav.packages'), href: lang === 'es' ? '/paquetes' : '/en/packages' },
     { name: t('nav.about'), href: lang === 'es' ? '/nosotros' : '/en/about' },
+    { name: t('nav.gallery'), href: lang === 'es' ? '/galeria' : '/en/gallery' },
     { name: t('nav.contact'), href: lang === 'es' ? '/contacto' : '/en/contact' },
   ];
 
+  const isActive = (href: string) => {
+    try {
+      let currentPath = currentRoute || '';
+      if (lang !== 'es') {
+        currentPath = currentPath === '/' ? `/${lang}/` : `/${lang}/${currentPath}`;
+      }
+      const normalize = (p: string) => p && p.endsWith('/') && p.length > 1 ? p.slice(0, -1) : p;
+      return normalize(currentPath) === normalize(href || '');
+    } catch (e) {
+      return false;
+    }
+  };
+
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.8, ease: 'easeOut' }}
+    <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 font-['Montserrat'] ${
         isScrolled 
           ? 'bg-white shadow-md py-3' 
@@ -64,17 +74,24 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
 
         {/* Desktop Menu */}
         <div className="hidden xl:flex items-center space-x-8">
-          {links.map((link) => (
-            <a 
-              key={link.name} 
-              href={link.href}
-              className={`text-sm font-medium transition-colors uppercase tracking-wider ${
-                isScrolled ? 'text-slate-700 hover:text-orange-500' : 'text-white/90 hover:text-orange-400'
-              }`}
-            >
-              {link.name}
-            </a>
-          ))}
+          {links.map((link) => {
+            const active = isActive(link.href);
+            return (
+              <a 
+                key={link.name} 
+                href={link.href}
+                className={`text-sm font-medium transition-colors uppercase tracking-wider ${
+                  active 
+                    ? isScrolled ? 'text-orange-500 font-bold' : 'text-orange-400 font-bold'
+                    : isScrolled 
+                      ? 'text-slate-700 hover:text-orange-500' 
+                      : 'text-white/90 hover:text-orange-400'
+                }`}
+              >
+                {link.name}
+              </a>
+            );
+          })}
           
           <div className={`h-6 w-[1px] mx-4 transition-colors ${isScrolled ? 'bg-slate-300' : 'bg-white/20'}`}></div>
           
@@ -93,35 +110,33 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
       </div>
 
       {/* Mobile Menu Overlay */}
-      <AnimatePresence>
-        {mobileMenuOpen && (
-          <motion.div 
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="xl:hidden bg-[#1E2B4D] border-t border-white/10"
-          >
-            <div className="flex flex-col px-6 py-6 space-y-4">
-              {links.map((link) => (
+      {mobileMenuOpen && (
+        <div className="xl:hidden bg-[#1E2B4D] border-t border-white/10">
+          <div className="flex flex-col px-6 py-6 space-y-4">
+            {links.map((link) => {
+              const active = isActive(link.href);
+              return (
                 <a 
                   key={link.name} 
                   href={link.href}
-                  className="text-base font-semibold text-white/90 hover:text-orange-400 transition-colors uppercase tracking-widest"
+                  className={`text-base transition-colors uppercase tracking-widest ${
+                    active ? 'text-orange-400 font-bold' : 'text-white/90 hover:text-orange-400 font-semibold'
+                  }`}
                 >
                   {link.name}
                 </a>
-              ))}
-              
-              <div className="w-full h-[1px] bg-white/10 my-4"></div>
-              
-              <div className="flex items-center justify-between">
-                <span className="text-xs text-slate-400 uppercase tracking-widest">Idioma</span>
-                <LanguagePicker currentLang={lang} currentRoute={currentRoute} />
-              </div>
+              );
+            })}
+            
+            <div className="w-full h-[1px] bg-white/10 my-4"></div>
+            
+            <div className="flex items-center justify-between">
+              <span className="text-xs text-slate-400 uppercase tracking-widest">Idioma</span>
+              <LanguagePicker currentLang={lang} currentRoute={currentRoute} />
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.nav>
+          </div>
+        </div>
+      )}
+    </nav>
   );
 }

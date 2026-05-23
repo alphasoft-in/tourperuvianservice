@@ -20,18 +20,18 @@ const packageData = [
 ];
 
 const containerVariants: Variants = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 1 },
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.15
+      staggerChildren: 0
     }
   }
 };
 
 const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  hidden: { opacity: 1, y: 0 },
+  show: { opacity: 1, y: 0 }
 };
 
 export default function FeaturedPackages({ lang }: Props) {
@@ -42,31 +42,13 @@ export default function FeaturedPackages({ lang }: Props) {
       <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1E2B4D] mb-4 md:mb-6 tracking-tight leading-tight"
-          >
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1E2B4D] mb-4 md:mb-6 tracking-tight leading-tight">
             {t('packages.title')}
-          </motion.h2>
-          <motion.div
-            initial={{ opacity: 0, scaleX: 0 }}
-            whileInView={{ opacity: 1, scaleX: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="h-1.5 w-24 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 mx-auto rounded-full mb-6"
-          ></motion.div>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-sm md:text-base lg:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed px-4 md:px-0"
-          >
+          </h2>
+          <div className="h-1.5 w-24 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 mx-auto rounded-full mb-6"></div>
+          <p className="text-sm md:text-base lg:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed px-4 md:px-0">
             {t('packages.subtitle')}
-          </motion.p>
+          </p>
         </div>
 
         {/* Packages Grid */}
@@ -85,12 +67,10 @@ export default function FeaturedPackages({ lang }: Props) {
             >
               {/* Image Container */}
               <div className="relative h-56 md:h-64 overflow-hidden rounded-t-2xl md:rounded-t-3xl [transform:translateZ(0)]">
-                <div className="absolute inset-0 bg-slate-200 animate-pulse"></div> {/* Skeleton */}
                 <img
                   src={pkg.image}
                   alt={pkg.name}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-t-2xl md:rounded-t-3xl"
-                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1E2B4D]/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-3 md:bottom-4 left-4 md:left-6 right-4 md:right-6 flex items-end justify-between">

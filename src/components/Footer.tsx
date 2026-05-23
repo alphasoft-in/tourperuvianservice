@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Calendar, Users, Package, ChevronDown } from 'lucide-react';
 import { FaFacebookF, FaInstagram, FaTiktok, FaTripadvisor, FaYoutube } from 'react-icons/fa';
 import { useTranslations } from '../i18n/utils';
 
@@ -12,8 +12,74 @@ export default function Footer({ lang }: Props) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#1E2B4D] text-white pt-12 md:pt-14 pb-6 font-['Montserrat']">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+    <>
+      <div 
+        className="relative py-20 px-6 md:px-12 font-['Montserrat'] bg-cover bg-center"
+        style={{ backgroundImage: "url('/slide1.png')" }}
+      >
+        <div className="absolute inset-0 bg-[#1E2B4D]/80 backdrop-blur-sm"></div>
+        <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] p-6 md:p-8 relative z-10">
+          <form className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 items-end">
+            
+            <div className="flex flex-col">
+              <label className="text-sm font-semibold text-slate-700 mb-2 flex items-center gap-2">
+                <Calendar className="w-4 h-4 text-orange-500" />
+                {t('cta.startDate')}
+              </label>
+              <input type="date" className="w-full border border-slate-200 rounded-xl p-3 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all text-slate-600 bg-slate-50 hover:bg-white" />
+            </div>
+
+            <div className="flex flex-col">
+              <label className="text-sm font-semibold text-slate-700 mb-2 flex items-center gap-2">
+                <Calendar className="w-4 h-4 text-orange-500" />
+                {t('cta.endDate')}
+              </label>
+              <input type="date" className="w-full border border-slate-200 rounded-xl p-3 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all text-slate-600 bg-slate-50 hover:bg-white" />
+            </div>
+
+            <div className="flex flex-col">
+              <label className="text-sm font-semibold text-slate-700 mb-2 flex items-center gap-2">
+                <Package className="w-4 h-4 text-orange-500" />
+                {t('cta.package')}
+              </label>
+              <div className="relative">
+                <select className="w-full border border-slate-200 rounded-xl p-3 pr-10 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all text-slate-600 bg-slate-50 hover:bg-white cursor-pointer appearance-none">
+                  <option value="">{t('cta.package')}</option>
+                  <option value="cascas">Cascas</option>
+                  <option value="salpo">Salpo</option>
+                  <option value="jequetepeque">Jequetepeque</option>
+                </select>
+                <ChevronDown className="w-4 h-4 text-slate-400 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="flex flex-col w-1/2">
+                <label className="text-sm font-semibold text-slate-700 mb-2 flex items-center gap-2">
+                  <Users className="w-4 h-4 text-orange-500" />
+                  {t('cta.adults')}
+                </label>
+                <input type="number" min="1" defaultValue={2} className="w-full border border-slate-200 rounded-xl p-3 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all text-slate-600 bg-slate-50 hover:bg-white" />
+              </div>
+              <div className="flex flex-col w-1/2">
+                <label className="text-sm font-semibold text-slate-700 mb-2 flex items-center gap-2">
+                  <Users className="w-4 h-4 text-orange-500" />
+                  {t('cta.children')}
+                </label>
+                <input type="number" min="0" defaultValue={0} className="w-full border border-slate-200 rounded-xl p-3 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all text-slate-600 bg-slate-50 hover:bg-white" />
+              </div>
+            </div>
+
+            <button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 h-[46px] w-full mt-4 lg:mt-0 shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 hover:-translate-y-0.5">
+              {t('cta.search')}
+            </button>
+
+          </form>
+        </div>
+      </div>
+
+      <footer className="bg-[#1E2B4D] text-white pt-12 md:pt-14 pb-6 font-['Montserrat']">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-12 gap-8 xl:gap-12 mb-8 md:mb-12">
           
           {/* Brand & About */}
@@ -133,5 +199,6 @@ export default function Footer({ lang }: Props) {
         </div>
       </div>
     </footer>
+    </>
   );
 }

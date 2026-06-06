@@ -5,7 +5,7 @@ import { packageData } from '../../../components/FeaturedPackages';
 import { Clock, CheckCircle2, Map } from 'lucide-react';
 
 export function getStaticPaths() {
-  const paquetesIds = packageData.filter(p => p.category === 'paquete').map(p => p.id);
+  const paquetesIds = packageData.filter(p => p.category === 'destino').map(p => p.id);
   return paquetesIds.map((id) => {
     return {
       params: { id },

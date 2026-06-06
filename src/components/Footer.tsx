@@ -2,6 +2,7 @@ import React from 'react';
 import { MapPin, Phone, Mail, Clock, Calendar, Users, Package, ChevronDown } from 'lucide-react';
 import { FaFacebookF, FaInstagram, FaTiktok, FaTripadvisor, FaYoutube } from 'react-icons/fa';
 import { useTranslations } from '../i18n/utils';
+import { packageData } from './FeaturedPackages';
 
 interface Props {
   lang: 'es' | 'en';
@@ -19,7 +20,7 @@ export default function Footer({ lang }: Props) {
       >
         <div className="absolute inset-0 bg-[#1E2B4D]/80 backdrop-blur-sm"></div>
         <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] p-6 md:p-8 relative z-10">
-          <form className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 items-end">
+          <form className="grid grid-cols-1 xl:grid-cols-5 gap-4 md:gap-6 items-end">
             
             <div className="flex flex-col">
               <label className="text-sm font-semibold text-slate-700 mb-2 flex items-center gap-2">
@@ -45,9 +46,9 @@ export default function Footer({ lang }: Props) {
               <div className="relative">
                 <select className="w-full border border-slate-200 rounded-xl p-3 pr-10 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all text-slate-600 bg-slate-50 hover:bg-white cursor-pointer appearance-none">
                   <option value="">{t('cta.package')}</option>
-                  <option value="cascas">Cascas</option>
-                  <option value="salpo">Salpo</option>
-                  <option value="jequetepeque">Jequetepeque</option>
+                  {packageData.map(pkg => (
+                    <option key={pkg.id} value={pkg.id}>{pkg.name}</option>
+                  ))}
                 </select>
                 <ChevronDown className="w-4 h-4 text-slate-400 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
               </div>
@@ -70,7 +71,7 @@ export default function Footer({ lang }: Props) {
               </div>
             </div>
 
-            <button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 h-[46px] w-full mt-4 lg:mt-0 shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 hover:-translate-y-0.5">
+            <button type="submit" className="xl:col-span-1 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 h-[46px] w-full mt-4 lg:mt-0 shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 hover:-translate-y-0.5">
               {t('cta.search')}
             </button>
 

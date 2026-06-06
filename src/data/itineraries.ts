@@ -930,5 +930,617 @@ export const itineraries: Record<string, PackageDetails> = {
         }
       ]
     }
+  },
+  salpo: {
+    id: 'salpo',
+    image: '/img/paquetes_recomendados/salpo.png',
+    heroImage: '/img/paquetes_recomendados/salpo.png',
+    es: {
+      title: 'Salpo Inolvidable',
+      subtitle: 'Descubre el Balcón del Cielo, el Bosque de Piedras y el Dique de Carabamba.',
+      duration: 'FULL DAY',
+      services: 'INCLUYE: Movilidad Privada. Guía Turístico. Entradas a los atractivos. Botiquín de primeros auxilios. Actividades propias del tour. Fotografías y videos del recorrido. NO INCLUYE: Alimentación.',
+      note: 'Salidas: Sábados, domingos y feriados. Inicio: 06:15 am, Retorno: 9:00 pm. Punto de embarque: Jr. San Martín #541',
+      days: [
+        {
+          title: 'ITINERARIO',
+          activities: [
+            'Plaza de Armas de Salpo.',
+            'Mirador Balcón del Cielo.',
+            'Visita Dique y Laguna de Carabamba.',
+            'Fábrica de quesos.',
+            'Bosque de piedras "El Gran Shamana".',
+            'Puesta de Sol en Mal Paso.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Unforgettable Salpo',
+      subtitle: 'Discover the Balcony of Heaven, the Stone Forest and the Carabamba Dam.',
+      duration: 'FULL DAY',
+      services: 'INCLUDES: Private Mobility. Tour Guide. Entrance fees. First aid kit. Tour activities. Photographs and videos of the tour. DOES NOT INCLUDE: Meals.',
+      note: 'Departures: Saturdays, Sundays and holidays. Start: 06:15 am, Return: 9:00 pm. Boarding point: Jr. San Martin #541',
+      days: [
+        {
+          title: 'ITINERARY',
+          activities: [
+            'Salpo Main Square.',
+            'Balcony of Heaven Viewpoint.',
+            'Visit Carabamba Dam and Lagoon.',
+            'Cheese Factory.',
+            '"El Gran Shamana" Stone Forest.',
+            'Sunset in Mal Paso.'
+          ]
+        }
+      ]
+    }
+  },
+  'full-day-trujillo': {
+    id: 'full-day-trujillo',
+    image: '/img/paquetes_recomendados/full-day-trujillo.png',
+    heroImage: '/img/paquetes_recomendados/full-day-trujillo.png',
+    es: {
+      title: 'Full Day Trujillo',
+      subtitle: 'Descubre la Huaca de la Luna, Chan Chan y el encantador Balneario de Huanchaco.',
+      duration: 'FULL DAY',
+      services: 'INCLUYE: Movilidad Privada. Guía Turístico. Botiquín de primeros auxilios. Actividades propias del tour. Fotografías y videos del recorrido. NO INCLUYE: Alimentación. Entradas.',
+      note: 'Salidas: Martes a Domingos. Inicio: 10:30 am, Retorno: 5:00 pm. Punto de embarque: Jr. San Martín #541',
+      days: [
+        {
+          title: 'ITINERARIO',
+          activities: [
+            'Parque de la fertilidad.',
+            'Huaca de la Luna.',
+            'Taller de artesanos Moche.',
+            'Show de caballos de paso (Opcional).',
+            'Ciudadela de Chan-Chan.',
+            'Balneario de Huanchaco.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Full Day Trujillo',
+      subtitle: 'Discover Huaca de la Luna, Chan Chan and the charming Huanchaco Beach.',
+      duration: 'FULL DAY',
+      services: 'INCLUDES: Private Mobility. Tour Guide. First aid kit. Tour activities. Photographs and videos of the tour. DOES NOT INCLUDE: Meals. Entrance fees.',
+      note: 'Departures: Tuesdays to Sundays. Start: 10:30 am, Return: 5:00 pm. Boarding point: Jr. San Martin #541',
+      days: [
+        {
+          title: 'ITINERARY',
+          activities: [
+            'Fertility Park.',
+            'Huaca de la Luna.',
+            'Moche artisan workshop.',
+            'Peruvian Paso Horse Show (Optional).',
+            'Chan-Chan Citadel.',
+            'Huanchaco Beach.'
+          ]
+        }
+      ]
+    }
+  },
+  'caleta-colorada': {
+    id: 'caleta-colorada',
+    image: '/img/paquetes_recomendados/caleta-colorada.png',
+    heroImage: '/img/paquetes_recomendados/caleta-colorada.png',
+    es: {
+      title: 'Caleta Colorada',
+      subtitle: 'Disfruta de las playas, paseos en bote y los encantos de Chimbote y Nuevo Chimbote.',
+      duration: 'FULL DAY',
+      services: 'INCLUYE: Movilidad Privada. Guía Turístico. Entradas a los atractivos. Botiquín de primeros auxilios. Actividades propias del tour. Fotografías y videos del recorrido. Paseo en Bote. NO INCLUYE: Alimentación.',
+      note: 'Salidas: Sábados, domingos y feriados. Inicio: 7:00 am, Retorno: 9:00 pm. Punto de embarque: Jr. San Martín #541',
+      days: [
+        {
+          title: 'ITINERARIO',
+          activities: [
+            'Malecón Grau de Chimbote.',
+            'Avistamiento de la Isla Blanca.',
+            'Tiempo para que desayunen o compras.',
+            'Visita a la playa El Dorado.',
+            'Paseo en Bote.',
+            'Tarde playera en Caleta Colorada.',
+            'Visita a la Plaza Mayor de Nuevo Chimbote.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Caleta Colorada',
+      subtitle: 'Enjoy the beaches, boat rides, and the charms of Chimbote and Nuevo Chimbote.',
+      duration: 'FULL DAY',
+      services: 'INCLUDES: Private Mobility. Tour Guide. Entrance fees. First aid kit. Tour activities. Photographs and videos of the tour. Boat ride. DOES NOT INCLUDE: Meals.',
+      note: 'Departures: Saturdays, Sundays and holidays. Start: 7:00 am, Return: 9:00 pm. Boarding point: Jr. San Martin #541',
+      days: [
+        {
+          title: 'ITINERARY',
+          activities: [
+            'Grau Boardwalk of Chimbote.',
+            'White Island sighting.',
+            'Time for breakfast or shopping.',
+            'Visit to El Dorado beach.',
+            'Boat ride.',
+            'Beach afternoon in Caleta Colorada.',
+            'Visit to the Main Square of Nuevo Chimbote.'
+          ]
+        }
+      ]
+    }
+  },
+  'explora-jequetepeque': {
+    id: 'explora-jequetepeque',
+    image: '/img/paquetes_recomendados/explora-jequetepeque.png',
+    heroImage: '/img/paquetes_recomendados/explora-jequetepeque.png',
+    es: {
+      title: 'Explora Jequetepeque',
+      subtitle: 'Descubre San Pedro de Lloc, Pacasmayo y el imponente reservorio de Gallito Ciego.',
+      duration: 'FULL DAY',
+      services: 'INCLUYE: Movilidad Privada. Guía Turístico. Entradas a los atractivos. Botiquín de primeros auxilios. Actividades propias del tour. Fotografías y videos del recorrido. NO INCLUYE: Alimentación.',
+      note: 'Salidas: Sábados, domingos y feriados. Inicio: 6:00 am, Retorno: 9:00 pm. Punto de embarque: Jr. San Martín #541',
+      days: [
+        {
+          title: 'ITINERARIO',
+          activities: [
+            'Plaza de San Pedro de Lloc.',
+            'Miradores de Gallito Ciego.',
+            'Restaurant Campestre.',
+            'Plaza de Jequetepeque.',
+            'Show de caballos de paso.',
+            'Playa de Pacasmayo.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Explore Jequetepeque',
+      subtitle: 'Discover San Pedro de Lloc, Pacasmayo and the imposing Gallito Ciego reservoir.',
+      duration: 'FULL DAY',
+      services: 'INCLUDES: Private Mobility. Tour Guide. Entrance fees. First aid kit. Tour activities. Photographs and videos of the tour. DOES NOT INCLUDE: Meals.',
+      note: 'Departures: Saturdays, Sundays and holidays. Start: 6:00 am, Return: 9:00 pm. Boarding point: Jr. San Martin #541',
+      days: [
+        {
+          title: 'ITINERARY',
+          activities: [
+            'San Pedro de Lloc Main Square.',
+            'Gallito Ciego Viewpoints.',
+            'Country Restaurant.',
+            'Jequetepeque Main Square.',
+            'Peruvian Paso Horse Show.',
+            'Pacasmayo Beach.'
+          ]
+        }
+      ]
+    }
+  },
+  'ruta-del-vino': {
+    id: 'ruta-del-vino',
+    image: '/img/paquetes_recomendados/ruta-del-vino.png',
+    heroImage: '/img/paquetes_recomendados/ruta-del-vino.png',
+    es: {
+      title: 'Ruta del Vino',
+      subtitle: 'Descubre la Piedra El Gavilán, la Cascada El Molino y los viñedos de Cascas.',
+      duration: 'FULL DAY',
+      services: 'INCLUYE: Movilidad Privada. Guía Turístico. Entradas a los atractivos. Botiquín de primeros auxilios. Actividades propias del tour. Fotografías y videos del recorrido. NO INCLUYE: Alimentación.',
+      note: 'Salidas: Sábados, domingos y feriados. Inicio: 6:45 am, Retorno: 7:30 pm. Punto de embarque: Jr. San Martín #541',
+      days: [
+        {
+          title: 'ITINERARIO',
+          activities: [
+            'Piedra El Gavilán.',
+            'Vinos La Volet.',
+            'Viñedos.',
+            'Árbol de las mil raíces.',
+            'Cristo de las Rocas.',
+            'Plaza de Armas de Cascas.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Wine Route',
+      subtitle: 'Discover Piedra El Gavilan, El Molino Waterfall and the vineyards of Cascas.',
+      duration: 'FULL DAY',
+      services: 'INCLUDES: Private Mobility. Tour Guide. Entrance fees. First aid kit. Tour activities. Photographs and videos of the tour. DOES NOT INCLUDE: Meals.',
+      note: 'Departures: Saturdays, Sundays and holidays. Start: 6:45 am, Return: 7:30 pm. Boarding point: Jr. San Martin #541',
+      days: [
+        {
+          title: 'ITINERARY',
+          activities: [
+            'El Gavilan Stone.',
+            'La Volet Wines.',
+            'Vineyards.',
+            'Tree of a thousand roots.',
+            'Christ of the Rocks.',
+            'Cascas Main Square.'
+          ]
+        }
+      ]
+    }
+  },
+  'mayascon': {
+    id: 'mayascon',
+    image: '/img/paquetes_recomendados/mayascon.png',
+    heroImage: '/img/paquetes_recomendados/mayascon.png',
+    es: {
+      title: 'Mayascón',
+      subtitle: 'Disfruta de las piscinas naturales de Mayascón, el criadero de avestruces y Pimentel.',
+      duration: '1 DÍA / 1 NOCHE',
+      services: 'INCLUYE: Movilidad Privada. Guía Turístico. Entradas a los atractivos. Botiquín de primeros auxilios. Actividades propias del tour. Fotografías y videos del recorrido. NO INCLUYE: Alimentación.',
+      note: 'Salida: 02 de abril 11:45 pm, Retorno: 03 de abril 10:00 pm. Punto de embarque: Jr. San Martín 541',
+      days: [
+        {
+          title: 'ITINERARIO',
+          activities: [
+            'Plaza principal de Mayascón.',
+            'Hacienda de Mayascón.',
+            'Piedra milenaria de la energía.',
+            'Cerro Cabeza de León.',
+            'Trekking de 25 minutos para visitar las 7 piscinas naturales y volcánicas de Mayascón.',
+            'Criadero de avestruces.',
+            'Balneario y malecón de Pimentel.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Mayascon',
+      subtitle: 'Enjoy the natural pools of Mayascon, the ostrich farm and Pimentel.',
+      duration: '1 DAY / 1 NIGHT',
+      services: 'INCLUDES: Private Mobility. Tour Guide. Entrance fees. First aid kit. Tour activities. Photographs and videos of the tour. DOES NOT INCLUDE: Meals.',
+      note: 'Departure: April 02 at 11:45 pm, Return: April 03 at 10:00 pm. Boarding point: Jr. San Martin 541',
+      days: [
+        {
+          title: 'ITINERARY',
+          activities: [
+            'Mayascon main square.',
+            'Mayascon Hacienda.',
+            'Millenary energy stone.',
+            'Lion Head Hill.',
+            '25-minute trek to visit the 7 natural and volcanic pools of Mayascon.',
+            'Ostrich farm.',
+            'Pimentel beach and boardwalk.'
+          ]
+        }
+      ]
+    }
+  },
+  'ruta-chancay-medieval': {
+    id: 'ruta-chancay-medieval',
+    image: '/img/paquetes_recomendados/ruta-chancay-medieval.png',
+    heroImage: '/img/paquetes_recomendados/ruta-chancay-medieval.png',
+    es: {
+      title: 'Ruta Chancay Medieval',
+      subtitle: 'Descubre el Castillo de Chancay, Eco Truly Park y disfruta de shows en vivo.',
+      duration: '1 DÍA / 1 NOCHE',
+      services: 'INCLUYE: Movilidad Privada. Guía Turístico. Entradas a los atractivos. Botiquín de primeros auxilios. Actividades propias del tour. Fotografías y videos del recorrido. NO INCLUYE: Alimentación.',
+      note: 'Salidas: Sábados. Inicio: 11:00 pm, Retorno: 12:00 am (media noche). Punto de embarque: Jr. San Martín #541',
+      days: [
+        {
+          title: 'ITINERARIO',
+          activities: [
+            'Eco Truly Park.',
+            'Castillo de Chancay.',
+            'Parque Temático.',
+            'Museos de la Época Medieval y Antigua.',
+            'Culturas del Perú: Grecia, Roma, etc.',
+            'Show en vivo.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Medieval Chancay Route',
+      subtitle: 'Discover Chancay Castle, Eco Truly Park and enjoy live shows.',
+      duration: '1 DAY / 1 NIGHT',
+      services: 'INCLUDES: Private Mobility. Tour Guide. Entrance fees. First aid kit. Tour activities. Photographs and videos of the tour. DOES NOT INCLUDE: Meals.',
+      note: 'Departures: Saturdays. Start: 11:00 pm, Return: 12:00 am (midnight). Boarding point: Jr. San Martin #541',
+      days: [
+        {
+          title: 'ITINERARY',
+          activities: [
+            'Eco Truly Park.',
+            'Chancay Castle.',
+            'Theme Park.',
+            'Museums of the Medieval and Ancient Era.',
+            'Cultures of Peru: Greece, Rome, etc.',
+            'Live show.'
+          ]
+        }
+      ]
+    }
+  },
+  'rio-de-janeiro-new-year': {
+    id: 'rio-de-janeiro-new-year',
+    image: '/img/paquetes_recomendados/rio-de-janeiro.png',
+    heroImage: '/img/paquetes_recomendados/rio-de-janeiro.png',
+    es: {
+      title: 'Año Nuevo Rio de Janeiro',
+      subtitle: 'Recibe el año nuevo en las hermosas playas de Río de Janeiro.',
+      duration: '4 DÍAS / 3 NOCHES',
+      services: 'INCLUYE: Vuelos, Traslados, Alojamiento (3 Noches), Desayunos, Guía Turístico. (Precios desde $1479 según hotel: Atlantico Rio, Hotel Nacional Inn Rio Copacabana, Astoria Copacabana).',
+      note: 'SALIDA CONFIRMADA: 29 de diciembre 2026 al 02 de enero 2027.',
+      days: [
+        {
+          title: 'DÍA 1',
+          activities: [
+            'Llegada al aeropuerto de Río de Janeiro.',
+            'Traslado al hotel seleccionado.',
+            'Resto del día libre para caminar y conocer la famosa playa de Copacabana.'
+          ]
+        },
+        {
+          title: 'DÍA 2',
+          activities: [
+            'Desayuno en el hotel.',
+            'Día libre. Te sugerimos realizar un City Tour opcional para conocer el Cristo Redentor (Corcovado) y el Pan de Azúcar.',
+            'Tarde libre para disfrutar de la playa o pasear por Ipanema.'
+          ]
+        },
+        {
+          title: 'DÍA 3',
+          activities: [
+            'Desayuno en el hotel.',
+            'Día libre de relajación en la playa.',
+            'Por la noche, prepárate para el "Reveillon": la espectacular fiesta de Año Nuevo en la playa de Copacabana con el famoso show de fuegos artificiales.'
+          ]
+        },
+        {
+          title: 'DÍA 4',
+          activities: [
+            'Desayuno en el hotel.',
+            'Mañana libre para las últimas compras o un último chapuzón en el mar.',
+            'A la hora acordada, traslado al aeropuerto para tu vuelo de retorno.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'New Year Rio de Janeiro',
+      subtitle: 'Welcome the new year on the beautiful beaches of Rio de Janeiro.',
+      duration: '4 DAYS / 3 NIGHTS',
+      services: 'INCLUDES: Flights, Transfers, Accommodation (3 Nights), Breakfasts, Tour Guide. (Prices from $1479 varying by hotel: Atlantico Rio, Hotel Nacional Inn Rio Copacabana, Astoria Copacabana).',
+      note: 'CONFIRMED DEPARTURE: December 29, 2026 to January 02, 2027.',
+      days: [
+        {
+          title: 'DAY 1',
+          activities: [
+            'Arrival at Rio de Janeiro airport.',
+            'Transfer to the selected hotel.',
+            'Rest of the day free to walk around and get to know the famous Copacabana beach.'
+          ]
+        },
+        {
+          title: 'DAY 2',
+          activities: [
+            'Breakfast at the hotel.',
+            'Free day. We suggest taking an optional City Tour to visit Christ the Redeemer (Corcovado) and Sugarloaf Mountain.',
+            'Free afternoon to enjoy the beach or stroll through Ipanema.'
+          ]
+        },
+        {
+          title: 'DAY 3',
+          activities: [
+            'Breakfast at the hotel.',
+            'Free day of relaxation on the beach.',
+            'At night, get ready for "Reveillon": the spectacular New Year party on Copacabana beach with the famous fireworks show.'
+          ]
+        },
+        {
+          title: 'DAY 4',
+          activities: [
+            'Breakfast at the hotel.',
+            'Free morning for last minute shopping or a final dip in the sea.',
+            'At the agreed time, transfer to the airport for your return flight.'
+          ]
+        }
+      ]
+    }
+  },
+  'punta-cana': {
+    id: 'punta-cana',
+    image: '/img/paquetes_recomendados/punta-cana.png',
+    heroImage: '/img/paquetes_recomendados/punta-cana.png',
+    es: {
+      title: 'Punta Cana',
+      subtitle: 'Disfruta de las mejores playas del Caribe con todo incluido.',
+      duration: '5 DÍAS / 4 NOCHES',
+      services: 'INCLUYE: Vuelos, Traslados, Alojamiento (4 Noches), Sistema Todo Incluido (Comidas y Bebidas), Guía Turístico. (Precios desde $1135 varían según hotel y fecha: Vik Arena Blanca, Vista Sol Punta Cana, Grand Sirenis Punta Cana, Meliá Caribe Beach).',
+      note: 'SALIDAS CONFIRMADAS: 27 al 31 de enero 2027 / 10 al 14 de febrero 2027.',
+      days: [
+        {
+          title: 'DÍA 1',
+          activities: [
+            'Llegada al aeropuerto de Punta Cana.',
+            'Recepción y traslado privado al resort.',
+            'Check-in y resto del día libre para empezar a disfrutar del sistema Todo Incluido.'
+          ]
+        },
+        {
+          title: 'DÍA 2',
+          activities: [
+            'Día libre en el resort.',
+            'Disfruta de las múltiples piscinas, el acceso directo a la playa de arena blanca y el mar turquesa.',
+            'Oportunidad de realizar actividades acuáticas no motorizadas incluidas en tu hotel.'
+          ]
+        },
+        {
+          title: 'DÍA 3',
+          activities: [
+            'Día libre.',
+            'Te sugerimos tomar una excursión opcional de día completo a la paradisíaca Isla Saona en catamarán.',
+            'Por la noche, asiste a los shows nocturnos temáticos del resort.'
+          ]
+        },
+        {
+          title: 'DÍA 4',
+          activities: [
+            'Día libre de total relax.',
+            'Aprovecha al máximo los bares y restaurantes de especialidad (buffet y a la carta) de tu hotel.',
+            'Descansa y disfruta del cálido clima caribeño.'
+          ]
+        },
+        {
+          title: 'DÍA 5',
+          activities: [
+            'Desayuno buffet.',
+            'Últimas horas en la playa o la piscina.',
+            'A la hora indicada, traslado hacia el aeropuerto de Punta Cana para tomar el vuelo de retorno.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Punta Cana',
+      subtitle: 'Enjoy the best beaches in the Caribbean with all-inclusive.',
+      duration: '5 DAYS / 4 NIGHTS',
+      services: 'INCLUDES: Flights, Transfers, Accommodation (4 Nights), All-Inclusive System (Meals and Drinks), Tour Guide. (Prices from $1135 varying by hotel and date: Vik Arena Blanca, Vista Sol Punta Cana, Grand Sirenis Punta Cana, Melia Caribe Beach).',
+      note: 'CONFIRMED DEPARTURES: January 27 to 31, 2027 / February 10 to 14, 2027.',
+      days: [
+        {
+          title: 'DAY 1',
+          activities: [
+            'Arrival at Punta Cana airport.',
+            'Reception and private transfer to the resort.',
+            'Check-in and the rest of the day free to start enjoying the All-Inclusive system.'
+          ]
+        },
+        {
+          title: 'DAY 2',
+          activities: [
+            'Free day at the resort.',
+            'Enjoy the multiple pools, direct access to the white sand beach and the turquoise sea.',
+            'Opportunity to enjoy non-motorized water activities included at your hotel.'
+          ]
+        },
+        {
+          title: 'DAY 3',
+          activities: [
+            'Free day.',
+            'We suggest taking an optional full-day excursion to the paradisiacal Saona Island by catamaran.',
+            'At night, attend the resort\'s thematic night shows.'
+          ]
+        },
+        {
+          title: 'DAY 4',
+          activities: [
+            'Free day for total relaxation.',
+            'Make the most of the specialty bars and restaurants (buffet and a la carte) at your hotel.',
+            'Rest and enjoy the warm Caribbean weather.'
+          ]
+        },
+        {
+          title: 'DAY 5',
+          activities: [
+            'Buffet breakfast.',
+            'Last few hours on the beach or by the pool.',
+            'At the indicated time, transfer to the Punta Cana airport to take your return flight.'
+          ]
+        }
+      ]
+    }
+  },
+  'cartagena-new-year': {
+    id: 'cartagena-new-year',
+    image: '/img/paquetes_recomendados/cartagena.png',
+    heroImage: '/img/paquetes_recomendados/cartagena.png',
+    es: {
+      title: 'Cartagena Año Nuevo',
+      subtitle: 'Recibe el año nuevo en la mágica ciudad de Cartagena con vuelos vía Latam.',
+      duration: '5 DÍAS / 4 NOCHES',
+      services: 'INCLUYE: Boleto aéreo vía Latam Airlines. Mochila + Carry on 10kg. Traslados. Alojamiento en Hotel Holiday Inn Express Cartagena Bocagrande 3*. Alimentación. Travelkit. (Precio Desde USD 999).',
+      note: 'FECHAS: 28 de diciembre al 01 de enero.',
+      days: [
+        {
+          title: 'DÍA 1',
+          activities: [
+            'Vuelo hacia Cartagena vía Latam Airlines.',
+            'Recibimiento en el aeropuerto y traslado al Hotel Holiday Inn Express.',
+            'Tarde libre para acomodarse y pasear por las vibrantes calles de Bocagrande.'
+          ]
+        },
+        {
+          title: 'DÍA 2',
+          activities: [
+            'Desayuno en el hotel.',
+            'Día libre. Recomendamos un recorrido por el centro histórico y la imponente Ciudad Amurallada de Cartagena.',
+            'Podrás visitar sitios emblemáticos como la Torre del Reloj y el Castillo de San Felipe (opcional).'
+          ]
+        },
+        {
+          title: 'DÍA 3',
+          activities: [
+            'Desayuno.',
+            'Día libre para ir a la playa. Opcionalmente puedes tomar un tour en bote hacia las hermosas Islas del Rosario y Playa Blanca en Barú.',
+            'Por la noche, disfruta de la gastronomía caribeña y música en vivo en la ciudad vieja.'
+          ]
+        },
+        {
+          title: 'DÍA 4',
+          activities: [
+            'Desayuno en el hotel.',
+            'Mañana y tarde libre para descanso o compras.',
+            'Por la noche, preparativos y cena para recibir el Año Nuevo al alegre estilo colombiano.'
+          ]
+        },
+        {
+          title: 'DÍA 5',
+          activities: [
+            'Desayuno en el hotel.',
+            'Tiempo libre para empacar y realizar algunas últimas compras (café, artesanías).',
+            'A la hora acordada, traslado al aeropuerto para tu vuelo de retorno vía Latam Airlines.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'New Year Cartagena',
+      subtitle: 'Welcome the new year in the magical city of Cartagena with flights via Latam.',
+      duration: '5 DAYS / 4 NIGHTS',
+      services: 'INCLUDES: Air ticket via Latam Airlines. Backpack + Carry on 10kg. Transfers. Accommodation at Hotel Holiday Inn Express Cartagena Bocagrande 3*. Meals. Travelkit. (Price From USD 999).',
+      note: 'DATES: December 28 to January 01.',
+      days: [
+        {
+          title: 'DAY 1',
+          activities: [
+            'Flight to Cartagena via Latam Airlines.',
+            'Reception at the airport and transfer to the Holiday Inn Express Hotel.',
+            'Free afternoon to settle in and stroll through the vibrant streets of Bocagrande.'
+          ]
+        },
+        {
+          title: 'DAY 2',
+          activities: [
+            'Breakfast at the hotel.',
+            'Free day. We recommend a tour of the historic center and the imposing Walled City of Cartagena.',
+            'You can visit iconic sites such as the Clock Tower and the San Felipe Castle (optional).'
+          ]
+        },
+        {
+          title: 'DAY 3',
+          activities: [
+            'Breakfast.',
+            'Free day to go to the beach. Optionally you can take a boat tour to the beautiful Rosario Islands and Playa Blanca in Barú.',
+            'At night, enjoy Caribbean cuisine and live music in the old city.'
+          ]
+        },
+        {
+          title: 'DAY 4',
+          activities: [
+            'Breakfast at the hotel.',
+            'Free morning and afternoon for rest or shopping.',
+            'At night, preparations and dinner to welcome the New Year in the joyful Colombian style.'
+          ]
+        },
+        {
+          title: 'DAY 5',
+          activities: [
+            'Breakfast at the hotel.',
+            'Free time to pack and do some last-minute shopping (coffee, souvenirs).',
+            'At the agreed time, transfer to the airport for your return flight via Latam Airlines.'
+          ]
+        }
+      ]
+    }
   }
 };

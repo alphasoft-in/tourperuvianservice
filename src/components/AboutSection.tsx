@@ -1,5 +1,5 @@
 import React from 'react';
-import { Map, Plane, ShieldCheck, Bus, Award, Target, Eye, Heart, Star, HeartHandshake, ClipboardCheck, Users } from 'lucide-react';
+import { Map, Plane, ShieldCheck, Bus, Award, Target, Eye, Heart, Star, HeartHandshake, ClipboardCheck, Users, FileText } from 'lucide-react';
 
 interface Props {
   lang: 'es' | 'en';
@@ -119,18 +119,20 @@ export default function AboutSection({ lang }: Props) {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 pt-8 pb-0 md:pt-16 md:pb-2 lg:pb-12 font-['Montserrat']">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 pt-8 pb-0 md:pt-16 md:pb-2 xl:pb-12 font-['Montserrat']">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 xl:gap-20 items-center">
           
-          <div className="text-center lg:text-left max-w-xl mx-auto lg:max-w-none">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-bold mb-6 mx-auto lg:mx-0">
-              <Award className="w-4 h-4" />
-              {data.experience}
+          <div className="flex flex-col justify-center max-w-xl mx-auto xl:mx-0 text-center xl:text-left">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100 border border-orange-200 mb-6 md:mb-8 w-fit mx-auto xl:mx-0 shadow-sm">
+              <Award className="w-4 h-4 md:w-5 md:h-5 text-orange-600" />
+              <span className="text-orange-700 font-bold text-xs sm:text-sm md:text-base tracking-wide">
+                {data.experience}
+              </span>
             </div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#1E2B4D] mb-4 md:mb-6 font-['Montserrat'] tracking-tight leading-tight">
+            <h2 className="text-xl sm:text-2xl md:text-3xl xl:text-4xl font-extrabold text-[#1E2B4D] mb-4 md:mb-6 font-['Montserrat'] tracking-tight leading-tight">
               {data.mainTitle}
             </h2>
-            <p className="text-slate-600 leading-relaxed mb-8 md:mb-10 text-sm md:text-base lg:text-lg">
+            <p className="text-sm sm:text-base xl:text-lg text-slate-600 leading-relaxed mb-8 md:mb-10">
               {data.intro.split('15 años de experiencia').map((part, i, arr) => 
                 i === 0 && lang === 'es' ? <span key={i}>{part}<strong>15 años de experiencia</strong>{arr[i+1]}</span> : null
               )}
@@ -143,13 +145,13 @@ export default function AboutSection({ lang }: Props) {
               {data.features.map((feature, index) => {
                 const Icon = feature.icon;
                 return (
-                  <div key={index} className="flex flex-row items-start text-left gap-4 md:gap-5">
-                    <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-500 shadow-sm border border-orange-100 mt-1">
-                      <Icon className="w-6 h-6 md:w-7 md:h-7" />
+                  <div key={index} className="flex flex-col xl:flex-row items-center xl:items-start text-center xl:text-left gap-4 md:gap-5">
+                    <div className="flex-shrink-0 w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center border border-orange-100 shadow-sm xl:mt-1">
+                      <Icon className="w-7 h-7 text-orange-500" />
                     </div>
                     <div>
-                      <h3 className="text-base md:text-lg font-bold text-[#1E2B4D] mb-1">{feature.title}</h3>
-                      <p className="text-slate-600 leading-relaxed text-sm">{feature.desc}</p>
+                      <h3 className="text-base md:text-lg lg:text-xl font-bold text-[#1E2B4D] mb-2">{feature.title}</h3>
+                      <p className="text-slate-600 leading-relaxed text-[13px] md:text-sm lg:text-base">{feature.desc}</p>
                     </div>
                   </div>
                 );
@@ -157,9 +159,15 @@ export default function AboutSection({ lang }: Props) {
             </div>
           </div>
 
-          <div className="relative mt-2 lg:mt-0 mr-4 mb-4 md:mr-6 md:mb-6">
+          <div className="relative mt-8 xl:mt-0 mr-4 mb-4 md:mr-6 md:mb-6">
             <div className="absolute inset-0 bg-orange-500 rounded-3xl transform translate-x-4 translate-y-4 md:translate-x-6 md:translate-y-6"></div>
-            <img src="/trujillo.webp" alt="Turismo en Trujillo" className="relative z-10 w-full h-[500px] md:h-[700px] object-cover rounded-3xl shadow-2xl" />
+            <img 
+              src="/trujillo.webp" 
+              alt="Turismo Peruvian Service" 
+              className="relative rounded-3xl w-full h-[400px] md:h-[500px] xl:h-[700px] object-cover shadow-[0_20px_50px_rgba(0,0,0,0.3)] z-10"
+            />
+            {/* Overlay Gradient */}
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-[#1E2B4D]/80 via-transparent to-transparent z-10"></div>
             
             {/* Floating badge */}
             <div className="absolute top-6 sm:top-8 lg:top-12 left-4 sm:left-6 lg:-left-8 z-20 bg-white/90 backdrop-blur-md px-5 py-4 md:px-6 md:py-5 rounded-2xl shadow-xl flex items-center gap-3 md:gap-4 border border-white/50 animate-bounce hidden sm:flex" style={{ animationDuration: '3s' }}>
@@ -178,7 +186,7 @@ export default function AboutSection({ lang }: Props) {
       {/* Mission, Vision, Values Section */}
       <div className="bg-slate-50 pt-8 pb-10 md:pt-10 md:pb-16 lg:py-16 font-['Montserrat']">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 lg:gap-8">
             
             {/* Mission */}
             <div className="bg-white p-6 lg:p-8 rounded-3xl shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300 border border-slate-100 flex flex-col items-center text-center">
@@ -221,6 +229,64 @@ export default function AboutSection({ lang }: Props) {
               </div>
             </div>
 
+          </div>
+        </div>
+      </div>
+
+      {/* PDF Previews Section */}
+      <div className="bg-white py-12 md:py-20 font-['Montserrat']">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-10 md:mb-14">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#1E2B4D] mb-4 tracking-tight">
+              {lang === 'es' ? 'Documentos Oficiales' : 'Official Documents'}
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base">
+              {lang === 'es' 
+                ? 'Nuestra agencia opera con total transparencia y cumplimiento de las normativas vigentes.' 
+                : 'Our agency operates with full transparency and compliance with current regulations.'}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 md:gap-12">
+            {/* Constancia DIRCETUR */}
+            <div className="flex flex-col items-center w-full max-w-[340px] sm:max-w-[420px] md:max-w-[500px] lg:max-w-[600px] xl:max-w-none mx-auto">
+              <h3 className="text-lg md:text-xl font-bold text-[#1E2B4D] mb-4 flex items-center">
+                <FileText className="w-5 h-5 mr-2 text-orange-500" />
+                {lang === 'es' ? 'Constancia DIRCETUR' : 'DIRCETUR Certificate'}
+              </h3>
+              <a 
+                href="/pdf/constancia_inscripcion.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block w-full aspect-[1/1.414] rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all cursor-zoom-in"
+              >
+                <img 
+                  src="/pdf/constancia_inscripcion.png" 
+                  alt="Constancia DIRCETUR"
+                  className="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
+                />
+              </a>
+            </div>
+
+            {/* Licencia Municipal */}
+            <div className="flex flex-col items-center w-full max-w-[340px] sm:max-w-[420px] md:max-w-[500px] lg:max-w-[600px] xl:max-w-none mx-auto">
+              <h3 className="text-lg md:text-xl font-bold text-[#1E2B4D] mb-4 flex items-center">
+                <FileText className="w-5 h-5 mr-2 text-orange-500" />
+                {lang === 'es' ? 'Licencia de Funcionamiento' : 'Operating License'}
+              </h3>
+              <a 
+                href="/pdf/licencia.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block w-full aspect-[1/1.414] rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all cursor-zoom-in"
+              >
+                <img 
+                  src="/pdf/licencia.png" 
+                  alt="Licencia de Funcionamiento"
+                  className="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>

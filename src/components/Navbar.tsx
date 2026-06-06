@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { useTranslations } from '../i18n/utils';
 import LanguagePicker from './LanguagePicker';
+import { packageData } from './FeaturedPackages';
 
 interface Props {
   lang: 'es' | 'en';
@@ -29,7 +30,14 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
 
   const links = [
     { name: t('nav.home'), href: lang === 'es' ? '/' : '/en/' },
-    { name: t('nav.destinations'), href: lang === 'es' ? '/destinos' : '/en/destinations' },
+    { 
+      name: t('nav.destinations'), 
+      href: lang === 'es' ? '/destinos' : '/en/destinations',
+      dropdown: [
+        { name: lang === 'es' ? 'Nacionales' : 'National', href: lang === 'es' ? '/destinos/nacionales' : '/en/destinations/national' },
+        { name: lang === 'es' ? 'Internacionales' : 'International', href: lang === 'es' ? '/destinos/internacionales' : '/en/destinations/international' }
+      ]
+    },
     { name: t('nav.packages'), href: lang === 'es' ? '/paquetes' : '/en/packages' },
     { name: t('nav.about'), href: lang === 'es' ? '/nosotros' : '/en/about' },
     { name: t('nav.gallery'), href: lang === 'es' ? '/galeria' : '/en/gallery' },
@@ -39,11 +47,48 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
   const isActive = (href: string) => {
     try {
       let currentPath = currentRoute || '';
-      if (lang !== 'es') {
-        currentPath = currentPath === '/' ? `/${lang}/` : `/${lang}/${currentPath}`;
+      let effectiveCurrentPath = currentPath;
+
+      // Handle package details page active state
+      let match = currentPath.match(/^paquetes\/([^\/]+)/);
+      if (!match && lang !== 'es') {
+        match = currentPath.match(/^packages\/([^\/]+)/);
       }
-      const normalize = (p: string) => p && p.endsWith('/') && p.length > 1 ? p.slice(0, -1) : p;
-      return normalize(currentPath) === normalize(href || '');
+      
+      if (match) {
+        const id = match[1];
+        const pkg = packageData.find(p => p.id === id);
+        if (pkg) {
+          if (pkg.category === 'destino') {
+            effectiveCurrentPath = pkg.locationType === 'internacional' ? 'destinos/internacionales' : 'destinos/nacionales';
+            if (lang !== 'es') {
+              effectiveCurrentPath = pkg.locationType === 'internacional' ? 'destinations/international' : 'destinations/national';
+            }
+          } else {
+            effectiveCurrentPath = lang === 'es' ? 'paquetes' : 'packages';
+          }
+        }
+      }
+
+      if (lang !== 'es') {
+        effectiveCurrentPath = effectiveCurrentPath === '/' ? `/${lang}/` : `/${lang}/${effectiveCurrentPath}`;
+      }
+      
+      const normalize = (p: string) => {
+        if (!p) return '';
+        if (!p.startsWith('/')) p = '/' + p;
+        if (p.endsWith('/') && p.length > 1) p = p.slice(0, -1);
+        return p;
+      };
+
+      const normCurrent = normalize(effectiveCurrentPath);
+      const normHref = normalize(href);
+      
+      if (normHref === '/' || normHref === `/${lang}`) {
+        return normCurrent === normHref;
+      }
+      
+      return normCurrent === normHref || normCurrent.startsWith(normHref + '/');
     } catch (e) {
       return false;
     }
@@ -75,7 +120,47 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
         {/* Desktop Menu */}
         <div className="hidden xl:flex items-center space-x-8">
           {links.map((link) => {
-            const active = isActive(link.href);
+            const active = isActive(link.href) || (link.dropdown && link.dropdown.some(sub => isActive(sub.href)));
+            
+            if (link.dropdown) {
+              return (
+                <div key={link.name} className="relative group pt-4 pb-4">
+                  <a 
+                    href={link.href}
+                    className={`text-sm font-medium transition-colors uppercase tracking-wider flex items-center ${
+                      active 
+                        ? isScrolled ? 'text-orange-500 font-bold' : 'text-orange-400 font-bold'
+                        : isScrolled 
+                          ? 'text-slate-700 group-hover:text-orange-500' 
+                          : 'text-white/90 group-hover:text-orange-400'
+                    }`}
+                  >
+                    {link.name} <ChevronDown className="w-4 h-4 ml-1" />
+                  </a>
+                  <div className="absolute left-0 mt-4 w-48 bg-white shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left -translate-y-2 group-hover:translate-y-0">
+                    <div className="py-2">
+                      {link.dropdown.map((sublink) => {
+                        const subActive = isActive(sublink.href);
+                        return (
+                          <a 
+                            key={sublink.name} 
+                            href={sublink.href} 
+                            className={`block px-5 py-3 text-sm transition-colors uppercase tracking-wider font-medium ${
+                              subActive 
+                                ? 'bg-orange-50 text-orange-500' 
+                                : 'text-slate-700 hover:bg-slate-50 hover:text-orange-500'
+                            }`}
+                          >
+                            {sublink.name}
+                          </a>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+
             return (
               <a 
                 key={link.name} 
@@ -114,7 +199,39 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
         <div className="xl:hidden bg-[#1E2B4D] border-t border-white/10">
           <div className="flex flex-col px-6 py-6 space-y-4">
             {links.map((link) => {
-              const active = isActive(link.href);
+              const active = isActive(link.href) || (link.dropdown && link.dropdown.some(sub => isActive(sub.href)));
+              
+              if (link.dropdown) {
+                return (
+                  <div key={link.name} className="flex flex-col space-y-3">
+                    <a 
+                      href={link.href}
+                      className={`text-base transition-colors uppercase tracking-widest ${
+                        active ? 'text-orange-400 font-bold' : 'text-white/90 hover:text-orange-400 font-semibold'
+                      }`}
+                    >
+                      {link.name}
+                    </a>
+                    <div className="pl-4 flex flex-col space-y-3 border-l-2 border-white/10 ml-2">
+                      {link.dropdown.map((sublink) => {
+                        const subActive = isActive(sublink.href);
+                        return (
+                          <a 
+                            key={sublink.name} 
+                            href={sublink.href} 
+                            className={`text-sm transition-colors uppercase tracking-wider font-medium ${
+                              subActive ? 'text-orange-400 font-bold' : 'text-white/70 hover:text-orange-400'
+                            }`}
+                          >
+                            {sublink.name}
+                          </a>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              }
+
               return (
                 <a 
                   key={link.name} 

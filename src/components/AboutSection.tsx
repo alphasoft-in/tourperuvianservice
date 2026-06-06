@@ -9,9 +9,9 @@ const content = {
   es: {
     heroTitle: 'Nosotros',
     heroSubtitle: 'Lo mejor en viajes y turismo en Trujillo',
-    experience: '15 Años de Experiencia',
+    experience: '20 Años de Experiencia',
     mainTitle: 'Descubre el Perú y el Mundo con Peruvian Service',
-    intro: 'Somos una agencia de viaje y turismo con 15 años de experiencia brindando el mejor servicio turístico a los más bellos lugares del Perú y del Mundo.',
+    intro: 'Somos una agencia de viaje y turismo con 20 años de experiencia brindando el mejor servicio turístico a los más bellos lugares del Perú y del Mundo.',
     features: [
       {
         icon: Map,
@@ -52,9 +52,9 @@ const content = {
   en: {
     heroTitle: 'About Us',
     heroSubtitle: 'The best in travel and tourism in Trujillo',
-    experience: '15 Years of Experience',
+    experience: '20 Years of Experience',
     mainTitle: 'Discover Peru and the World with Peruvian Service',
-    intro: 'We are a travel and tourism agency with 15 years of experience providing the best tourist service to the most beautiful places in Peru and the World.',
+    intro: 'We are a travel and tourism agency with 20 years of experience providing the best tourist service to the most beautiful places in Peru and the World.',
     features: [
       {
         icon: Map,
@@ -133,12 +133,12 @@ export default function AboutSection({ lang }: Props) {
               {data.mainTitle}
             </h2>
             <p className="text-sm sm:text-base xl:text-lg text-slate-600 leading-relaxed mb-8 md:mb-10">
-              {data.intro.split('15 años de experiencia').map((part, i, arr) => 
-                i === 0 && lang === 'es' ? <span key={i}>{part}<strong>15 años de experiencia</strong>{arr[i+1]}</span> : null
+              {data.intro.split('20 años de experiencia').map((part, i, arr) => 
+                i === 0 && lang === 'es' ? <span key={i}>{part}<strong>20 años de experiencia</strong>{arr[i+1]}</span> : null
               )}
               {lang === 'en' ? (
-                <span>We are a travel and tourism agency with <strong>15 years of experience</strong> providing the best tourist service to the most beautiful places in Peru and the World.</span>
-              ) : lang === 'es' && !data.intro.includes('15 años de experiencia') ? data.intro : null}
+                <span>We are a travel and tourism agency with <strong>20 years of experience</strong> providing the best tourist service to the most beautiful places in Peru and the World.</span>
+              ) : lang === 'es' && !data.intro.includes('20 años de experiencia') ? data.intro : null}
             </p>
             
             <div className="flex flex-col gap-8 lg:gap-6 max-w-xl mx-auto lg:mx-0 lg:max-w-none">

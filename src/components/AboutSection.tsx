@@ -272,7 +272,7 @@ export default function AboutSection({ lang }: Props) {
             <div className="flex flex-col items-center w-full max-w-[340px] sm:max-w-[420px] md:max-w-[500px] lg:max-w-[600px] xl:max-w-none mx-auto">
               <h3 className="text-lg md:text-xl font-bold text-[#1E2B4D] mb-4 flex items-center">
                 <FileText className="w-5 h-5 mr-2 text-orange-500" />
-                {lang === 'es' ? 'Licencia de Funcionamiento' : 'Operating License'}
+                {lang === 'es' ? 'Autorización Marca Perú' : 'Marca Perú Authorization'}
               </h3>
               <a 
                 href="/pdf/licencia.pdf" 
@@ -282,7 +282,7 @@ export default function AboutSection({ lang }: Props) {
               >
                 <img 
                   src="/pdf/licencia.png" 
-                  alt="Licencia de Funcionamiento"
+                  alt="Autorización Marca Perú"
                   className="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
                 />
               </a>

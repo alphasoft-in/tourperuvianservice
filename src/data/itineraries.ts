@@ -128,8 +128,8 @@ export const itineraries: Record<string, PackageDetails> = {
     es: {
       title: 'Aventura en la Selva del Alto Mayo: Rioja, Moyobamba, Tarapoto',
       subtitle: 'Descubre la magia de la selva peruana, desde la comunidad nativa de Lamas hasta la impresionante Laguna Azul y las Cataratas de Ahuashiyacu.',
-      duration: '3 DÍAS / 2 NOCHES',
-      services: 'Traslado Trujillo-Tarapoto-Trujillo en móvil tours cuenta con, música ambiental, TV, DVD con seguro Vigente SOAT; Dos choferes profesionales conocedores de la ruta. Alimentación: 2 desayunos, un almuerzo típico en la laguna azul. 2 noches de alojamiento en habitaciones dobles, matrimoniales, triples, cuádruples con TV, baño privado el Hotel cuenta con piscina (hotel Plaza del bosque). Entradas y traslados a los lugares turísticos, Guía oficial de turismo.',
+      duration: '4 DÍAS / 3 NOCHES',
+      services: 'Alimentación: 2 desayunos, un almuerzo típico en la laguna azul. 2 noches de alojamiento en habitaciones dobles, matrimoniales, triples, cuádruples con TV, baño privado el Hotel cuenta con piscina (hotel Plaza del bosque). Entradas y traslados a los lugares turísticos, Guía oficial de turismo.',
       note: '3:00 pm Salida del Terminal Terrestre de la Av. La Marina en Empresa de Transporte GH Bus',
       days: [
         {
@@ -150,18 +150,26 @@ export const itineraries: Record<string, PackageDetails> = {
           ]
         },
         {
-          title: 'TERCER DÍA: CATARATAS DE AHUASHIYACU',
+          title: 'TERCER DÍA: ALTOMAYO MOYOBAMBA Y RIOJA',
           activities: [
-            'Desayuno.',
-            'Partida a las cataratas de Ahushiyacu, impresionante catarata de 40 mts. de altura donde podrán darse un chapuzón y tomarse fotos.',
-            'Retorno a Tarapoto.',
-            'Embarque en el terminal de móvil tours y retorno a Trujillo.'
+            'El valle del Alto Mayo o "El lado oculto del paraíso" es como llamamos a las ciudades de Moyobamba y Rioja por sus exóticos atractivos, con variedad de orquídeas, aguas cristalinas, termales y sulfurosas, cuevas y reservas de bosques protegidos. Durante este recorrido, visitaremos los lugares turísticos más importantes durante el día y por supuesto incluye la degustación del rico café.',
+            '07:00 Desayuno en el hotel.',
+            '07:30 Recojo del hotel.',
+            '08:30 Salida hacia la ciudad de Rioja.',
+            '10:00 Visita a la Naciente del Rio Tioyacu.',
+            '13:30 Almuerzo en un restaurante turístico.',
+            '14:30 Visita al Orquideario.',
+            '15:00 Visita a los baños Termales de San Mateo.',
+            '16:30 Visita a una cafetería en Moyobamba.',
+            '17:30 Retorno a la ciudad de Tarapoto.'
           ]
         },
         {
-          title: 'CUARTO DIA',
+          title: 'CUARTO DÍA: CATARATAS DE AHUASHIYACU',
           activities: [
-            'Llegada a Trujillo.'
+            'Desayuno.',
+            'Partida a las cataratas de Ahushiyacu, impresionante catarata de 40 mts. de altura donde podrán darse un chapuzón y tomarse fotos.',
+            'Retorno a Tarapoto, traslado al aeropuerto o terminal terrestre y fin de nuestros servicios.'
           ]
         }
       ]
@@ -169,8 +177,8 @@ export const itineraries: Record<string, PackageDetails> = {
     en: {
       title: 'Alto Mayo Jungle Adventure: Rioja, Moyobamba, Tarapoto',
       subtitle: 'Discover the magic of the Peruvian jungle, from the native community of Lamas to the impressive Blue Lagoon and Ahuashiyacu Waterfalls.',
-      duration: '3 DAYS / 2 NIGHTS',
-      services: 'Trujillo-Tarapoto-Trujillo transfer in Movil Tours with ambient music, TV, DVD, valid SOAT insurance; Two professional drivers familiar with the route. Meals: 2 breakfasts, one typical lunch at the Blue Lagoon. 2 nights accommodation in double, matrimonial, triple, or quadruple rooms with TV, private bathroom, and swimming pool (Hotel Plaza del Bosque). Entrance fees and transfers to tourist places, Official tour guide.',
+      duration: '4 DAYS / 3 NIGHTS',
+      services: 'Meals: 2 breakfasts, one typical lunch at the Blue Lagoon. 2 nights accommodation in double, matrimonial, triple, or quadruple rooms with TV, private bathroom, and swimming pool (Hotel Plaza del Bosque). Entrance fees and transfers to tourist places, Official tour guide.',
       note: '3:00 p.m. Departure from the Av. La Marina Bus Terminal on GH Bus Transport Company.',
       days: [
         {
@@ -191,18 +199,26 @@ export const itineraries: Record<string, PackageDetails> = {
           ]
         },
         {
-          title: 'THIRD DAY: AHUASHIYACU WATERFALLS',
+          title: 'THIRD DAY: ALTO MAYO, MOYOBAMBA AND RIOJA',
           activities: [
-            'Breakfast.',
-            'Departure to the Ahushiyacu waterfalls, an impressive 40-meter high waterfall where you can take a dip and take photos.',
-            'Return to Tarapoto.',
-            'Boarding at the Movil Tours terminal and return to Trujillo.'
+            'The Alto Mayo valley or "The hidden side of paradise" is what we call the cities of Moyobamba and Rioja for their exotic attractions, with a variety of orchids, crystal clear, thermal and sulfurous waters, caves and protected forest reserves. During this tour, we will visit the most important tourist places during the day and of course it includes tasting delicious coffee.',
+            '07:00 Breakfast at the hotel.',
+            '07:30 Pick up from the hotel.',
+            '08:30 Departure to the city of Rioja.',
+            '10:00 Visit to the Source of the Tioyacu River.',
+            '13:30 Lunch at a tourist restaurant.',
+            '14:30 Visit to the Orchidarium.',
+            '15:00 Visit to the San Mateo Thermal Baths.',
+            '16:30 Visit to a cafeteria in Moyobamba.',
+            '17:30 Return to the city of Tarapoto.'
           ]
         },
         {
-          title: 'FOURTH DAY',
+          title: 'FOURTH DAY: AHUASHIYACU WATERFALLS',
           activities: [
-            'Arrival in Trujillo.'
+            'Breakfast.',
+            'Departure to the Ahushiyacu waterfalls, an impressive 40-meter high waterfall where you can take a dip and take photos.',
+            'Return to Tarapoto, transfer to the airport or bus terminal and end of our services.'
           ]
         }
       ]
@@ -1252,8 +1268,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'rio-de-janeiro-new-year': {
     id: 'rio-de-janeiro-new-year',
-    image: '/img/paquetes_recomendados/rio-de-janeiro.png',
-    heroImage: '/img/paquetes_recomendados/rio-de-janeiro.png',
+    image: '/img/paquetes_internacionales/rio-janeiro.png',
+    heroImage: '/img/paquetes_internacionales/rio-janeiro.png',
     es: {
       title: 'Año Nuevo Rio de Janeiro',
       subtitle: 'Recibe el año nuevo en las hermosas playas de Río de Janeiro.',
@@ -1339,8 +1355,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'punta-cana': {
     id: 'punta-cana',
-    image: '/img/paquetes_recomendados/punta-cana.png',
-    heroImage: '/img/paquetes_recomendados/punta-cana.png',
+    image: '/img/paquetes_internacionales/punta-cana.png',
+    heroImage: '/img/paquetes_internacionales/punta-cana.png',
     es: {
       title: 'Punta Cana',
       subtitle: 'Disfruta de las mejores playas del Caribe con todo incluido.',
@@ -1442,8 +1458,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'cartagena-new-year': {
     id: 'cartagena-new-year',
-    image: '/img/paquetes_recomendados/cartagena.png',
-    heroImage: '/img/paquetes_recomendados/cartagena.png',
+    image: '/img/paquetes_internacionales/cartagena.png',
+    heroImage: '/img/paquetes_internacionales/cartagena.png',
     es: {
       title: 'Cartagena Año Nuevo',
       subtitle: 'Recibe el año nuevo en la mágica ciudad de Cartagena con vuelos vía Latam.',

@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "@astrojs/react": "^5.0.7",
+    "@astrojs/sitemap": "^3.7.3",
     "@fontsource-variable/montserrat": "^5.2.8",
     "@fontsource/montserrat": "^5.2.8",
+    "@paypal/react-paypal-js": "^10.0.0",
     "@tailwindcss/vite": "^4.3.0",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",

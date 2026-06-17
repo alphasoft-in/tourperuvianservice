@@ -39,6 +39,7 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
       ]
     },
     { name: t('nav.packages'), href: lang === 'es' ? '/paquetes' : '/en/packages' },
+    { name: t('nav.transport'), href: lang === 'es' ? '/transporte' : '/en/transport' },
     { name: t('nav.about'), href: lang === 'es' ? '/nosotros' : '/en/about' },
     { name: t('nav.gallery'), href: lang === 'es' ? '/galeria' : '/en/gallery' },
     { name: t('nav.contact'), href: lang === 'es' ? '/contacto' : '/en/contact' },
@@ -125,9 +126,8 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
             if (link.dropdown) {
               return (
                 <div key={link.name} className="relative group pt-4 pb-4">
-                  <a 
-                    href={link.href}
-                    className={`text-sm font-medium transition-colors uppercase tracking-wider flex items-center ${
+                  <span 
+                    className={`cursor-pointer text-sm font-medium transition-colors uppercase tracking-wider flex items-center ${
                       active 
                         ? isScrolled ? 'text-orange-500 font-bold' : 'text-orange-400 font-bold'
                         : isScrolled 
@@ -136,7 +136,7 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
                     }`}
                   >
                     {link.name} <ChevronDown className="w-4 h-4 ml-1" />
-                  </a>
+                  </span>
                   <div className="absolute left-0 mt-4 w-48 bg-white shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left -translate-y-2 group-hover:translate-y-0">
                     <div className="py-2">
                       {link.dropdown.map((sublink) => {
@@ -204,14 +204,13 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
               if (link.dropdown) {
                 return (
                   <div key={link.name} className="flex flex-col space-y-3">
-                    <a 
-                      href={link.href}
-                      className={`text-base transition-colors uppercase tracking-widest ${
+                    <span 
+                      className={`cursor-pointer text-base transition-colors uppercase tracking-widest ${
                         active ? 'text-orange-400 font-bold' : 'text-white/90 hover:text-orange-400 font-semibold'
                       }`}
                     >
                       {link.name}
-                    </a>
+                    </span>
                     <div className="pl-4 flex flex-col space-y-3 border-l-2 border-white/10 ml-2">
                       {link.dropdown.map((sublink) => {
                         const subActive = isActive(sublink.href);

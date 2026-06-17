@@ -1,0 +1,13 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TransportSection from '../../components/TransportSection';
+import TransportGallery from '../../components/TransportGallery';
+---
+
+<Layout 
+	title="Our Transport Fleet | Tour Peruvian Service"
+	description="Discover our fleet of modern and safe vehicles for your trips: VIP tourist buses, minivans, and 4x4 SUVs available for you."
+>
+	<TransportSection client:load lang="en" />
+	<TransportGallery client:load lang="en" />
+</Layout>

@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useTranslations } from '../i18n/utils';
 import { ui } from '../i18n/ui';
+import { FaTripadvisor } from 'react-icons/fa';
 
 interface Props {
   lang: 'es' | 'en';
@@ -74,18 +75,21 @@ export default function HeroSlider({ lang }: Props) {
               className="max-w-4xl flex flex-col items-center"
             >
               <motion.div 
-                className="mb-4 md:mb-6 bg-white/20 backdrop-blur-md border border-white/30 rounded-full px-4 py-1.5 flex items-center space-x-2 shadow-lg"
+                className="mb-3 md:mb-4 flex flex-col items-center justify-center bg-[#34e0a1] text-slate-900 rounded-t-[32px] rounded-b-xl px-3 py-2 md:px-4 md:py-2.5 shadow-2xl"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.8 }}
               >
-                <svg className="w-5 h-5 text-green-400" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0a12 12 0 1 0 12 12A12 12 0 0 0 12 0Zm0 22a10 10 0 1 1 10-10 10 10 0 0 1-10 10Zm5.4-14.6a5.3 5.3 0 0 0-7.8 0 5.3 5.3 0 0 0 0 7.2 5.3 5.3 0 0 0 7.8 0 5.3 5.3 0 0 0 0-7.2ZM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4Zm-6.5-6.6a4.5 4.5 0 0 1 3.2-1.3 4.5 4.5 0 0 1 3.2 1.3 4.5 4.5 0 0 1 0 6.4 4.5 4.5 0 0 1-6.4 0 4.5 4.5 0 0 1 0-6.4ZM12 14.5a2.5 2.5 0 1 0-2.5-2.5 2.5 2.5 0 0 0 2.5 2.5Z"/>
-                </svg>
-                <span className="text-white text-xs md:text-sm font-bold tracking-widest uppercase">Travelers' Choice 2026</span>
+                <div className="flex items-center justify-center mb-0.5 md:mb-1">
+                  <FaTripadvisor className="w-6 h-6 md:w-8 md:h-8 text-slate-900" />
+                </div>
+                <span className="font-black text-[10px] md:text-xs tracking-tight leading-none text-center font-['Montserrat']">
+                  Travelers'<br/>Choice
+                </span>
+                <span className="font-bold text-[8px] md:text-[9px] mt-0.5 tracking-widest">2026</span>
               </motion.div>
               
-              <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 md:mb-4 tracking-tight font-['Montserrat'] drop-shadow-2xl leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-white mb-2 md:mb-4 tracking-tight font-['Montserrat'] drop-shadow-2xl leading-tight">
                 {t(slides[current].titleKey)}
               </h1>
               <p className="text-sm md:text-base lg:text-lg text-white/90 mb-5 md:mb-8 font-normal max-w-2xl mx-auto leading-relaxed drop-shadow-2xl">

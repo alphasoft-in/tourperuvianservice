@@ -172,7 +172,7 @@ export default function ComplaintsForm({ language = 'es' }: ComplaintsFormProps)
         </div>
 
         <div className="flex justify-center mt-8">
-          <button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3.5 px-10 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 uppercase tracking-wide">
+          <button type="submit" className="bg-orange-500 hover:bg-orange-600 text-slate-900 font-bold py-3.5 px-10 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 uppercase tracking-wide">
             {t.submit}
           </button>
         </div>

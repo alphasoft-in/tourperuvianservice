@@ -8,9 +8,6 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://tourperuvianservice.com',
-  build: {
-    inlineStylesheets: 'always'
-  },
   vite: {
     plugins: [tailwindcss()]
   },

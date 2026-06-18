@@ -130,7 +130,7 @@ export default function Footer({ lang }: Props) {
           {/* Brand & About */}
           <div className="col-span-1 sm:col-span-2 xl:col-span-4 xl:pr-6">
             <a href={lang === 'es' ? '/' : '/en/'} className="inline-block mb-4 md:mb-6">
-              <img src="/logo.avif" alt="Turismo Peruvian Service" width={200} height={80} className="w-auto h-14 md:h-20 lg:h-24 brightness-0 invert opacity-90 object-contain" />
+              <img src="/logo.png" alt="Turismo Peruvian Service" width={200} height={80} className="w-auto h-14 md:h-20 lg:h-24 brightness-0 invert opacity-90 object-contain" />
             </a>
             <p className="text-white/70 text-xs md:text-sm leading-relaxed mb-6 md:mb-0">
               {t('footer.about')}

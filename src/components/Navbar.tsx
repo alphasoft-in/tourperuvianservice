@@ -110,7 +110,7 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
         {/* Logo */}
         <a href={lang === 'es' ? '/' : '/en/'} className="flex items-center group">
           <img 
-            src="/logo.avif" 
+            src="/logo.png" 
             alt="Tour Peruvian Service" 
             width={200}
             height={80}

@@ -15,7 +15,7 @@ interface Props {
 const { 
 	title = "Tour Peruvian Service - Agencia de Viajes en Perú", 
 	description = "Descubre la magia de Perú con Tour Peruvian Service. Paquetes turísticos, destinos nacionales e internacionales, y experiencias inolvidables.",
-	image = "/logo.avif",
+	image = "/logo.png",
 	schema
 } = Astro.props;
 
@@ -66,7 +66,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || Astro.url);
 		<noscript>
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap">
 		</noscript>
-		<link rel="preload" as="image" href="/logo.avif" />
+		<link rel="preload" as="image" href="/logo.png" />
 	</head>
 	<body class="bg-[#F8F9FA] text-slate-800 antialiased font-['Montserrat'] m-0 p-0">
 		<Navbar lang={lang} currentRoute={currentRoute} client:load />

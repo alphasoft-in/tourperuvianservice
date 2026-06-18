@@ -127,10 +127,12 @@ export default function HeroSlider({ lang }: Props) {
             key={index}
             onClick={() => setCurrent(index)}
             aria-label={`Ir al slide ${index + 1}`}
-            className={`transition-all duration-300 rounded-full relative after:content-[''] after:absolute after:-inset-6 ${
-              current === index ? 'w-8 h-2 bg-orange-500' : 'w-2 h-2 bg-white/50 hover:bg-white'
-            }`}
-          />
+            className="w-12 h-12 flex items-center justify-center group focus:outline-none"
+          >
+            <span className={`transition-all duration-300 rounded-full ${
+              current === index ? 'w-8 h-2 bg-orange-500' : 'w-2 h-2 bg-white/50 group-hover:bg-white'
+            }`} />
+          </button>
         ))}
       </div>
     </div>

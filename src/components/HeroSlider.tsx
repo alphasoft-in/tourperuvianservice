@@ -14,19 +14,19 @@ type TranslationKey = keyof typeof ui['es'];
 const slides = [
   {
     id: 1,
-    image: '/slide1.png', // User's slide
+    image: '/slide1.avif', // User's slide
     titleKey: 'slider.slide1.title' as TranslationKey,
     descKey: 'slider.slide1.desc' as TranslationKey,
   },
   {
     id: 2,
-    image: '/slide2.png', // Coastal/Trujillo vibe
+    image: '/slide2.avif', // Coastal/Trujillo vibe
     titleKey: 'slider.slide2.title' as TranslationKey,
     descKey: 'slider.slide2.desc' as TranslationKey,
   },
   {
     id: 3,
-    image: '/slide3.png', // Jungle/Nature
+    image: '/slide3.avif', // Jungle/Nature
     titleKey: 'slider.slide3.title' as TranslationKey,
     descKey: 'slider.slide3.desc' as TranslationKey,
   }
@@ -107,13 +107,15 @@ export default function HeroSlider({ lang }: Props) {
       {/* Navigation Arrows */}
       <button 
         onClick={prevSlide}
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/30 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 transition-all z-20"
+        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full bg-black/30 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 transition-all z-20"
+        aria-label="Anterior slide"
       >
         <ChevronLeft className="w-6 h-6 md:w-8 md:h-8" />
       </button>
       <button 
         onClick={nextSlide}
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/30 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 transition-all z-20"
+        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full bg-black/30 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 transition-all z-20"
+        aria-label="Siguiente slide"
       >
         <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
       </button>
@@ -124,7 +126,8 @@ export default function HeroSlider({ lang }: Props) {
           <button
             key={index}
             onClick={() => setCurrent(index)}
-            className={`transition-all duration-300 rounded-full ${
+            aria-label={`Ir al slide ${index + 1}`}
+            className={`transition-all duration-300 rounded-full relative after:absolute after:-inset-3 ${
               current === index ? 'w-8 h-2 bg-orange-500' : 'w-2 h-2 bg-white/50 hover:bg-white'
             }`}
           />

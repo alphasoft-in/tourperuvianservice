@@ -30,14 +30,14 @@ export interface PackageDetails {
 export const itineraries: Record<string, PackageDetails> = {
   huaraz: {
     id: 'huaraz',
-    image: '/img/paquetes_recomendados/huaraz.png',
-    heroImage: '/img/paquetes_recomendados/huaraz_hero.png',
+    image: '/img/paquetes_recomendados/huaraz.avif',
+    heroImage: '/img/paquetes_recomendados/huaraz_hero.avif',
     es: {
       title: 'Huaraz: Mágico Callejón de Huaylas',
       subtitle: 'Descubre las maravillas de la Cordillera Blanca, lagunas cristalinas y la cultura milenaria de Chavín.',
       duration: '4 DÍAS / 3 NOCHES',
-      services: 'Pasajes Lima – Huaraz - Lima con asientos reclinables, baño químico. Hotel Céntrico Casa Blanca o Chavín Señorial (una cama por persona, baño privado en cada habitación con agua caliente, wifi, tv cable, en habitación doble). Tres desayunos. Guía de turismo. Pago de entradas y traslado a todos los centros turísticos a visitar.',
-      note: '10:00 p.m. Salida de Trujillo',
+      services: 'Pasajes de ida y vuelta desde lugar de origen. Alojamiento en hotel a elección del cliente (habitaciones con baño privado, agua caliente, wifi, tv cable). Tres desayunos. Guía de turismo. Pago de entradas y traslado a todos los centros turísticos a visitar.',
+      note: 'Horarios y punto de salida según coordinación previa.',
       optionalTours: 'Tenemos Tours opcionales como Laguna de Parón o Laguna 69.',
       days: [
         {
@@ -80,8 +80,8 @@ export const itineraries: Record<string, PackageDetails> = {
       title: 'Huaraz: Magic Callejón de Huaylas',
       subtitle: 'Discover the wonders of the Cordillera Blanca, crystalline lagoons, and the ancient culture of Chavín.',
       duration: '4 DAYS / 3 NIGHTS',
-      services: 'Bus tickets Lima – Huaraz - Lima with reclining seats, chemical toilet. Central Hotel Casa Blanca or Chavín Señorial (one bed per person, private bathroom with hot water, Wi-Fi, cable TV in double room). Three breakfasts. Tour guide. Entrance fees and transfer to all tourist sites to visit.',
-      note: '10:00 p.m. Departure from Trujillo',
+      services: 'Round trip tickets from place of origin. Accommodation in hotel of client\'s choice (rooms with private bathroom, hot water, Wi-Fi, cable TV). Three breakfasts. Tour guide. Entrance fees and transfer to all tourist sites to visit.',
+      note: 'Departure times and points according to prior coordination.',
       optionalTours: 'We have optional tours such as Parón Lagoon or Lagoon 69.',
       days: [
         {
@@ -123,14 +123,14 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   tarapoto: {
     id: 'tarapoto',
-    image: '/img/paquetes_recomendados/tarapoto.png',
-    heroImage: '/img/paquetes_recomendados/tarapoto.png',
+    image: '/img/paquetes_recomendados/tarapoto.avif',
+    heroImage: '/img/paquetes_recomendados/tarapoto.avif',
     es: {
       title: 'Aventura en la Selva del Alto Mayo: Rioja, Moyobamba, Tarapoto',
       subtitle: 'Descubre la magia de la selva peruana, desde la comunidad nativa de Lamas hasta la impresionante Laguna Azul y las Cataratas de Ahuashiyacu.',
       duration: '4 DÍAS / 3 NOCHES',
-      services: 'Alimentación: 2 desayunos, un almuerzo típico en la laguna azul. 2 noches de alojamiento en habitaciones dobles, matrimoniales, triples, cuádruples con TV, baño privado el Hotel cuenta con piscina (hotel Plaza del bosque). Entradas y traslados a los lugares turísticos, Guía oficial de turismo.',
-      note: '3:00 pm Salida del Terminal Terrestre de la Av. La Marina en Empresa de Transporte GH Bus',
+      services: 'Alimentación: 2 desayunos, un almuerzo típico en la laguna azul. 2 noches de alojamiento en el hotel a elección del cliente (habitaciones con TV, baño privado, piscina según disponibilidad). Entradas y traslados a los lugares turísticos, Guía oficial de turismo.',
+      note: 'Horarios y punto de salida según coordinación previa.',
       days: [
         {
           title: 'PRIMER DIA: LAMAS NATIVO',
@@ -178,8 +178,8 @@ export const itineraries: Record<string, PackageDetails> = {
       title: 'Alto Mayo Jungle Adventure: Rioja, Moyobamba, Tarapoto',
       subtitle: 'Discover the magic of the Peruvian jungle, from the native community of Lamas to the impressive Blue Lagoon and Ahuashiyacu Waterfalls.',
       duration: '4 DAYS / 3 NIGHTS',
-      services: 'Meals: 2 breakfasts, one typical lunch at the Blue Lagoon. 2 nights accommodation in double, matrimonial, triple, or quadruple rooms with TV, private bathroom, and swimming pool (Hotel Plaza del Bosque). Entrance fees and transfers to tourist places, Official tour guide.',
-      note: '3:00 p.m. Departure from the Av. La Marina Bus Terminal on GH Bus Transport Company.',
+      services: 'Meals: 2 breakfasts, one typical lunch at the Blue Lagoon. 2 nights accommodation in hotel of client\'s choice (rooms with TV, private bathroom, pool subject to availability). Entrance fees and transfers to tourist places, Official tour guide.',
+      note: 'Departure times and points according to prior coordination.',
       days: [
         {
           title: 'FIRST DAY: NATIVE LAMAS',
@@ -226,14 +226,14 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   cajamarca: {
     id: 'cajamarca',
-    image: '/img/paquetes_recomendados/cajamarca.png',
-    heroImage: '/img/paquetes_recomendados/cajamarca.png',
+    image: '/img/paquetes_recomendados/cajamarca.avif',
+    heroImage: '/img/paquetes_recomendados/cajamarca.avif',
     es: {
       title: 'Cajamarca Inolvidable',
       subtitle: 'Descubre la historia, la cultura y los impresionantes paisajes de Cajamarca, desde el Cuarto del Rescate hasta Cumbemayo.',
       duration: '3 DÍAS / 2 NOCHES',
-      services: 'Transporte Trujillo-Cajamarca-Trujillo. Se viaja con choferes, profesionales experimentados y conocedores de la ruta. Dos desayunos. Movilidad turística a todos los recorridos en Cajamarca. Alojamiento en hotel céntrico Colonial **. Están incluidas todas las entradas y guiados.',
-      note: '10:00 pm Partida a Cajamarca en Bus de Turismo',
+      services: 'Pasajes de ida y vuelta desde lugar de origen. Se viaja con choferes, profesionales experimentados y conocedores de la ruta. Dos desayunos. Movilidad turística a todos los recorridos en Cajamarca. Alojamiento en hotel a elección del cliente. Están incluidas todas las entradas y guiados.',
+      note: 'Horarios y punto de salida según coordinación previa.',
       days: [
         {
           title: 'PRIMER DÍA: CITY TOURS / VENTANILLAS DE OTUZCO',
@@ -277,8 +277,8 @@ export const itineraries: Record<string, PackageDetails> = {
       title: 'Unforgettable Cajamarca',
       subtitle: 'Discover the history, culture, and stunning landscapes of Cajamarca, from the Rescue Room to Cumbemayo.',
       duration: '3 DAYS / 2 NIGHTS',
-      services: 'Trujillo-Cajamarca-Trujillo transportation. Travel with experienced and knowledgeable professional drivers. Two breakfasts. Tourist mobility to all tours in Cajamarca. Accommodation in the central Colonial Hotel **. All entrance fees and guided tours are included.',
-      note: '10:00 p.m. Departure to Cajamarca in a Tourist Bus',
+      services: 'Round trip tickets from place of origin. Travel with experienced and knowledgeable professional drivers. Two breakfasts. Tourist mobility to all tours in Cajamarca. Accommodation in hotel of client\'s choice. All entrance fees and guided tours are included.',
+      note: 'Departure times and points according to prior coordination.',
       days: [
         {
           title: 'FIRST DAY: CITY TOUR / VENTANILLAS DE OTUZCO',
@@ -321,14 +321,14 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   chachapoyas: {
     id: 'chachapoyas',
-    image: '/img/paquetes_recomendados/chachapoyas.png',
-    heroImage: '/img/paquetes_recomendados/chachapoyas.png',
+    image: '/img/paquetes_recomendados/chachapoyas.avif',
+    heroImage: '/img/paquetes_recomendados/chachapoyas.avif',
     es: {
       title: 'Tour Chachapoyas - Teleférico',
       subtitle: 'Descubre la majestuosa fortaleza de Kuélap, los misteriosos Sarcófagos de Karajía y la imponente Catarata de Gocta.',
       duration: '3 DÍAS / 2 NOCHES',
-      services: 'Pasajes ida y vuelta en Móvil Tours. Movilidad turística a todos los itinerarios mencionados en el tour. Entradas a todos los lugares turísticos y guiados. Dos noches en hotel Ñuñurcos. Tres desayunos y tres almuerzos.',
-      note: '6:00 pm Salida en Móvil Tours.',
+      services: 'Pasajes de ida y vuelta desde lugar de origen. Movilidad turística a todos los itinerarios mencionados en el tour. Entradas a todos los lugares turísticos y guiados. Dos noches en hotel a elección del cliente. Tres desayunos y tres almuerzos.',
+      note: 'Horarios y punto de salida según coordinación previa.',
       days: [
         {
           title: 'PRIMER DIA: CIUDADELA FORTIFICADA DE KUELAP',
@@ -375,8 +375,8 @@ export const itineraries: Record<string, PackageDetails> = {
       title: 'Chachapoyas Tour - Cable Car',
       subtitle: 'Discover the majestic Kuélap fortress, the mysterious Karajía Sarcophagi, and the imposing Gocta Waterfall.',
       duration: '3 DAYS / 2 NIGHTS',
-      services: 'Round trip tickets in Móvil Tours. Tourist mobility to all itineraries mentioned in the tour. Entrances to all tourist places and guided tours. Two nights in Ñuñurcos hotel. Three breakfasts and three lunches.',
-      note: '6:00 p.m. Departure in Móvil Tours.',
+      services: 'Round trip tickets from place of origin. Tourist mobility to all itineraries mentioned in the tour. Entrances to all tourist places and guided tours. Two nights in hotel of client\'s choice. Three breakfasts and three lunches.',
+      note: 'Departure times and points according to prior coordination.',
       days: [
         {
           title: 'FIRST DAY: FORTIFIED CITADEL OF KUELAP',
@@ -422,13 +422,13 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   cusco: {
     id: 'cusco',
-    image: '/img/paquetes_recomendados/cusco.png',
-    heroImage: '/img/paquetes_recomendados/cusco.png',
+    image: '/img/paquetes_recomendados/cusco.avif',
+    heroImage: '/img/paquetes_recomendados/cusco.avif',
     es: {
       title: 'Cusco Mágico',
       subtitle: 'Explora la magia del Imperio Inca, maravíllate con Machupicchu y conquista la Montaña de 7 Colores.',
       duration: '4 DÍAS / 3 NOCHES',
-      services: 'Recojo del aeropuerto del Cusco y traslado al hotel, 04 noches de alojamiento (Hotel Tierra del Inca) a pocas cuadras de la Plaza de Armas de Cusco, 03 desayunos, entradas a todos los lugares turísticos, ticket de tren ida y retorno (tren turístico), boletos al Qoricancha y todos los centros turísticos que abarca el City Tour, ingresos a Machupicchu, bus de subida y bajada a Machupicchu (Consetur), Guía Profesional en Machupicchu y traslados a todos los lugares turísticos mencionados.',
+      services: 'Recojo del aeropuerto/terminal del Cusco y traslado al hotel, 04 noches de alojamiento en hotel a elección del cliente (céntrico), 03 desayunos, entradas a todos los lugares turísticos, ticket de tren ida y retorno (tren turístico), boletos al Qoricancha y todos los centros turísticos que abarca el City Tour, ingresos a Machupicchu, bus de subida y bajada a Machupicchu (Consetur), Guía Profesional en Machupicchu y traslados a todos los lugares turísticos mencionados.',
       days: [
         {
           title: 'PRIMER DIA: CITY TOURS',
@@ -476,7 +476,7 @@ export const itineraries: Record<string, PackageDetails> = {
       title: 'Magic Cusco',
       subtitle: 'Explore the magic of the Inca Empire, marvel at Machupicchu, and conquer the 7 Colors Mountain.',
       duration: '4 DAYS / 3 NIGHTS',
-      services: 'Pick up from Cusco airport and transfer to the hotel, 04 nights accommodation (Tierra del Inca hotel) a few blocks from the main square of Cusco, 03 breakfasts, entrances to all tourist places, round trip train ticket (tourist train), tickets to Qoricancha and all the tourist centers covered by the city tour, entrances to Machupicchu, bus up and down to Machupicchu (Consetur), Professional Guide in Machupicchu and transfers to all mentioned tourist places.',
+      services: 'Pick up from Cusco airport/terminal and transfer to the hotel, 04 nights accommodation in hotel of client\'s choice (central), 03 breakfasts, entrances to all tourist places, round trip train ticket (tourist train), tickets to Qoricancha and all the tourist centers covered by the city tour, entrances to Machupicchu, bus up and down to Machupicchu (Consetur), Professional Guide in Machupicchu and transfers to all mentioned tourist places.',
       days: [
         {
           title: 'FIRST DAY: CITY TOUR',
@@ -523,14 +523,14 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   arequipa: {
     id: 'arequipa',
-    image: '/img/paquetes_recomendados/arequipa.png',
-    heroImage: '/img/paquetes_recomendados/arequipa.png',
+    image: '/img/paquetes_recomendados/arequipa.avif',
+    heroImage: '/img/paquetes_recomendados/arequipa.avif',
     es: {
       title: 'Arequipa y Colca',
       subtitle: 'Descubre la Ciudad Blanca, admira su arquitectura colonial y maravíllate con el impresionante Cañón del Colca.',
       duration: '4 DÍAS / 3 NOCHES',
-      services: 'Vuelos Lima - Arequipa - Lima y Trujillo - Lima - Trujillo. Recojo del aeropuerto o terminal terrestre. Transporte turístico durante todo el recorrido. Guía profesional bilingüe. Alojamiento en los hoteles elegidos. Desayuno continental. Traslados, guiado y las entradas, dos noches de hotel en el Colca, alimentación completa, Hostal Colca y otra noche en Arequipa en el Hotel La Casa de Consuelo.',
-      note: 'Salida del aeropuerto Jorge Chávez.',
+      services: 'Pasajes de ida y vuelta desde lugar de origen. Recojo del aeropuerto o terminal terrestre. Transporte turístico durante todo el recorrido. Guía profesional bilingüe. Alojamiento en hotel a elección del cliente. Desayuno continental. Traslados, guiado y las entradas, alimentación completa.',
+      note: 'Horarios y punto de salida según coordinación previa.',
       days: [
         {
           title: 'PRIMER DIA: CITY TOUR',
@@ -581,8 +581,8 @@ export const itineraries: Record<string, PackageDetails> = {
       title: 'Arequipa and Colca',
       subtitle: 'Discover the White City, admire its colonial architecture, and marvel at the impressive Colca Canyon.',
       duration: '4 DAYS / 3 NIGHTS',
-      services: 'Lima - Arequipa - Lima and Trujillo - Lima - Trujillo flights. Pick up from the airport or bus terminal. Tourist transport during the whole tour. Bilingual professional guide. Accommodation in the chosen hotels. Continental breakfast. Transfers, guided tours and entrance fees, two nights hotel in Colca, full meals, Hostal Colca and another night in Arequipa at Hotel La Casa de Consuelo.',
-      note: 'Departure from Jorge Chávez airport.',
+      services: 'Round trip tickets from place of origin. Pick up from the airport or bus terminal. Tourist transport during the whole tour. Bilingual professional guide. Accommodation in hotel of client\'s choice. Continental breakfast. Transfers, guided tours and entrance fees, full meals.',
+      note: 'Departure times and points according to prior coordination.',
       days: [
         {
           title: 'FIRST DAY: CITY TOUR',
@@ -632,14 +632,14 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   ica: {
     id: 'ica',
-    image: '/img/paquetes_recomendados/ica.png',
-    heroImage: '/img/paquetes_recomendados/ica.png',
+    image: '/img/paquetes_recomendados/ica.avif',
+    heroImage: '/img/paquetes_recomendados/ica.avif',
     es: {
       title: 'Belleza, Misterio y Aventura (Ica, Nazca y Paracas)',
       subtitle: 'Disfruta de un inolvidable paseo por las dunas de Huacachina, sobrevuela el misterio de Nazca y explora la vida silvestre en Paracas.',
       duration: '3 DÍAS / 2 NOCHES',
-      services: 'Bus privado de turismo, Ingresos a todos los lugares a visitar, Guía profesional de Turismo, Entradas, Transporte turístico a todos los lugares a visitar, Paseo en tubulares en la Huacachina (opcional), Paseo en los deslizadores a las Islas Ballestas, Alimentación completa, Hospedaje por 2 Noches Habitación doble o matrimonial en hotel céntrico.',
-      note: '05:00 pm Recojo de la I.E en el bus de turismo.',
+      services: 'Pasajes de ida y vuelta desde lugar de origen. Ingresos a todos los lugares a visitar, Guía profesional de Turismo, Transporte turístico a todos los lugares a visitar, Paseo en tubulares en la Huacachina (opcional), Paseo en los deslizadores a las Islas Ballestas, Alimentación completa, Hospedaje por 2 Noches en hotel a elección del cliente.',
+      note: 'Horarios y punto de salida según coordinación previa.',
       days: [
         {
           title: 'PRIMER DIA: CITY TOUR ICA',
@@ -689,8 +689,8 @@ export const itineraries: Record<string, PackageDetails> = {
       title: 'Beauty, Mystery and Adventure (Ica, Nazca and Paracas)',
       subtitle: 'Enjoy an unforgettable ride through the Huacachina dunes, fly over the mystery of Nazca and explore the wildlife in Paracas.',
       duration: '3 DAYS / 2 NIGHTS',
-      services: 'Private tourist bus, Entrances to all places to visit, Professional Tourist Guide, Tickets, Tourist transport to all places to visit, Buggy ride in Huacachina (optional), Speedboat ride to the Ballestas Islands, Full meals, Lodging for 2 Nights Double or matrimonial room in a central hotel.',
-      note: '05:00 p.m. Pick up from the school in the tourist bus.',
+      services: 'Round trip tickets from place of origin. Entrances to all places to visit, Professional Tourist Guide, Tourist transport to all places to visit, Buggy ride in Huacachina (optional), Speedboat ride to the Ballestas Islands, Full meals, Lodging for 2 Nights in hotel of client\'s choice.',
+      note: 'Departure times and points according to prior coordination.',
       days: [
         {
           title: 'FIRST DAY: ICA CITY TOUR',
@@ -739,14 +739,14 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   lima: {
     id: 'lima',
-    image: '/img/paquetes_recomendados/lima.png',
-    heroImage: '/img/paquetes_recomendados/lima.png',
+    image: '/img/paquetes_recomendados/lima.avif',
+    heroImage: '/img/paquetes_recomendados/lima.avif',
     es: {
       title: 'Lima Histórica y Moderna',
       subtitle: 'Descubre la Ciudad de los Reyes, desde su majestuoso centro histórico hasta el moderno circuito de playas.',
       duration: '3 DÍAS / 2 NOCHES',
-      services: 'Movilidad turística desde Trujillo a todos los circuitos turísticos, dos noches de hotel céntrico, dos desayunos, dos almuerzos, guiado y entradas a todos los lugares mencionados.',
-      note: '9:00 pm Salida desde Trujillo.',
+      services: 'Pasajes de ida y vuelta desde lugar de origen. Movilidad turística a todos los circuitos turísticos, dos noches en hotel a elección del cliente, dos desayunos, dos almuerzos, guiado y entradas a todos los lugares mencionados.',
+      note: 'Horarios y punto de salida según coordinación previa.',
       days: [
         {
           title: 'PRIMER DIA: LIMA HISTÓRICA',
@@ -791,8 +791,8 @@ export const itineraries: Record<string, PackageDetails> = {
       title: 'Historical and Modern Lima',
       subtitle: 'Discover the City of Kings, from its majestic historic center to the modern beach circuit.',
       duration: '3 DAYS / 2 NIGHTS',
-      services: 'Tourist mobility from Trujillo to all tourist circuits, two nights in a central hotel, two breakfasts, two lunches, guided tours and entrance fees to all mentioned places.',
-      note: '9:00 p.m. Departure from Trujillo.',
+      services: 'Round trip tickets from place of origin. Tourist mobility to all tourist circuits, two nights in hotel of client\'s choice, two breakfasts, two lunches, guided tours and entrance fees to all mentioned places.',
+      note: 'Departure times and points according to prior coordination.',
       days: [
         {
           title: 'FIRST DAY: HISTORICAL LIMA',
@@ -836,14 +836,14 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   trujillo: {
     id: 'trujillo',
-    image: '/img/paquetes_recomendados/trujillo.png',
-    heroImage: '/img/paquetes_recomendados/trujillo.png',
+    image: '/img/paquetes_recomendados/trujillo.avif',
+    heroImage: '/img/paquetes_recomendados/trujillo.avif',
     es: {
-      title: 'Trujillo Capital de la Primavera',
-      subtitle: 'Explora la majestuosidad de Chan Chan, descubre los misterios de la Dama de Cao y relájate en las playas de Huanchaco.',
+      title: 'Tours en Trujillo: Chan Chan, Huacas y Huanchaco | Salidas Diarias',
+      subtitle: 'Explora la majestuosidad de Chan Chan, descubre los misterios de la Dama de Cao y relájate en las playas de Huanchaco con nuestros guías certificados.',
       duration: '4 DÍAS / 3 NOCHES',
-      services: 'Dos noches de hospedaje en los hoteles mencionados en base a habitaciones dobles o triples con baño privado, agua caliente, tv cable, wifi. Alimentación completa. Traslados y entradas a los lugares turísticos.',
-      note: 'Recojo del terminal terrestre o aeropuerto.',
+      services: 'Pasajes de ida y vuelta desde lugar de origen. Dos noches de hospedaje en el hotel a elección del cliente en base a habitaciones dobles o triples con baño privado, agua caliente, tv cable, wifi. Alimentación completa. Traslados y entradas a los lugares turísticos.',
+      note: 'Horarios y punto de salida según coordinación previa.',
       days: [
         {
           title: 'PRIMER DIA: HUACA DE LA LUNA',
@@ -893,11 +893,11 @@ export const itineraries: Record<string, PackageDetails> = {
       ]
     },
     en: {
-      title: 'Trujillo Capital of Spring',
-      subtitle: 'Explore the majesty of Chan Chan, discover the mysteries of the Lady of Cao, and relax on the beaches of Huanchaco.',
+      title: 'Trujillo Tours: Chan Chan, Huacas and Huanchaco | Daily Departures',
+      subtitle: 'Explore the majesty of Chan Chan, discover the mysteries of the Lady of Cao, and relax on the beaches of Huanchaco with our certified guides.',
       duration: '4 DAYS / 3 NIGHTS',
-      services: 'Two nights of accommodation in the mentioned hotels based on double or triple rooms with private bathroom, hot water, cable TV, Wi-Fi. Full meals. Transfers and entrance fees to tourist places.',
-      note: 'Pick up from the bus terminal or airport.',
+      services: 'Round trip tickets from place of origin. Two nights of accommodation in hotel of client\'s choice based on double or triple rooms with private bathroom, hot water, cable TV, Wi-Fi. Full meals. Transfers and entrance fees to tourist places.',
+      note: 'Departure times and points according to prior coordination.',
       days: [
         {
           title: 'FIRST DAY: HUACA DE LA LUNA',
@@ -949,8 +949,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   salpo: {
     id: 'salpo',
-    image: '/img/paquetes_recomendados/salpo.png',
-    heroImage: '/img/paquetes_recomendados/salpo.png',
+    image: '/img/paquetes_recomendados/salpo.avif',
+    heroImage: '/img/paquetes_recomendados/salpo.avif',
     es: {
       title: 'Salpo Inolvidable',
       subtitle: 'Descubre el Balcón del Cielo, el Bosque de Piedras y el Dique de Carabamba.',
@@ -994,11 +994,11 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'full-day-trujillo': {
     id: 'full-day-trujillo',
-    image: '/img/paquetes_recomendados/full-day-trujillo.png',
-    heroImage: '/img/paquetes_recomendados/full-day-trujillo.png',
+    image: '/img/paquetes_recomendados/full-day-trujillo.avif',
+    heroImage: '/img/paquetes_recomendados/full-day-trujillo.avif',
     es: {
-      title: 'Full Day Trujillo',
-      subtitle: 'Descubre la Huaca de la Luna, Chan Chan y el encantador Balneario de Huanchaco.',
+      title: 'Full Day Trujillo: Chan Chan y Huaca de la Luna',
+      subtitle: 'Descubre la Huaca de la Luna, Chan Chan y el encantador Balneario de Huanchaco en un solo día con guías certificados y salidas diarias.',
       duration: 'FULL DAY',
       services: 'INCLUYE: Movilidad Privada. Guía Turístico. Botiquín de primeros auxilios. Actividades propias del tour. Fotografías y videos del recorrido. NO INCLUYE: Alimentación. Entradas.',
       note: 'Salidas: Martes a Domingos. Inicio: 10:30 am, Retorno: 5:00 pm. Punto de embarque: Jr. San Martín #541',
@@ -1017,8 +1017,8 @@ export const itineraries: Record<string, PackageDetails> = {
       ]
     },
     en: {
-      title: 'Full Day Trujillo',
-      subtitle: 'Discover Huaca de la Luna, Chan Chan and the charming Huanchaco Beach.',
+      title: 'Full Day Trujillo: Chan Chan and Huaca de la Luna',
+      subtitle: 'Discover Huaca de la Luna, Chan Chan and the charming Huanchaco Beach in a single day with certified guides and daily departures.',
       duration: 'FULL DAY',
       services: 'INCLUDES: Private Mobility. Tour Guide. First aid kit. Tour activities. Photographs and videos of the tour. DOES NOT INCLUDE: Meals. Entrance fees.',
       note: 'Departures: Tuesdays to Sundays. Start: 10:30 am, Return: 5:00 pm. Boarding point: Jr. San Martin #541',
@@ -1039,8 +1039,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'caleta-colorada': {
     id: 'caleta-colorada',
-    image: '/img/paquetes_recomendados/caleta-colorada.png',
-    heroImage: '/img/paquetes_recomendados/caleta-colorada.png',
+    image: '/img/paquetes_recomendados/caleta-colorada.avif',
+    heroImage: '/img/paquetes_recomendados/caleta-colorada.avif',
     es: {
       title: 'Caleta Colorada',
       subtitle: 'Disfruta de las playas, paseos en bote y los encantos de Chimbote y Nuevo Chimbote.',
@@ -1086,8 +1086,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'explora-jequetepeque': {
     id: 'explora-jequetepeque',
-    image: '/img/paquetes_recomendados/explora-jequetepeque.png',
-    heroImage: '/img/paquetes_recomendados/explora-jequetepeque.png',
+    image: '/img/paquetes_recomendados/explora-jequetepeque.avif',
+    heroImage: '/img/paquetes_recomendados/explora-jequetepeque.avif',
     es: {
       title: 'Explora Jequetepeque',
       subtitle: 'Descubre San Pedro de Lloc, Pacasmayo y el imponente reservorio de Gallito Ciego.',
@@ -1131,8 +1131,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'ruta-del-vino': {
     id: 'ruta-del-vino',
-    image: '/img/paquetes_recomendados/ruta-del-vino.png',
-    heroImage: '/img/paquetes_recomendados/ruta-del-vino.png',
+    image: '/img/paquetes_recomendados/ruta-del-vino.avif',
+    heroImage: '/img/paquetes_recomendados/ruta-del-vino.avif',
     es: {
       title: 'Ruta del Vino',
       subtitle: 'Descubre la Piedra El Gavilán, la Cascada El Molino y los viñedos de Cascas.',
@@ -1176,8 +1176,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'mayascon': {
     id: 'mayascon',
-    image: '/img/paquetes_recomendados/mayascon.png',
-    heroImage: '/img/paquetes_recomendados/mayascon.png',
+    image: '/img/paquetes_recomendados/mayascon.avif',
+    heroImage: '/img/paquetes_recomendados/mayascon.avif',
     es: {
       title: 'Mayascón',
       subtitle: 'Disfruta de las piscinas naturales de Mayascón, el criadero de avestruces y Pimentel.',
@@ -1223,8 +1223,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'ruta-chancay-medieval': {
     id: 'ruta-chancay-medieval',
-    image: '/img/paquetes_recomendados/ruta-chancay-medieval.png',
-    heroImage: '/img/paquetes_recomendados/ruta-chancay-medieval.png',
+    image: '/img/paquetes_recomendados/ruta-chancay-medieval.avif',
+    heroImage: '/img/paquetes_recomendados/ruta-chancay-medieval.avif',
     es: {
       title: 'Ruta Chancay Medieval',
       subtitle: 'Descubre el Castillo de Chancay, Eco Truly Park y disfruta de shows en vivo.',
@@ -1268,8 +1268,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'rio-de-janeiro-new-year': {
     id: 'rio-de-janeiro-new-year',
-    image: '/img/paquetes_internacionales/rio-janeiro.png',
-    heroImage: '/img/paquetes_internacionales/rio-janeiro.png',
+    image: '/img/paquetes_internacionales/rio-janeiro.avif',
+    heroImage: '/img/paquetes_internacionales/rio-janeiro.avif',
     es: {
       title: 'Año Nuevo Rio de Janeiro',
       subtitle: 'Recibe el año nuevo en las hermosas playas de Río de Janeiro.',
@@ -1355,8 +1355,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'punta-cana': {
     id: 'punta-cana',
-    image: '/img/paquetes_internacionales/punta-cana.png',
-    heroImage: '/img/paquetes_internacionales/punta-cana.png',
+    image: '/img/paquetes_internacionales/punta-cana.avif',
+    heroImage: '/img/paquetes_internacionales/punta-cana.avif',
     es: {
       title: 'Punta Cana',
       subtitle: 'Disfruta de las mejores playas del Caribe con todo incluido.',
@@ -1458,8 +1458,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'cartagena-new-year': {
     id: 'cartagena-new-year',
-    image: '/img/paquetes_internacionales/cartagena.png',
-    heroImage: '/img/paquetes_internacionales/cartagena.png',
+    image: '/img/paquetes_internacionales/cartagena.avif',
+    heroImage: '/img/paquetes_internacionales/cartagena.avif',
     es: {
       title: 'Cartagena Año Nuevo',
       subtitle: 'Recibe el año nuevo en la mágica ciudad de Cartagena con vuelos vía Latam.',

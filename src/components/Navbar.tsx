@@ -97,7 +97,9 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 font-['Montserrat'] ${
+      className={`fixed top-0 left-0 w-full z-50 font-['Montserrat'] ${
+        isHomePage ? 'transition-all duration-300' : ''
+      } ${
         isScrolled 
           ? 'bg-white shadow-md py-3' 
           : 'bg-transparent py-5'
@@ -108,9 +110,14 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
         {/* Logo */}
         <a href={lang === 'es' ? '/' : '/en/'} className="flex items-center group">
           <img 
-            src="/logo.png" 
+            src="/logo.avif" 
             alt="Tour Peruvian Service" 
-            className={`transition-all duration-300 object-contain ${
+            width={200}
+            height={80}
+            loading="eager"
+            fetchPriority="high"
+            decoding="sync"
+            className={`object-contain ${isHomePage ? 'transition-all duration-300' : ''} ${
               isScrolled 
                 ? 'h-12 md:h-14' 
                 : 'h-16 md:h-20 brightness-0 invert opacity-90 group-hover:opacity-100'
@@ -187,7 +194,8 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
         <div className="xl:hidden">
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className={`focus:outline-none transition-colors ${isScrolled ? 'text-slate-800' : 'text-white'}`}
+            className={`focus:outline-none transition-colors flex items-center justify-center min-w-[44px] min-h-[44px] ${isScrolled ? 'text-slate-800' : 'text-white'}`}
+            aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>

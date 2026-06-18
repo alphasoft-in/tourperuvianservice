@@ -17,13 +17,35 @@ export function getStaticPaths() {
 
 const { pkg } = Astro.props;
 const data = pkg.en;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": data.title,
+  "description": data.subtitle || data.services.substring(0, 150) + '...',
+  "touristType": [
+    "Sightseeing",
+    "Cultural"
+  ],
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Tour Peruvian Service",
+    "url": "https://tourperuvianservice.com/"
+  },
+  "image": new URL(pkg.image, Astro.url).toString()
+};
 ---
 
-<Layout>
+<Layout 
+  title={`${data.title} | Tour Peruvian Service`}
+  description={data.subtitle || data.services.substring(0, 150) + '...'}
+  image={pkg.image}
+  schema={schema}
+>
   {/* Hero Section */}
   <div class="relative min-h-[45vh] md:min-h-[50vh] w-full pt-20 flex items-center justify-center">
     <div class="absolute inset-0 bg-black z-0">
-      <img src={pkg.image} alt={data.title} class="w-full h-full object-cover" />
+      <img src={pkg.image} alt={data.title} width="800" height="600" class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-black/60"></div>
     </div>
     <div class="relative z-10 flex flex-col items-center justify-center text-center px-4 py-8 w-full">

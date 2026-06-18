@@ -73,17 +73,17 @@ export default function ComplaintsForm({ language = 'es' }: ComplaintsFormProps)
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="md:col-span-2">
-              <label className="block text-sm font-semibold text-slate-700 mb-1">{t.fullName} *</label>
-              <input type="text" name="Nombre" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
+              <label htmlFor="Nombre" className="block text-sm font-semibold text-slate-700 mb-1">{t.fullName} *</label>
+              <input id="Nombre" type="text" name="Nombre" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
             </div>
             <div className="md:col-span-2">
-              <label className="block text-sm font-semibold text-slate-700 mb-1">{t.address} *</label>
-              <input type="text" name="Domicilio" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
+              <label htmlFor="Domicilio" className="block text-sm font-semibold text-slate-700 mb-1">{t.address} *</label>
+              <input id="Domicilio" type="text" name="Domicilio" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
             </div>
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-1">{t.docType} *</label>
+              <label htmlFor="TipoDocumento" className="block text-sm font-semibold text-slate-700 mb-1">{t.docType} *</label>
               <div className="relative">
-                <select name="TipoDocumento" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 pr-10 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none appearance-none">
+                <select id="TipoDocumento" name="TipoDocumento" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 pr-10 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none appearance-none">
                   <option value="DNI">DNI / ID</option>
                   <option value="CE">CE / Alien Registration</option>
                   <option value="Pasaporte">Pasaporte / Passport</option>
@@ -94,16 +94,16 @@ export default function ComplaintsForm({ language = 'es' }: ComplaintsFormProps)
               </div>
             </div>
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-1">{t.docNum} *</label>
-              <input type="text" name="NumeroDocumento" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
+              <label htmlFor="NumeroDocumento" className="block text-sm font-semibold text-slate-700 mb-1">{t.docNum} *</label>
+              <input id="NumeroDocumento" type="text" name="NumeroDocumento" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
             </div>
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-1">{t.phone} *</label>
-              <input type="tel" name="Telefono" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
+              <label htmlFor="Telefono" className="block text-sm font-semibold text-slate-700 mb-1">{t.phone} *</label>
+              <input id="Telefono" type="tel" name="Telefono" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
             </div>
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-1">{t.email} *</label>
-              <input type="email" name="Email" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
+              <label htmlFor="Email" className="block text-sm font-semibold text-slate-700 mb-1">{t.email} *</label>
+              <input id="Email" type="email" name="Email" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
             </div>
           </div>
         </div>
@@ -115,9 +115,9 @@ export default function ComplaintsForm({ language = 'es' }: ComplaintsFormProps)
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-1">{t.type} *</label>
+              <label htmlFor="TipoBien" className="block text-sm font-semibold text-slate-700 mb-1">{t.type} *</label>
               <div className="relative">
-                <select name="TipoBien" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 pr-10 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none appearance-none">
+                <select id="TipoBien" name="TipoBien" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 pr-10 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none appearance-none">
                   <option value="Servicio">{t.service}</option>
                   <option value="Producto">{t.product}</option>
                 </select>
@@ -127,12 +127,12 @@ export default function ComplaintsForm({ language = 'es' }: ComplaintsFormProps)
               </div>
             </div>
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-1">{t.amount}</label>
-              <input type="number" step="0.01" name="MontoReclamado" className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
+              <label htmlFor="MontoReclamado" className="block text-sm font-semibold text-slate-700 mb-1">{t.amount}</label>
+              <input id="MontoReclamado" type="number" step="0.01" name="MontoReclamado" className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
             </div>
             <div className="md:col-span-2">
-              <label className="block text-sm font-semibold text-slate-700 mb-1">{t.description} *</label>
-              <textarea name="DescripcionBien" required rows={2} className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none resize-none"></textarea>
+              <label htmlFor="DescripcionBien" className="block text-sm font-semibold text-slate-700 mb-1">{t.description} *</label>
+              <textarea id="DescripcionBien" name="DescripcionBien" required rows={2} className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none resize-none"></textarea>
             </div>
           </div>
         </div>
@@ -146,23 +146,23 @@ export default function ComplaintsForm({ language = 'es' }: ComplaintsFormProps)
             <div>
               <label className="block text-sm font-semibold text-slate-700 mb-2">{t.claimType} *</label>
               <div className="flex flex-col sm:flex-row gap-4">
-                <label className="flex items-center gap-2 cursor-pointer">
-                  <input type="radio" name="TipoReclamacion" value="Reclamo" defaultChecked className="w-4 h-4 text-orange-500 focus:ring-orange-500" />
-                  <span className="text-sm font-medium text-slate-700">{t.claim}</span>
-                </label>
-                <label className="flex items-center gap-2 cursor-pointer">
-                  <input type="radio" name="TipoReclamacion" value="Queja" className="w-4 h-4 text-orange-500 focus:ring-orange-500" />
-                  <span className="text-sm font-medium text-slate-700">{t.complaint}</span>
-                </label>
+                <div className="flex items-center gap-2 cursor-pointer">
+                  <input id="TipoReclamo" type="radio" name="TipoReclamacion" value="Reclamo" defaultChecked className="w-4 h-4 text-orange-500 focus:ring-orange-500" />
+                  <label htmlFor="TipoReclamo" className="text-sm font-medium text-slate-700 cursor-pointer">{t.claim}</label>
+                </div>
+                <div className="flex items-center gap-2 cursor-pointer">
+                  <input id="TipoQueja" type="radio" name="TipoReclamacion" value="Queja" className="w-4 h-4 text-orange-500 focus:ring-orange-500" />
+                  <label htmlFor="TipoQueja" className="text-sm font-medium text-slate-700 cursor-pointer">{t.complaint}</label>
+                </div>
               </div>
             </div>
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-1">{t.detail} *</label>
-              <textarea name="Detalle" required rows={4} className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none resize-none"></textarea>
+              <label htmlFor="Detalle" className="block text-sm font-semibold text-slate-700 mb-1">{t.detail} *</label>
+              <textarea id="Detalle" name="Detalle" required rows={4} className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none resize-none"></textarea>
             </div>
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-1">{t.request} *</label>
-              <textarea name="Pedido" required rows={3} className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none resize-none"></textarea>
+              <label htmlFor="Pedido" className="block text-sm font-semibold text-slate-700 mb-1">{t.request} *</label>
+              <textarea id="Pedido" name="Pedido" required rows={3} className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none resize-none"></textarea>
             </div>
           </div>
         </div>

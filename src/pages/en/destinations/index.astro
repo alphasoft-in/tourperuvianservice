@@ -3,7 +3,10 @@ import Layout from '../../../layouts/Layout.astro';
 import FeaturedPackages from '../../../components/FeaturedPackages';
 ---
 
-<Layout>
+<Layout
+  title="Tourist Destinations | Tour Peruvian Service"
+  description="Explore our national and international tourist destinations. Find your next adventure."
+>
   <div class="pt-20">
     <FeaturedPackages client:load lang="en" category="destino" title="Our Destinations" subtitle="Explore the most impressive destinations and live a unique experience in every region of Peru." />
   </div>

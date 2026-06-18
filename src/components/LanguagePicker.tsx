@@ -19,15 +19,23 @@ export default function LanguagePicker({ currentLang, currentRoute = '', isScrol
         // Translate route segments
         let translatedRoute = route;
         if (lang === 'en') {
-          translatedRoute = translatedRoute.replace(/^\/?paquetes\//, '/packages/');
-          translatedRoute = translatedRoute.replace(/^\/?destinos\//, '/destinations/');
-          translatedRoute = translatedRoute.replace(/^\/?nosotros\/?$/, '/about/');
-          translatedRoute = translatedRoute.replace(/^\/?contacto\/?$/, '/contact/');
+          translatedRoute = translatedRoute.replace(/^\/?paquetes/, '/packages');
+          translatedRoute = translatedRoute.replace(/^\/?destinos/, '/destinations');
+          translatedRoute = translatedRoute.replace(/nacionales\/?$/, 'national');
+          translatedRoute = translatedRoute.replace(/internacionales\/?$/, 'international');
+          translatedRoute = translatedRoute.replace(/^\/?nosotros\/?$/, '/about');
+          translatedRoute = translatedRoute.replace(/^\/?contacto\/?$/, '/contact');
+          translatedRoute = translatedRoute.replace(/^\/?transporte\/?$/, '/transport');
+          translatedRoute = translatedRoute.replace(/^\/?galeria\/?$/, '/gallery');
         } else if (lang === 'es') {
-          translatedRoute = translatedRoute.replace(/^\/?packages\//, '/paquetes/');
-          translatedRoute = translatedRoute.replace(/^\/?destinations\//, '/destinos/');
-          translatedRoute = translatedRoute.replace(/^\/?about\/?$/, '/nosotros/');
-          translatedRoute = translatedRoute.replace(/^\/?contact\/?$/, '/contacto/');
+          translatedRoute = translatedRoute.replace(/^\/?packages/, '/paquetes');
+          translatedRoute = translatedRoute.replace(/^\/?destinations/, '/destinos');
+          translatedRoute = translatedRoute.replace(/national\/?$/, 'nacionales');
+          translatedRoute = translatedRoute.replace(/international\/?$/, 'internacionales');
+          translatedRoute = translatedRoute.replace(/^\/?about\/?$/, '/nosotros');
+          translatedRoute = translatedRoute.replace(/^\/?contact\/?$/, '/contacto');
+          translatedRoute = translatedRoute.replace(/^\/?transport\/?$/, '/transporte');
+          translatedRoute = translatedRoute.replace(/^\/?gallery\/?$/, '/galeria');
         }
 
         // Native Astro routing: Spanish is root ('/'), English is '/en/'

@@ -10,37 +10,37 @@ interface Props {
 const images = [
   {
     id: 1,
-    src: '/slide1.png',
+    src: '/slide1.avif',
     titleKey: 'gallery.img1.title',
     className: 'col-span-1 md:col-span-2 md:row-span-2',
   },
   {
     id: 2,
-    src: '/slide2.png',
+    src: '/slide2.avif',
     titleKey: 'gallery.img2.title',
     className: 'col-span-1 md:col-span-2',
   },
   {
     id: 3,
-    src: '/trujillo.webp',
+    src: '/trujillo.avif',
     titleKey: 'gallery.img3.title',
     className: 'col-span-1',
   },
   {
     id: 4,
-    src: '/img/paquetes_recomendados/cajamarca.png',
+    src: '/img/paquetes_recomendados/cajamarca.avif',
     titleKey: 'gallery.img4.title',
     className: 'col-span-1',
   },
   {
     id: 5,
-    src: '/img/paquetes_recomendados/huaraz.png',
+    src: '/img/paquetes_recomendados/huaraz.avif',
     titleKey: 'gallery.img5.title',
     className: 'col-span-1 md:col-span-2',
   },
   {
     id: 6,
-    src: '/img/paquetes_recomendados/tarapoto.png',
+    src: '/img/paquetes_recomendados/tarapoto.avif',
     titleKey: 'gallery.img6.title',
     className: 'col-span-1 md:col-span-2',
   },
@@ -68,29 +68,51 @@ export default function Gallery({ lang }: Props) {
     <section className="pt-32 pb-20 bg-slate-50 relative overflow-hidden font-['Montserrat'] min-h-screen">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4 tracking-tight">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-4 tracking-tight">
             {t('gallery.title') || 'Nuestra Galería'}
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base text-slate-600 max-w-2xl mx-auto leading-relaxed px-4 sm:px-0">
             {t('gallery.subtitle') || 'Descubre los momentos inolvidables y paisajes majestuosos que te esperan en Perú.'}
           </p>
-          <div className="w-24 h-1.5 bg-orange-500 mx-auto mt-8 rounded-full"></div>
+          <div className="w-16 sm:w-20 h-1.5 bg-orange-500 mx-auto mt-6 sm:mt-8 rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-[250px] gap-4">
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-[250px] gap-4"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { 
+              opacity: 1,
+              transition: { staggerChildren: 0.15 } 
+            }
+          }}
+        >
           {images.map((img, index) => (
-            <div
+            <motion.div
               key={img.id}
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: { type: "spring", stiffness: 100, damping: 15 }
+                }
+              }}
               className={`relative overflow-hidden rounded-2xl group cursor-pointer shadow-lg ${img.className}`}
               onClick={() => setSelectedIndex(index)}
             >
               <img
                 src={img.src}
                 alt={t(img.titleKey as any) || 'Gallery image'}
-                className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                <div>
                   <span className="text-white font-semibold text-lg drop-shadow-md">
                     {t(img.titleKey as any) || ''}
                   </span>
@@ -100,9 +122,9 @@ export default function Gallery({ lang }: Props) {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
       {/* Lightbox Modal */}
@@ -112,26 +134,29 @@ export default function Gallery({ lang }: Props) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/95 backdrop-blur-sm p-4"
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/95 backdrop-blur-sm p-4"
             onClick={() => setSelectedIndex(null)}
           >
             <button
-              className="absolute top-6 right-6 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 p-2 rounded-full backdrop-blur-md transition-all z-50"
+              className="absolute top-4 right-4 md:top-6 md:right-6 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full backdrop-blur-md transition-all z-50"
               onClick={() => setSelectedIndex(null)}
+              aria-label="Cerrar galería"
             >
               <X className="w-6 h-6" />
             </button>
             
             <button
-              className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 p-3 rounded-full backdrop-blur-md transition-all z-50"
+              className="absolute left-2 md:left-8 top-1/2 -translate-y-1/2 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full backdrop-blur-md transition-all z-50"
               onClick={handlePrev}
+              aria-label="Anterior imagen"
             >
               <ChevronLeft className="w-8 h-8" />
             </button>
 
             <button
-              className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 p-3 rounded-full backdrop-blur-md transition-all z-50"
+              className="absolute right-2 md:right-8 top-1/2 -translate-y-1/2 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full backdrop-blur-md transition-all z-50"
               onClick={handleNext}
+              aria-label="Siguiente imagen"
             >
               <ChevronRight className="w-8 h-8" />
             </button>
@@ -142,13 +167,13 @@ export default function Gallery({ lang }: Props) {
             >
               <motion.img
                 key={selectedIndex}
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.95 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
                 transition={{ duration: 0.2 }}
                 src={images[selectedIndex].src}
                 alt="Selected view"
-                className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                className="w-full h-full object-contain rounded-lg shadow-2xl"
               />
             </div>
           </motion.div>

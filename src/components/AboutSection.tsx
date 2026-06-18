@@ -103,7 +103,7 @@ export default function AboutSection({ lang }: Props) {
       <div className="relative py-32 px-6 md:px-12 overflow-hidden flex items-center justify-center min-h-[400px]">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/slide2.png')" }}
+          style={{ backgroundImage: "url('/slide2.avif')" }}
         ></div>
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#1E2B4D]/80 via-transparent to-transparent"></div>
@@ -162,7 +162,7 @@ export default function AboutSection({ lang }: Props) {
           <div className="relative mt-8 xl:mt-0 mr-4 mb-4 md:mr-6 md:mb-6">
             <div className="absolute inset-0 bg-orange-500 rounded-3xl transform translate-x-4 translate-y-4 md:translate-x-6 md:translate-y-6"></div>
             <img 
-              src="/trujillo.webp" 
+              src="/trujillo.avif" 
               alt="Turismo Peruvian Service" 
               className="relative rounded-3xl w-full h-[400px] md:h-[500px] xl:h-[700px] object-cover shadow-[0_20px_50px_rgba(0,0,0,0.3)] z-10"
             />
@@ -261,7 +261,7 @@ export default function AboutSection({ lang }: Props) {
                 className="block w-full aspect-[1/1.414] rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all cursor-zoom-in"
               >
                 <img 
-                  src="/pdf/constancia_inscripcion.png" 
+                  src="/pdf/constancia_inscripcion.avif" 
                   alt="Constancia DIRCETUR"
                   className="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
                 />
@@ -281,7 +281,7 @@ export default function AboutSection({ lang }: Props) {
                 className="block w-full aspect-[1/1.414] rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all cursor-zoom-in"
               >
                 <img 
-                  src="/pdf/licencia.png" 
+                  src="/pdf/licencia.avif" 
                   alt="Autorización Marca Perú"
                   className="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
                 />

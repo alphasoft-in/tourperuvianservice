@@ -45,12 +45,12 @@ export default function LanguagePicker({ currentLang, currentRoute = '', isScrol
           <a
             key={lang}
             href={href.replace(/\/\//g, '/')} // prevent double slashes
-            className={`text-xs font-semibold px-3 py-1.5 rounded-full transition-colors uppercase ${
+            className={`text-xs font-semibold px-3 py-1.5 rounded-full relative after:absolute after:-inset-2 transition-colors uppercase ${
               isActive
                 ? 'bg-orange-500 text-white'
                 : isScrolled
                   ? 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
-                  : 'text-slate-300 hover:text-white hover:bg-white/10'
+                  : 'text-slate-100 hover:text-white hover:bg-white/10'
             }`}
           >
             {lang}

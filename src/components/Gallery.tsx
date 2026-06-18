@@ -138,7 +138,7 @@ export default function Gallery({ lang }: Props) {
             onClick={() => setSelectedIndex(null)}
           >
             <button
-              className="absolute top-4 right-4 md:top-6 md:right-6 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full backdrop-blur-md transition-all z-50"
+              className="absolute top-4 right-4 md:top-6 md:right-6 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full backdrop-blur-md transition-all z-50"
               onClick={() => setSelectedIndex(null)}
               aria-label="Cerrar galería"
             >
@@ -146,7 +146,7 @@ export default function Gallery({ lang }: Props) {
             </button>
             
             <button
-              className="absolute left-2 md:left-8 top-1/2 -translate-y-1/2 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full backdrop-blur-md transition-all z-50"
+              className="absolute left-2 md:left-8 top-1/2 -translate-y-1/2 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full backdrop-blur-md transition-all z-50"
               onClick={handlePrev}
               aria-label="Anterior imagen"
             >
@@ -154,7 +154,7 @@ export default function Gallery({ lang }: Props) {
             </button>
 
             <button
-              className="absolute right-2 md:right-8 top-1/2 -translate-y-1/2 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full backdrop-blur-md transition-all z-50"
+              className="absolute right-2 md:right-8 top-1/2 -translate-y-1/2 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full backdrop-blur-md transition-all z-50"
               onClick={handleNext}
               aria-label="Siguiente imagen"
             >

@@ -39,12 +39,12 @@ export default function BookingActions({ tourName, language = 'es' }: BookingAct
           <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden bg-white shadow-sm">
             <button 
               onClick={handleDecrement}
-              className="px-4 py-1.5 bg-gray-50 hover:bg-gray-100 text-gray-600 font-bold transition-colors border-r border-gray-300"
+              className="px-4 py-3 min-w-[48px] bg-gray-50 hover:bg-gray-100 text-gray-600 font-bold transition-colors border-r border-gray-300"
             >-</button>
-            <span className="px-4 py-1.5 font-bold min-w-[3rem] text-center text-blue-600">{passengers}</span>
+            <span className="px-4 py-3 font-bold min-w-[3rem] text-center text-blue-600">{passengers}</span>
             <button 
               onClick={handleIncrement}
-              className="px-4 py-1.5 bg-gray-50 hover:bg-gray-100 text-gray-600 font-bold transition-colors border-l border-gray-300"
+              className="px-4 py-3 min-w-[48px] bg-gray-50 hover:bg-gray-100 text-gray-600 font-bold transition-colors border-l border-gray-300"
             >+</button>
           </div>
         </div>

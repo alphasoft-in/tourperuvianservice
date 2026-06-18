@@ -194,7 +194,7 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
         <div className="xl:hidden">
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className={`focus:outline-none transition-colors flex items-center justify-center min-w-[44px] min-h-[44px] ${isScrolled ? 'text-slate-800' : 'text-white'}`}
+            className={`focus:outline-none transition-colors flex items-center justify-center min-w-[48px] min-h-[48px] ${isScrolled ? 'text-slate-800' : 'text-white'}`}
             aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -211,22 +211,22 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
               
               if (link.dropdown) {
                 return (
-                  <div key={link.name} className="flex flex-col space-y-3">
+                  <div key={link.name} className="flex flex-col space-y-1">
                     <span 
-                      className={`cursor-pointer text-base transition-colors uppercase tracking-widest ${
+                      className={`cursor-pointer block py-2 text-base transition-colors uppercase tracking-widest ${
                         active ? 'text-orange-400 font-bold' : 'text-white/90 hover:text-orange-400 font-semibold'
                       }`}
                     >
                       {link.name}
                     </span>
-                    <div className="pl-4 flex flex-col space-y-3 border-l-2 border-white/10 ml-2">
+                    <div className="pl-4 flex flex-col space-y-1 border-l-2 border-white/10 ml-2">
                       {link.dropdown.map((sublink) => {
                         const subActive = isActive(sublink.href);
                         return (
                           <a 
                             key={sublink.name} 
                             href={sublink.href} 
-                            className={`text-sm transition-colors uppercase tracking-wider font-medium ${
+                            className={`block py-2 text-sm transition-colors uppercase tracking-wider font-medium ${
                               subActive ? 'text-orange-400 font-bold' : 'text-white/70 hover:text-orange-400'
                             }`}
                           >
@@ -243,7 +243,7 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
                 <a 
                   key={link.name} 
                   href={link.href}
-                  className={`text-base transition-colors uppercase tracking-widest ${
+                  className={`block py-2 text-base transition-colors uppercase tracking-widest ${
                     active ? 'text-orange-400 font-bold' : 'text-white/90 hover:text-orange-400 font-semibold'
                   }`}
                 >

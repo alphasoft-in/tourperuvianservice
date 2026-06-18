@@ -107,14 +107,14 @@ export default function HeroSlider({ lang }: Props) {
       {/* Navigation Arrows */}
       <button 
         onClick={prevSlide}
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full bg-black/30 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 transition-all z-20"
+        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full bg-black/30 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 transition-all z-20"
         aria-label="Anterior slide"
       >
         <ChevronLeft className="w-6 h-6 md:w-8 md:h-8" />
       </button>
       <button 
         onClick={nextSlide}
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full bg-black/30 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 transition-all z-20"
+        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full bg-black/30 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 transition-all z-20"
         aria-label="Siguiente slide"
       >
         <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
@@ -127,7 +127,7 @@ export default function HeroSlider({ lang }: Props) {
             key={index}
             onClick={() => setCurrent(index)}
             aria-label={`Ir al slide ${index + 1}`}
-            className={`transition-all duration-300 rounded-full relative after:absolute after:-inset-3 ${
+            className={`transition-all duration-300 rounded-full relative after:absolute after:-inset-4 ${
               current === index ? 'w-8 h-2 bg-orange-500' : 'w-2 h-2 bg-white/50 hover:bg-white'
             }`}
           />

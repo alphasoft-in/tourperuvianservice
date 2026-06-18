@@ -12,6 +12,7 @@ export interface PackageDetails {
     subtitle: string;
     duration: string;
     services: string;
+    includes?: string[];
     note?: string;
     optionalTours?: string;
     days: DayItinerary[];
@@ -21,6 +22,7 @@ export interface PackageDetails {
     subtitle: string;
     duration: string;
     services: string;
+    includes?: string[];
     note?: string;
     optionalTours?: string;
     days: DayItinerary[];
@@ -224,6 +226,278 @@ export const itineraries: Record<string, PackageDetails> = {
       ]
     }
   },
+  chachapoyas: {
+    id: 'chachapoyas',
+    image: '/img/paquetes_recomendados/chachapoyas.avif',
+    heroImage: '/img/paquetes_recomendados/chachapoyas.avif',
+    es: {
+      title: 'Chachapoyas',
+      subtitle: 'Descubre la asombrosa ciudadela de Kuélap, los misteriosos Sarcófagos de Karajía y la imponente Catarata de Gocta.',
+      duration: '3 DÍAS / 2 NOCHES',
+      services: 'Pasajes Trujillo Chachapoyas Trujillo en móvil tours. Movilidad turística en Chachapoyas. Traslado a todos los itinerarios mencionados en el tour. Entradas a todos los lugares turísticos y guiados. Dos noches de hotel. Dos desayunos, tres almuerzos.',
+      includes: [
+        'Pasajes Trujillo / Chachapoyas / Trujillo en Móvil Tours',
+        'Movilidad turística en Chachapoyas',
+        'Traslado a todos los itinerarios mencionados en el tour',
+        'Entradas a todos los lugares turísticos y guiados',
+        '2 noches de hotel',
+        '2 desayunos',
+        '3 almuerzos'
+      ],
+      note: 'Costo del tour por persona: S/ 950.00. (04:00 pm Salida de Trujillo en Bus de móvil tours del terrapuerto)',
+      days: [
+        {
+          title: 'PRIMER DÍA: CIUDADELA FORTIFICADA DE KUÉLAP',
+          activities: [
+            '06:00 am Arribo a Chachapoyas, recepción y traslado estación de bus/hotel (tener en cuenta que en la mayoría de hoteles el check-in es a partir del mediodía).',
+            '08:30 am Salida de Chachapoyas con dirección al pueblo del Tingo (1 hora en carro). A 40 minutos de Chachapoyas hacen una primera parada en un mirador para observar el sitio Arqueológico de Macro.',
+            '09:45 am Llegada a la boletería para adquirir los tickets y continuar 10 minutos más en carro hasta el andén de salida de las Telecabinas a Kuélap.',
+            '10:30 am Desembarque de pasajeros en la zona denominada La Malca, en donde se obtendrán los tickets de ingreso a Kuélap. Se registran e inician la caminata de 1km (30 minutos) para llegar al sitio arqueológico de Kuélap. La visita guiada toma 2 horas aproximadamente.',
+            '01:00 pm Caminata de retorno a la Malca.',
+            '01:30 pm Traslado en Teleférico a Tingo.',
+            '02:00 pm Almuerzo en Tingo o alrededores.',
+            '03:00 pm Traslado de retorno a la ciudad de Chachapoyas.',
+            '04:00 pm Llegada a Chachapoyas, fin del servicio.',
+            '07:00 pm Cena y primera noche de hotel.'
+          ]
+        },
+        {
+          title: 'SEGUNDO DÍA: SARCÓFAGOS DE KARAJÍA Y CAVERNA DE QUIOCTA',
+          activities: [
+            '07:30 am Desayuno en el hotel.',
+            '08:00 am Salida con dirección al pueblo de Cruzpata (2 horas en carro), desde ahí harán una caminata de 30 minutos para llegar al sitio arqueológico de Karajía, estilo funerario único del Perú y del mundo. Caminata de retorno al pueblo de Cruzpata.',
+            '12:00 pm Traslado al restaurante ubicado en el pueblo de Lamud (1 hora en carro).',
+            '01:00 pm Almuerzo.',
+            '03:00 pm Traslado a la caverna de Quiocta (30 minutos en carro hasta la zona de parqueo). Caminata de 270 metros hasta el ingreso de la caverna. La visita dentro de la caverna toma 1.5 horas aproximadamente, en donde se aprecian miles de estalactitas y estalagmitas.',
+            '06:30 pm Arribo a Chachapoyas.',
+            '07:30 pm Cena.'
+          ]
+        },
+        {
+          title: 'TERCER DÍA: CATARATA DE GOCTA',
+          activities: [
+            '07:30 am Desayuno en el hotel.',
+            '08:30 am Salida con dirección al Pueblo de Cocachimba (1 hora en carro).',
+            '09:30 am Llegada a Cocachimba, registro de pasajeros en la boletería.',
+            '10:00 am Caminata o cabalgata de 2.5 horas para llegar a la Catarata de Gocta. Luego de admirar su singular belleza, toma de fotografías y/o tomar un baño (opcional ya que el agua es muy fría). Retorno al pueblo de Cocachimba para almorzar en un restaurante de la comunidad.',
+            '03:00 pm Almuerzo y retorno a Chachapoyas.',
+            '05:00 pm Arribo a Chachapoyas, fin del servicio.',
+            '07:00 pm Traslado hotel/estación de Bus en Chachapoyas y cena a bordo.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Chachapoyas – Cable Car Tour',
+      subtitle: 'Discover the amazing Kuelap citadel, the mysterious Karajia Sarcophagi, and the imposing Gocta Waterfall.',
+      duration: '3 DAYS / 2 NIGHTS',
+      services: 'Tickets Trujillo-Chachapoyas-Trujillo via Movil Tours. Tourist transport in Chachapoyas. Transfers to all itineraries mentioned in the tour. Entrance fees to all tourist places and guides. Two nights of hotel. Two breakfasts, three lunches.',
+      includes: [
+        'Tickets Trujillo / Chachapoyas / Trujillo via Movil Tours',
+        'Tourist transportation in Chachapoyas',
+        'Transfers to all itineraries mentioned in the tour',
+        'Entrance fees to all tourist places and guided tours',
+        '2 nights hotel accommodation',
+        '2 breakfasts',
+        '3 lunches'
+      ],
+      note: 'Tour cost per person: S/ 950.00. (04:00 pm Departure from Trujillo by Movil Tours bus from the bus terminal)',
+      days: [
+        {
+          title: 'FIRST DAY: FORTIFIED CITADEL OF KUELAP',
+          activities: [
+            '06:00 a.m. Arrival in Chachapoyas, reception and transfer bus station/hotel (keep in mind that in most hotels check-in is from noon).',
+            '08:30 a.m. Departure from Chachapoyas towards the town of Tingo (1 hour by car). 40 minutes from Chachapoyas, make a first stop at a viewpoint to observe the Macro Archaeological site.',
+            '09:45 a.m. Arrival at the ticket office to purchase tickets and continue 10 more minutes by car to the departure platform of the Cable Cars to Kuelap.',
+            '10:30 a.m. Disembarkation of passengers in the area called La Malca, where you will obtain the entrance tickets to Kuelap. Register and start the 1km walk (30 minutes) to reach the Kuelap archaeological site. The guided tour takes approximately 2 hours.',
+            '01:00 p.m. Return walk to La Malca.',
+            '01:30 p.m. Cable car transfer to Tingo.',
+            '02:00 p.m. Lunch in Tingo or surroundings.',
+            '03:00 p.m. Return transfer to the city of Chachapoyas.',
+            '04:00 p.m. Arrival in Chachapoyas, end of service.',
+            '07:00 p.m. Dinner and first night at the hotel.'
+          ]
+        },
+        {
+          title: 'SECOND DAY: KARAJIA SARCOPHAGI AND QUIOCTA CAVE',
+          activities: [
+            '07:30 a.m. Breakfast at the hotel.',
+            '08:00 a.m. Departure towards the town of Cruzpata (2 hours by car), from there you will take a 30-minute walk to reach the Karajia archaeological site, a unique funerary style in Peru and the world. Return walk to the town of Cruzpata.',
+            '12:00 p.m. Transfer to the restaurant located in the town of Lamud (1 hour by car).',
+            '01:00 p.m. Lunch.',
+            '03:00 p.m. Transfer to the Quiocta cave (30 minutes by car to the parking area). Walk 270 meters to the cave entrance. The visit inside the cave takes approximately 1.5 hours, where you can appreciate thousands of stalactites and stalagmites.',
+            '06:30 p.m. Arrival in Chachapoyas.',
+            '07:30 p.m. Dinner.'
+          ]
+        },
+        {
+          title: 'THIRD DAY: GOCTA WATERFALL',
+          activities: [
+            '07:30 a.m. Breakfast at the hotel.',
+            '08:30 a.m. Departure towards the town of Cocachimba (1 hour by car).',
+            '09:30 a.m. Arrival in Cocachimba, passenger registration at the ticket office.',
+            '10:00 a.m. 2.5-hour walk or horseback ride to reach the Gocta Waterfall. After admiring its singular beauty, taking pictures and/or taking a bath (optional since the water is very cold), return to the town of Cocachimba to have lunch at a community restaurant.',
+            '03:00 p.m. Lunch and return to Chachapoyas.',
+            '05:00 p.m. Arrival in Chachapoyas, end of service.',
+            '07:00 p.m. Transfer hotel/bus station in Chachapoyas and dinner on board.'
+          ]
+        }
+      ]
+    }
+  },
+  'selva-central': {
+    id: 'selva-central',
+    image: '/img/paquetes_recomendados/selva_central.avif',
+    heroImage: '/img/paquetes_recomendados/selva_central.avif',
+    es: {
+      title: 'Tour Selva Central',
+      subtitle: 'Descubre la magia de Oxapampa, Pozuzo, Villa Rica y el Valle del Perené en una aventura inolvidable.',
+      duration: '4 DÍAS / 3 NOCHES',
+      services: 'Transporte en bus Lima – Oxapampa - La Merced - Lima. 3 noches de hospedaje. 3 desayunos. Traslados. Guía oficial de Turismo.',
+      includes: [
+        '3 noches de hospedaje',
+        '3 desayunos',
+        'Transporte en bus Lima – Oxapampa – La Merced – Lima',
+        'Traslados',
+        'Guía oficial de Turismo'
+      ],
+      note: 'Precio por persona S/ 950.00. (9:00 pm Salida desde el terminal de Móvil bus en la Victoria, Lima)',
+      days: [
+        {
+          title: 'DÍA 1: TOUR OXAPAMPA (Altitud 1814 msnm)',
+          activities: [
+            '8:30 am Llegada al terminal de Oxapampa y traslado al hotel.',
+            '10:30 am Inicio del tour: La Colonia Oxapampina. Compra de productos de la zona y observaremos un baile típico tradicional (género Polka).',
+            'Tunqui Cueva o casa al revés (opcional): Ingresamos a una caverna y observamos formaciones rocosas.',
+            'Mirador La Florida: Observamos toda la ciudad de Oxapampa con una hermosa vista.',
+            'Recreo el Wharapo: Explicación sobre el proceso de la caña de azúcar (aguardiente, wharapo y miel de caña).',
+            'Casa de artesanías: Compras de artesanías de Oxapampa.',
+            'Parque de Chontabamba y Catarata del Río Tigre: Puente colgante y hermoso paisaje para fotografías.',
+            'Manantial la Virgen: Nacimiento de agua cristalina pura, considerada agua curativa.',
+            'Bienvenida a Oxapampa: Observación de los símbolos representativos y participación en ordeño de ganado y amamantado de becerro.',
+            'Museo SCHLAEFLI: Muestra de artefactos antiguos con una breve historia por Don Armando Schlaefli.',
+            '6:30 pm Fin del tour del día.'
+          ]
+        },
+        {
+          title: 'DÍA 2: TOUR POZUZO',
+          activities: [
+            '8:00 am Inicio del tour hacia Pozuzo.',
+            'Catarata Rayantambo: Caídas de agua ideales para fotografías con un hermoso paisaje de fondo.',
+            'Cascada de Yulitunqui y Portal de Bienvenida a Pozuzo.',
+            'Parque de Prusia y Barrio de Prusia: Observamos las hermosas casas típicas europeas.',
+            'Visita a la Fábrica de Cerveza artesanal con explicación de su elaboración.',
+            'Puente colgante histórico Emperador Guillermo.',
+            'Pozas de Agua Salada: Refrescante baño en pozas con azufre (bueno para la regeneración de células).',
+            'Parque temático de Pozuzo: Observamos la réplica a escala del barco el Norton y otras representaciones de la historia de Pozuzo.',
+            'Almuerzo típico europeo.',
+            '6:30 pm Fin del tour del día.'
+          ]
+        },
+        {
+          title: 'DÍA 3: TOUR VILLA RICA',
+          activities: [
+            '8:30 am Inicio del tour.',
+            'Canopy Extremo: Deporte de suspensión en el aire (1200 metros) observando la vegetación.',
+            'Fábrica de chocolate: Explicación sobre el proceso para obtener pasta de chocolate.',
+            'Plaza de Villa Rica: Observamos la cafetera más grande del mundo.',
+            'Cascada el León: Refrescante baño en las aguas de la cascada y observación del perfil del león.',
+            'Laguna el Oconal: Paseo en bote e ictioterapia (los peces comen las células muertas del pie al introducirlas en el agua).',
+            'Cata de café: Explicación sobre el proceso del café y una cata básica.',
+            'Mirador la Cumbre: Observamos el 80% de la ciudad de Villa Rica, la cual tiene una forma representativa del Perú.',
+            '6:30 pm Fin del tour del día.'
+          ]
+        },
+        {
+          title: 'DÍA 4: TOUR VALLE DEL PERENÉ',
+          activities: [
+            '8:00 am Inicio del tour.',
+            'Catarata Bayoz: Refrescante baño en la segunda caída de aguas temperadas.',
+            'Catarata Velo de Novia: Observación de la caída y toma de fotos (no hay baño, solo fotografías).',
+            'Comunidad Nativa: Bailes y tradiciones basadas en su cultura antigua (baile alrededor de una fogata).',
+            'Mariposario: Observación de la metamorfosis de la mariposa y un mini zoológico.',
+            'Paseo en bote a motor fuera de borda en el río Perené.',
+            'Almuerzo Típico: Basado en los platos deliciosos de la zona selvática.',
+            '7:00 pm Fin del tour y traslado para el retorno a Lima.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Central Jungle Tour',
+      subtitle: 'Discover the magic of Oxapampa, Pozuzo, Villa Rica and the Perene Valley in an unforgettable adventure.',
+      duration: '4 DAYS / 3 NIGHTS',
+      services: 'Bus transportation Lima - Oxapampa - La Merced - Lima. 3 nights of accommodation. 3 breakfasts. Transfers. Official Tourism Guide.',
+      includes: [
+        '3 nights of accommodation',
+        '3 breakfasts',
+        'Bus transportation Lima – Oxapampa – La Merced – Lima',
+        'Transfers',
+        'Official Tourism Guide'
+      ],
+      note: 'Tour cost per person: S/ 950.00. (9:00 pm Departure from the Movil bus terminal in La Victoria, Lima)',
+      days: [
+        {
+          title: 'DAY 1: OXAPAMPA TOUR',
+          activities: [
+            '8:30 a.m. Arrival at the Oxapampa terminal and transfer to the hotel.',
+            '10:30 a.m. Tour starts: The Oxapampina Colony. Purchase of local products and traditional typical dance (Polka genre).',
+            'Tunqui Cueva or upside-down house (optional): Enter a cavern and observe rock formations.',
+            'La Florida Viewpoint: Observe the entire city of Oxapampa with a beautiful view.',
+            'El Wharapo recreation center: Explanation of the sugar cane process (aguardiente, wharapo and cane honey).',
+            'Handicraft house: Shopping for Oxapampa crafts.',
+            'Chontabamba Park and Tigre River Waterfall: Suspension bridge and beautiful landscape for photographs.',
+            'La Virgen Spring: Source of pure crystal clear water, considered healing water.',
+            'Welcome to Oxapampa: Observation of representative symbols and participation in cattle milking and calf nursing.',
+            'SCHLAEFLI Museum: Exhibition of ancient artifacts with a brief history by Don Armando Schlaefli.',
+            '6:30 p.m. End of the day\'s tour.'
+          ]
+        },
+        {
+          title: 'DAY 2: POZUZO TOUR',
+          activities: [
+            '8:00 a.m. Tour starts towards Pozuzo.',
+            'Rayantambo Waterfall: Waterfalls ideal for photographs with a beautiful landscape.',
+            'Yulitunqui Waterfall and Welcome Portal to Pozuzo.',
+            'Prussia Park and Prussia Neighborhood: We observe the typical European houses.',
+            'Visit to the Craft Beer Factory with explanation of its production.',
+            'Emperor Guillermo historic suspension bridge.',
+            'Salt Water Pools: Refreshing bath in pools with sulfur (good for cell regeneration).',
+            'Pozuzo Theme Park: Scale replica of the Norton ship and representations of Pozuzo\'s history.',
+            'Typical European lunch.',
+            '6:30 p.m. End of the day\'s tour.'
+          ]
+        },
+        {
+          title: 'DAY 3: VILLA RICA TOUR',
+          activities: [
+            '8:30 a.m. Tour starts.',
+            'Extreme Canopy: Suspension sport in the air (1200 meters) observing the vegetation.',
+            'Chocolate factory: Explanation of the process to obtain chocolate paste.',
+            'Villa Rica Square: We observe the largest coffee maker in the world.',
+            'El Leon Waterfall: Refreshing bath in the waters of the waterfall and observation of the lion\'s profile.',
+            'El Oconal Lagoon: Boat ride and ichthyotherapy (fish eat the dead cells of the foot).',
+            'Coffee tasting: Explanation of the coffee process and basic tasting.',
+            'La Cumbre Viewpoint: We observe 80% of the city of Villa Rica, which has a shape representative of Peru.',
+            '6:30 p.m. End of the day\'s tour.'
+          ]
+        },
+        {
+          title: 'DAY 4: PERENE VALLEY TOUR',
+          activities: [
+            '8:00 a.m. Tour starts.',
+            'Bayoz Waterfall: Refreshing bath in the second fall of temperate waters.',
+            'Velo de Novia Waterfall: Observation of the fall and taking photos.',
+            'Native Community: Dances and traditions based on their ancient culture around a campfire.',
+            'Butterfly Farm: Observation of butterfly metamorphosis and a mini zoo.',
+            'Outboard motor boat ride on the Perene river.',
+            'Typical lunch based on dishes from the jungle area.',
+            '7:00 p.m. End of the tour and transfer for the return to Lima.'
+          ]
+        }
+      ]
+    }
+  },
   cajamarca: {
     id: 'cajamarca',
     image: '/img/paquetes_recomendados/cajamarca.avif',
@@ -319,107 +593,6 @@ export const itineraries: Record<string, PackageDetails> = {
       ]
     }
   },
-  chachapoyas: {
-    id: 'chachapoyas',
-    image: '/img/paquetes_recomendados/chachapoyas.avif',
-    heroImage: '/img/paquetes_recomendados/chachapoyas.avif',
-    es: {
-      title: 'Tour Chachapoyas - Teleférico',
-      subtitle: 'Descubre la majestuosa fortaleza de Kuélap, los misteriosos Sarcófagos de Karajía y la imponente Catarata de Gocta.',
-      duration: '3 DÍAS / 2 NOCHES',
-      services: 'Pasajes de ida y vuelta desde lugar de origen. Movilidad turística a todos los itinerarios mencionados en el tour. Entradas a todos los lugares turísticos y guiados. Dos noches en hotel a elección del cliente. Tres desayunos y tres almuerzos.',
-      note: 'Horarios y punto de salida según coordinación previa.',
-      days: [
-        {
-          title: 'PRIMER DIA: CIUDADELA FORTIFICADA DE KUELAP',
-          activities: [
-            '6:00 am Arribo a Chachapoyas, recepción y traslado estación de bus/hotel (tener en cuenta que en la mayoría de los hoteles el check-in es a partir del mediodía).',
-            '8:30 am Salida de Chachapoyas con dirección al pueblo del Tingo (1 hora en carro), a 40 minutos de Chachapoyas hacen una primera parada en un mirador para observar el sitio Arqueológico de Macro.',
-            '9:45 am Llegada a la boletería para adquirir los tickets y continuar 10 minutos más en carro hasta el Andén de salida de las Telecabinas a Kuelap.',
-            '10:30 am Desembarque de pasajeros en la zona denominada La Malca, en donde se obtendrá los tickets de ingreso a Kuelap. Se registran e inician la caminata de 1km (30 minutos) para llegar al sitio arqueológico de Kuelap. La visita guiada toma 2 horas aproximadamente.',
-            '1:00 pm Caminata de retorno a la Malca.',
-            '1:30 pm Traslado en Teleférico a Tingo.',
-            '2:00 pm Almuerzo en Tingo o alrededores.',
-            '3:00 pm Traslado de retorno a la ciudad de Chachapoyas.',
-            '4:00 pm Llegada a Chachapoyas, fin del servicio.',
-            '7:00 pm Primera noche de hotel.'
-          ]
-        },
-        {
-          title: 'SEGUNDO DIA: SARCÓFAGOS DE KARAJIA Y CAVERNA DE QUIOCTA',
-          activities: [
-            '7:30 am Desayuno en el hotel.',
-            '8:00 am Salida con dirección al pueblo de Cruzpata (2 horas en carro), desde ahí harán una caminata de 30 minutos para llegar al sitio arqueológico de Karajia, estilo funerario único del Perú y del mundo, caminata de retorno al pueblo de Cruzpata.',
-            '12:00 pm Traslado al restaurante ubicado en el pueblo de Lamud (1 hora en carro).',
-            '1:00 pm Almuerzo.',
-            '3:00 pm Traslado a la caverna de Quiocta, 30 minutos en carro hasta la zona de parqueo, caminata de 270 metros hasta el ingreso de la caverna, la visita dentro de la caverna toma 1.5 horas aproximadamente, en donde se aprecia miles de estalactitas y estalagmitas.',
-            '6:30 pm Arribo a Chachapoyas.',
-            'Segunda noche de hotel.'
-          ]
-        },
-        {
-          title: 'TERCER DIA: CATARATA DE GOCTA',
-          activities: [
-            '7:30 am Desayuno en el hotel.',
-            '8:30 am Salida con dirección al Pueblo de Cocachimba (1 hora en carro).',
-            '9:30 am Llegada a Cocachimba, registro de pasajeros en la boletería.',
-            '10:00 am Caminata o cabalgata de 2.5 horas para llegar a la Catarata de Gocta. Luego de admirar su singular belleza, toma de fotografías y/o tomar un baño (opcional ya que el agua es muy fría). Retorno al pueblo de Cocachimba para almorzar en un restaurante de la comunidad.',
-            '3:00 pm Almuerzo y retorno a Chachapoyas.',
-            '5:00 pm Arribo a Chachapoyas, fin del servicio.',
-            '7:00 pm Traslado hotel /estación de Bus en Chachapoyas, cena a bordo.'
-          ]
-        }
-      ]
-    },
-    en: {
-      title: 'Chachapoyas Tour - Cable Car',
-      subtitle: 'Discover the majestic Kuélap fortress, the mysterious Karajía Sarcophagi, and the imposing Gocta Waterfall.',
-      duration: '3 DAYS / 2 NIGHTS',
-      services: 'Round trip tickets from place of origin. Tourist mobility to all itineraries mentioned in the tour. Entrances to all tourist places and guided tours. Two nights in hotel of client\'s choice. Three breakfasts and three lunches.',
-      note: 'Departure times and points according to prior coordination.',
-      days: [
-        {
-          title: 'FIRST DAY: FORTIFIED CITADEL OF KUELAP',
-          activities: [
-            '6:00 a.m. Arrival in Chachapoyas, reception and transfer from bus station/hotel (keep in mind that in most hotels check-in is from noon).',
-            '8:30 a.m. Departure from Chachapoyas towards the town of Tingo (1 hour by car), 40 minutes from Chachapoyas we make a first stop at a viewpoint to observe the Archaeological site of Macro.',
-            '9:45 a.m. Arrival at the ticket office to purchase tickets and continue 10 more minutes by car to the departure platform of the Cable Cars to Kuelap.',
-            '10:30 a.m. Disembarkation of passengers in the area called La Malca, where you will obtain the entrance tickets to Kuelap. You register and start the 1km walk (30 minutes) to reach the archaeological site of Kuelap. The guided tour takes approximately 2 hours.',
-            '1:00 p.m. Return walk to La Malca.',
-            '1:30 p.m. Cable car transfer to Tingo.',
-            '2:00 p.m. Lunch in Tingo or surroundings.',
-            '3:00 p.m. Return transfer to the city of Chachapoyas.',
-            '4:00 p.m. Arrival in Chachapoyas, end of service.',
-            '7:00 p.m. First night at the hotel.'
-          ]
-        },
-        {
-          title: 'SECOND DAY: KARAJIA SARCOPHAGI AND QUIOCTA CAVE',
-          activities: [
-            '7:30 a.m. Breakfast at the hotel.',
-            '8:00 a.m. Departure towards the town of Cruzpata (2 hours by car), from there you will take a 30-minute walk to reach the archaeological site of Karajia, a unique funerary style in Peru and the world, return walk to the town of Cruzpata.',
-            '12:00 p.m. Transfer to the restaurant located in the town of Lamud (1 hour by car).',
-            '1:00 p.m. Lunch.',
-            '3:00 p.m. Transfer to the Quiocta cave, 30 minutes by car to the parking area, 270-meter walk to the entrance of the cave, the visit inside the cave takes approximately 1.5 hours, where you can see thousands of stalactites and stalagmites.',
-            '6:30 p.m. Arrival in Chachapoyas.',
-            'Second night at the hotel.'
-          ]
-        },
-        {
-          title: 'THIRD DAY: GOCTA WATERFALL',
-          activities: [
-            '7:30 a.m. Breakfast at the hotel.',
-            '8:30 a.m. Departure towards the Town of Cocachimba (1 hour by car).',
-            '9:30 a.m. Arrival in Cocachimba, registration of passengers at the ticket office.',
-            '10:00 a.m. 2.5 hour walk or horseback ride to reach the Gocta Waterfall. After admiring its singular beauty, taking photographs and/or taking a bath (optional since the water is very cold). Return to the town of Cocachimba to have lunch at a community restaurant.',
-            '3:00 p.m. Lunch and return to Chachapoyas.',
-            '5:00 p.m. Arrival in Chachapoyas, end of service.',
-            '7:00 p.m. Transfer hotel / Bus station in Chachapoyas, dinner on board.'
-          ]
-        }
-      ]
-    }
-  },
   cusco: {
     id: 'cusco',
     image: '/img/paquetes_recomendados/cusco.avif',
@@ -427,25 +600,68 @@ export const itineraries: Record<string, PackageDetails> = {
     es: {
       title: 'Cusco Mágico',
       subtitle: 'Explora la magia del Imperio Inca, maravíllate con Machupicchu y conquista la Montaña de 7 Colores.',
-      duration: '4 DÍAS / 3 NOCHES',
-      services: 'Recojo del aeropuerto/terminal del Cusco y traslado al hotel, 04 noches de alojamiento en hotel a elección del cliente (céntrico), 03 desayunos, entradas a todos los lugares turísticos, ticket de tren ida y retorno (tren turístico), boletos al Qoricancha y todos los centros turísticos que abarca el City Tour, ingresos a Machupicchu, bus de subida y bajada a Machupicchu (Consetur), Guía Profesional en Machupicchu y traslados a todos los lugares turísticos mencionados.',
+      duration: '5 DÍAS / 4 NOCHES',
+      services: 'Recojo del aeropuerto. Vuelos Trujillo-Lima-Trujillo y Lima-Cusco-Lima. 04 noches alojamiento (Hotel Arcangel o similar) a pocas cuadras de la plaza de armas de Cusco. 04 desayunos y un almuerzo buffet en Urubamba y un almuerzo en el tour Montaña de 7 colores. Bus turístico a todos los lugares mencionados. Entradas a todos los lugares turísticos. Ticket de tren ida y retorno (tren turístico Expedition). Boleto turístico. Bus de subida/bajada a Machupicchu (Consetur). Guía profesional en Valle Sagrado y Machupicchu. Traslados Tren Expedition Cusco/Ollanta/Cusco, City tour, Montaña de 7 colores.',
+      includes: [
+        'Recojo del aeropuerto',
+        'Vuelos Trujillo Lima Trujillo y Lima Cusco Lima',
+        '04 noches alojamiento (Hotel Arcangel o similar) a pocas cuadras de la plaza de armas de Cusco',
+        '04 desayunos y un almuerzo bufete en Urubamba y un almuerzo en el tour Montaña de 7 colores',
+        'Bus turístico a todos los lugares mencionados',
+        'Entradas a todos los lugares turísticos',
+        'Ticket de tren ida y retorno (tren turístico Expedition)',
+        'Boleto turístico',
+        'Bus de subida / bajada a Machupicchu (Consetur)',
+        'Guía profesional en valle sagrado',
+        'Guías profesionales en Machupicchu',
+        'Traslados Tren Expedition Cusco/Ollanta/Cusco',
+        'City tour',
+        'Montaña de 7 colores'
+      ],
+      note: 'Costo del tour por persona: $750.00 US Dólares.',
       days: [
         {
-          title: 'PRIMER DIA: CITY TOURS',
+          title: 'PRIMER DÍA: CITY TOURS',
           activities: [
-            'Recepción en el aeropuerto a la hora indicada para luego llevarlos al Hotel.',
-            '14:00 pm Recojo del Hotel, donde como primer punto se tendrá el Templo Del Koricancha, continuaremos en bus para visitar los centros arqueológicos Incas: El Templo de Sacsaywaman que tiene una ubicación estratégica donde podrá dar una vista panorámica al Cusco.',
-            'Seguido nos dirigimos a un templo místico de los incas donde en época inca se hacían los sacrificios religiosos.',
-            'Luego conoceremos el centro de control y militar de los Incas Pucara donde aquí todo hombre debía registrar su ingreso a la Ciudad de Cusco y finalmente el Templo Tambomachay.',
-            'Retorno a Cusco a las 7:00 pm y noche libre.'
+            'a.m. Recepción en el aeropuerto a la hora indicada para luego llevarlos al Hotel.',
+            '11:00 a.m. Recojo del Hotel, donde como primer punto se tendrá el Templo del Koricancha.',
+            'Continuaremos en bus para visitar los centros arqueológicos Incas: El Templo de Sacsayhuamán que tiene una ubicación estratégica desde donde podrá dar una vista panorámica al Cusco. Este templo es muy famoso por las enormes piedras pulidas y moldeadas, algunas de estas tienen 9m/30ft de altura y tienen un peso de 350 toneladas, todas estas fueron unidas con tal precisión que es imposible poder ingresar un aguja en las uniones de estas inmensas piedras.',
+            'Seguido nos dirigimos a un templo místico de los incas, Qenqo, donde en época inca se hacían los sacrificios religiosos.',
+            'Luego conoceremos el centro de control y militar de los Incas, Puca Pucara, donde aquí todo hombre debía registrar su ingreso a la Ciudad de Cusco y finalmente el Templo Tambomachay.',
+            '3:00 p.m. Retorno a Cusco.'
           ]
         },
         {
-          title: 'SEGUNDO DIA: CUSCO / MONTAÑA DE 7 COLORES',
+          title: 'SEGUNDO DÍA: CUSCO / VALLE SAGRADO DE LOS INKAS',
           activities: [
-            'La montaña de arco iris, conocido como la montaña de 7 colores, montaña colorada, montaña vinicunca, es un lugar mágico donde sus caminos eran parte de la antigua cultura quechua, y que se utiliza para intercambiar sus productos (productos de trueque), junto con las otras regiones Quechuas, ahora se ha convertido en una maravilla natural parecida a la montaña de arco iris de la china.',
+            '8:20 a.m. Recojo del hotel.',
+            'Este día nosotros tendremos un viaje al Valle Sagrado de los Incas donde visitaremos diferentes pueblos y centros Arqueológicos.',
+            'Como primer punto visitaremos Pisac, la construcción inca, el colorido mercado andino y la Iglesia Católica.',
+            'Después pasaremos por algunos pueblos como Lamay, Calca y Urubamba donde nos detendremos para el almuerzo en un restaurante turístico campestre.',
+            'Después del almuerzo nos dirigiremos a Ollantaytambo, donde podremos observar las típicas calles aún de trazo Inca, y sobre todo la impresionante construcción y las terrazas agrícolas del Templo de Ollantaytambo. Desde esta se tendrá una vista impresionante de todo el Valle Sagrado.',
+            'Finalmente visitaremos el pueblo andino de Chinchero donde la construcción real de Tupac Inca Yupanqui vive, usted puede admirar las perfectas paredes incas que aún se preservan en la plaza de armas de este pueblo y visitar el templo Colonial de Chincheros con interesantes pinturas murales y paredes Incas.',
+            'Traslado al terminal de Ollantaytambo para embarque en tren Expedition al pueblo de Aguas Calientes donde se pernoctará.'
+          ]
+        },
+        {
+          title: 'TERCER DÍA: CUSCO – MACHUPICCHU',
+          activities: [
+            '8:00 a.m. Desayuno.',
+            'Luego tomaremos los buses de Consetur (media hora de subida en bus) y dirigirnos a Machupicchu, donde visitaremos este maravilloso Santuario también conocido como "La ciudad Perdida de los Incas", uno de los mejores ejemplos conocidos de arquitectura inca que aún sobrevive.',
+            'En este recorrido podrá observar todos los templos, así como la Plaza Principal, la Torre Circular, el Sagrado Reloj Solar o Intihuatana.',
+            'Después de la visita, de aproximadamente 3 horas. 2:00 p.m. Regresaremos a Aguas Calientes para almorzar.',
+            '3:30 p.m. Retorno en el tren a la estación de Ollantaytambo.',
+            '5:00 p.m. Estaremos en la estación de Ollantaytambo para luego llevarlos de retorno a Cusco.',
+            '7:30 p.m. Llegarán a Cusco.',
+            '8:00 p.m. Cena.'
+          ]
+        },
+        {
+          title: 'CUARTO DÍA: CUSCO / MONTAÑA DE 7 COLORES',
+          activities: [
+            'La montaña de arco iris, conocido como la montaña de 7 colores, montaña colorada, montaña vinicunca, es un lugar mágico donde sus caminos eran parte de la antigua cultura quechua, y que se utiliza para intercambiar sus productos (productos de trueque), junto con las otras regiones Quechuas. Ahora se ha convertido en una maravilla natural parecida a la montaña de arco iris de la China.',
             'Temprano, alrededor de las 03:30 horas, le recogeremos del hotel en Cusco para realizar el viaje con destino al Qollasuyo, parte sur de la antigua Quechua (Cusco), que fue parte importante del Tawantinsuyo (4 regiones antiguas de los Incas).',
-            'Desde el inicio viajaremos durante 4 horas en transporte, primero pasaremos por el pueblo de Checacupe, para después seguir por Pitumarka, finalmente llegaremos a Quechuyno, lugar donde daremos inicio de la caminata.',
+            'Desde el inicio viajaremos durante 4 horas en transporte, primero pasaremos por el pueblo de Checacupe, para después seguir por Pitumarka. Finalmente llegaremos a Quechuyno, lugar donde daremos inicio de la caminata.',
             'En este lugar nos detendremos para desayunar y después de una breve charla, empezaremos nuestra caminata al pie del nevado de Ausangate, una subida de aproximadamente 3 horas hasta el punto más alto del cerro colorado.',
             'Durante este trayecto tendremos la oportunidad de ver las distintas variedades de camélidos sudamericanos. Llegado al cerro colorado, tendremos tiempo para tomar fotografías de este lugar enigmático.',
             'Después, continuaremos con nuestra caminata de 3 horas de descenso y partes planas al punto de inicio de la caminata (Quechuyno), donde tendremos el almuerzo.',
@@ -453,21 +669,11 @@ export const itineraries: Record<string, PackageDetails> = {
           ]
         },
         {
-          title: 'TERCER DIA: CUSCO – MACHUPICCHU',
+          title: 'QUINTO DÍA: TRASLADO AEROPUERTO',
           activities: [
-            '03.00 a.m Recojo del hotel y traslado a la estación de tren de Ollantaytambo rumbo al pueblo de Aguas Calientes.',
-            '8.00 am Nos dirigimos al tour todo el día en el mágico Santuario de Machupicchu. Que se encuentra a 112 km. del Cusco. Durante el viaje podrá observar el Cañon de Urubamba, el río Vilcanota y el gran espectáculo de los nevados de la Montaña Verónica.',
-            'Arribaremos en el pueblo de Aguas Calientes allí les estará esperando el transfer con la bandera Celeste y el grupo se denominará INCA.',
-            'Luego tomaremos los buses de Consetur (media hora de subida en bus) y dirigirnos a Machupicchu, donde visitaremos este maravilloso Santuario también conocido como "La Ciudad Perdida de los Incas" uno de los mejores ejemplos conocidos de arquitectura inca que aún sobrevive.',
-            'En este recorrido podrá observar todos los templos así como la Plaza Principal, la Torre Circular, el Sagrado Reloj Solar o Intihuatana.',
-            'Después de la visita, de aproximadamente 3 horas, nosotros regresaremos a Aguas Calientes para almorzar aproximadamente a las 2:00 pm. (El retorno depende del pasajero, ya que pueden recorrer por su cuenta después del tour y tomarse más vistas y explorar hasta las 4:30 a 5:00 pm que sale el ultimo bus).',
-            'Estando en Aguas Calientes cogerán el tren de las 18:35 PM luego los recogeremos de Ollantaytambo para luego llevarlos de retorno a Cusco, llegaran a Cusco 10:30 pm.'
-          ]
-        },
-        {
-          title: 'CUARTO DIA: RETORNO A LIMA',
-          activities: [
-            'Traslado al aeropuerto.'
+            'Desayuno.',
+            'Traslado al aeropuerto.',
+            'Llegada a Lima.'
           ]
         }
       ]
@@ -475,25 +681,68 @@ export const itineraries: Record<string, PackageDetails> = {
     en: {
       title: 'Magic Cusco',
       subtitle: 'Explore the magic of the Inca Empire, marvel at Machupicchu, and conquer the 7 Colors Mountain.',
-      duration: '4 DAYS / 3 NIGHTS',
-      services: 'Pick up from Cusco airport/terminal and transfer to the hotel, 04 nights accommodation in hotel of client\'s choice (central), 03 breakfasts, entrances to all tourist places, round trip train ticket (tourist train), tickets to Qoricancha and all the tourist centers covered by the city tour, entrances to Machupicchu, bus up and down to Machupicchu (Consetur), Professional Guide in Machupicchu and transfers to all mentioned tourist places.',
+      duration: '5 DAYS / 4 NIGHTS',
+      services: 'Pick up from the airport. Flights Trujillo-Lima-Trujillo and Lima-Cusco-Lima. 04 nights accommodation (Hotel Arcangel or similar) a few blocks from the main square of Cusco. 04 breakfasts and a buffet lunch in Urubamba and a lunch on the 7 Colors Mountain tour. Tourist bus to all mentioned places. Entrance fees to all tourist places. Round trip train ticket (Expedition tourist train). Tourist ticket. Bus up/down to Machupicchu (Consetur). Professional guide in Sacred Valley and Machupicchu. Transfers Expedition Train Cusco/Ollanta/Cusco, City tour, 7 Colors Mountain.',
+      includes: [
+        'Pick up from the airport',
+        'Flights Trujillo-Lima-Trujillo and Lima-Cusco-Lima',
+        '04 nights accommodation (Hotel Arcangel or similar) a few blocks from the main square of Cusco',
+        '04 breakfasts and a buffet lunch in Urubamba and a lunch on the 7 Colors Mountain tour',
+        'Tourist bus to all mentioned places',
+        'Entrance fees to all tourist places',
+        'Round trip train ticket (Expedition tourist train)',
+        'Tourist ticket',
+        'Bus up/down to Machupicchu (Consetur)',
+        'Professional guide in Sacred Valley',
+        'Professional guides in Machupicchu',
+        'Transfers Expedition Train Cusco/Ollanta/Cusco',
+        'City tour',
+        '7 Colors Mountain'
+      ],
+      note: 'Tour cost per person: $750.00 US Dollars.',
       days: [
         {
           title: 'FIRST DAY: CITY TOUR',
           activities: [
-            'Reception at the airport at the indicated time and then transfer to the Hotel.',
-            '2:00 p.m. Pick up from the Hotel, where as a first point we will have the Koricancha Temple, we will continue by bus to visit the Inca archaeological centers: The Sacsaywaman Temple which has a strategic location where you can give a panoramic view to Cusco.',
-            'Then we will go to a mystical temple of the Incas where religious sacrifices were made in Inca times.',
-            'Then we will know the control and military center of the Incas Pucara where here every man had to register his entrance to the City of Cusco and finally the Tambomachay Temple.',
-            'Return to Cusco at 7:00 p.m. and free night.'
+            'a.m. Reception at the airport at the indicated time and then transfer to the Hotel.',
+            '11:00 a.m. Pick up from the Hotel, where as a first point we will visit the Koricancha Temple.',
+            'We will continue by bus to visit the Inca archaeological centers: The Sacsayhuaman Temple which has a strategic location from where you can have a panoramic view of Cusco. This temple is very famous for the huge polished and molded stones, some of these are 9m/30ft high and weigh 350 tons, all these were joined with such precision that it is impossible to insert a needle into the joints of these immense stones.',
+            'Then we will go to a mystical temple of the Incas, Qenqo, where religious sacrifices were made in Inca times.',
+            'Then we will visit the control and military center of the Incas, Puca Pucara, where every man had to register his entrance to the City of Cusco and finally the Tambomachay Temple.',
+            '3:00 p.m. Return to Cusco.'
           ]
         },
         {
-          title: 'SECOND DAY: CUSCO / 7 COLORS MOUNTAIN',
+          title: 'SECOND DAY: CUSCO / SACRED VALLEY OF THE INCAS',
           activities: [
-            'The rainbow mountain, known as the mountain of 7 colors, colored mountain, vinicunca mountain, is a magical place where its paths were part of the ancient Quechua culture, and that is used to exchange their products (barter products), along with the other Quechua regions, has now become a natural wonder similar to the rainbow mountain of China.',
+            '8:20 a.m. Pick up from the hotel.',
+            'This day we will have a trip to the Sacred Valley of the Incas where we will visit different towns and Archaeological centers.',
+            'As a first point we will visit Pisac, the Inca construction, the colorful Andean market and the Catholic Church.',
+            'Then we will pass through some towns such as Lamay, Calca and Urubamba where we will stop for lunch in a country tourist restaurant.',
+            'After lunch we will go to Ollantaytambo, where we can observe the typical streets still of Inca layout, and above all the impressive construction and agricultural terraces of the Temple of Ollantaytambo. From here you will have an impressive view of the entire Sacred Valley.',
+            'Finally we will visit the Andean town of Chinchero where the real construction of Tupac Inca Yupanqui lives, you can admire the perfect Inca walls that are still preserved in the main square of this town and visit the Colonial temple of Chincheros with interesting mural paintings and Inca walls.',
+            'Transfer to the Ollantaytambo terminal to board the Expedition train to the town of Aguas Calientes where we will spend the night.'
+          ]
+        },
+        {
+          title: 'THIRD DAY: CUSCO – MACHUPICCHU',
+          activities: [
+            '8:00 a.m. Breakfast.',
+            'Then we will take the Consetur buses (half an hour going up by bus) and head to Machupicchu, where we will visit this wonderful Sanctuary also known as "The Lost City of the Incas", one of the best known examples of surviving Inca architecture.',
+            'In this tour you will be able to observe all the temples, as well as the Main Square, the Circular Tower, the Sacred Solar Clock or Intihuatana.',
+            'After the visit, of approximately 3 hours. 2:00 p.m. We will return to Aguas Calientes for lunch.',
+            '3:30 p.m. Return by train to the Ollantaytambo station.',
+            '5:00 p.m. We will be at the Ollantaytambo station and then take you back to Cusco.',
+            '7:30 p.m. Arrival in Cusco.',
+            '8:00 p.m. Dinner.'
+          ]
+        },
+        {
+          title: 'FOURTH DAY: CUSCO / 7 COLORS MOUNTAIN',
+          activities: [
+            'The rainbow mountain, known as the mountain of 7 colors, colored mountain, vinicunca mountain, is a magical place where its paths were part of the ancient Quechua culture, and that is used to exchange their products (barter products), along with the other Quechua regions. Now it has become a natural wonder similar to the rainbow mountain of China.',
             'Early, around 03:30 hours, we will pick you up from the hotel in Cusco to make the trip to Qollasuyo, southern part of the ancient Quechua (Cusco), which was an important part of the Tawantinsuyo (4 ancient regions of the Incas).',
-            'From the beginning we will travel for 4 hours in transport, first we will pass through the town of Checacupe, and then continue through Pitumarka, finally we will arrive at Quechuyno, where we will start the walk.',
+            'From the beginning we will travel for 4 hours in transport, first we will pass through the town of Checacupe, to then continue through Pitumarka. Finally we will arrive at Quechuyno, where we will start the walk.',
             'In this place we will stop for breakfast and after a brief chat, we will begin our walk at the foot of the Ausangate snowy mountain, an ascent of approximately 3 hours to the highest point of the colored hill.',
             'During this journey we will have the opportunity to see the different varieties of South American camelids. Arriving at the colored hill, we will have time to take pictures of this enigmatic place.',
             'Then, we will continue with our 3-hour walk of descent and flat parts to the starting point of the walk (Quechuyno), where we will have lunch.',
@@ -501,21 +750,11 @@ export const itineraries: Record<string, PackageDetails> = {
           ]
         },
         {
-          title: 'THIRD DAY: CUSCO - MACHUPICCHU',
+          title: 'FIFTH DAY: AIRPORT TRANSFER',
           activities: [
-            '03:00 a.m. Pick up from the hotel and transfer to the Ollantaytambo train station heading to the town of Aguas Calientes.',
-            '8:00 a.m. We head to the full day tour in the magical Sanctuary of Machupicchu, which is located 112 km from Cusco. During the trip you will be able to observe the Urubamba Canyon, the Vilcanota River and the great spectacle of the snowy mountains of Mount Veronica.',
-            'We will arrive in the town of Aguas Calientes there the transfer with the Light Blue flag will be waiting for you and the group will be called INCA.',
-            'Then we will take the Consetur buses (half an hour up by bus) and go to Machupicchu, where we will visit this wonderful Sanctuary also known as "The Lost City of the Incas", one of the best known examples of Inca architecture that still survives.',
-            'In this tour you will be able to observe all the temples as well as the Main Square, the Circular Tower, the Sacred Solar Clock or Intihuatana.',
-            'After the visit, of approximately 3 hours, we will return to Aguas Calientes for lunch approximately at 2:00 p.m. (The return depends on the passenger, since they can tour on their own after the tours and take more views and explore until 4:30 to 5:00 p.m. when the last bus leaves).',
-            'Being in Aguas Calientes you will catch the 18:35 PM train, then we will pick you up from Ollantaytambo and then take you back to Cusco, you will arrive in Cusco at 10:30 p.m.'
-          ]
-        },
-        {
-          title: 'FOURTH DAY: RETURN TO LIMA',
-          activities: [
-            'Transfer to the airport.'
+            'Breakfast.',
+            'Transfer to the airport.',
+            'Arrival in Lima.'
           ]
         }
       ]
@@ -526,105 +765,173 @@ export const itineraries: Record<string, PackageDetails> = {
     image: '/img/paquetes_recomendados/arequipa.avif',
     heroImage: '/img/paquetes_recomendados/arequipa.avif',
     es: {
-      title: 'Arequipa y Colca',
+      title: 'Arequipa Ciudad Blanca',
       subtitle: 'Descubre la Ciudad Blanca, admira su arquitectura colonial y maravíllate con el impresionante Cañón del Colca.',
-      duration: '4 DÍAS / 3 NOCHES',
+      duration: '5 DÍAS / 4 NOCHES',
       services: 'Pasajes de ida y vuelta desde lugar de origen. Recojo del aeropuerto o terminal terrestre. Transporte turístico durante todo el recorrido. Guía profesional bilingüe. Alojamiento en hotel a elección del cliente. Desayuno continental. Traslados, guiado y las entradas, alimentación completa.',
-      note: 'Horarios y punto de salida según coordinación previa.',
+      includes: [
+        'Pasajes Trujillo / Lima / Arequipa y viceversa (vía aérea)',
+        'Transporte en movilidad turística a todos los lugares a visitar',
+        'Entradas de ingreso para todos los paseos mencionados',
+        'Guía profesional para todos los paseos',
+        '4 noches de hospedaje',
+        '5 desayunos',
+        '5 almuerzos (dentro de ellas 2 almuerzos buffet en el 2do y 3er día)',
+        '4 cenas',
+        'Botiquín de primeros auxilios'
+      ],
+      note: 'Precio por persona: S/ 2500.00',
       days: [
         {
-          title: 'PRIMER DIA: CITY TOUR',
+          title: 'PRIMER DÍA: CAMPIÑA TOUR Y RUTA DEL SILLAR',
           activities: [
-            '09:00 am Recojo de los pasajeros del aeropuerto, traslado a su hotel y desayuno.',
-            '02:00 pm City tour.',
-            'La basílica catedral de Arequipa, donde podremos visitar dos joyas de la ciudad de Arequipa, el órgano belga y el púlpito de origen francés hecho en Lille por un artista famoso francés Buisine Rigot.',
-            'La iglesia de la compañía de Jesús, bellísima iglesia y fachada impresionante de estilo barroco mestizo por la profusa ornamentación. Aquí podemos encontrar elementos decorativos nativos y europeos, donde podemos interpretar la iconografía de esa época.',
-            'La cúpula de San Ignacio de Loyola y los claustros de la compañía, en esta cúpula vemos una decoración polícroma hecha con tintes naturales, vemos un hermoso cuadro de Bernardo Bitti (artista jesuita) que representa a San Ignacio de Loyola en La Storta.',
-            'Dentro de la iglesia podemos apreciar las obras de otro artista interesante como Diego Portales. Diego Portales tiene cuadros como la entrada de Jesús a Jerusalén y la Última Cena, donde en medio de la mesa encontramos un elemento andino como el cuy.',
-            'El Monasterio y convento de Santa Catalina data de fines del siglo XV el que representa a la influencia española, este lugar es considerado como una ciudadela dentro de la misma Ciudad de Arequipa riquísima en arquitectura y pintura que lo habitaron 500 mujeres. En este lugar aún viven monjas en el área norte del convento.',
-            'También haremos una visita al mirador de Carmen Alto donde existen terrazas pre incas y un excelente mirador al Valle de Chilina y a los tres volcanes Misti, Chachani y Pichu Pichu.',
-            '07:30 pm Cena y pernocte en el Hotel.'
+            'Salida de la ciudad de Trujillo hacia Lima / Arequipa.',
+            'Recojo del aeropuerto y traslado al hotel.',
+            'Dispondrán de tiempo para acomodarse. (Check-in: 12:00 pm, Check-out: 10:00 am).',
+            '09:30 am - 01:30 pm CAMPIÑA TOUR: Recojo del hotel.',
+            'Visita al Mirador de Carmen Alto, Yanahuara y Cayma. Visita al outlet Incalpaca y zoológico para observar 4 variedades de camélidos (Llama, Alpaca, Vicuña y Guanaco).',
+            'Pasaremos por los lagos artificiales de Tingo y Sachaca tomando la vía paisajista.',
+            'Ingreso a la Mansión del Fundador (casa colonial con ornamentos de origen colonial y republicano).',
+            'Visita al Molino de Sabandia (construcción del siglo XVI), donde opcionalmente podrán realizar deportes extremos, cabalgata, paseo en cuatrimoto, entre otros.',
+            'Cruzaremos el distrito de Paucarpata con su bella andenería pre-inca.',
+            'Retorno a la ciudad de Arequipa y tiempo para almorzar.',
+            '02:30 pm - 06:00 pm RUTA DEL SILLAR: Recojo del restaurante.',
+            'Traslado al distrito de Cerro Colorado hacia las famosas Canteras de Añashuayco. Observaremos el proceso ancestral de elaboración y extracción de bloques de sillar blanco.',
+            'Observación del megatallado en un farallón del frontis de la Iglesia de la Compañía de Jesús.',
+            'Caminata de 20 minutos por la enigmática Quebrada de Culebrillas (cantera virgen con sendero estrecho formado por erosión del agua y viento). Al final hallaremos misteriosos petroglifos.',
+            'Retorno a la ciudad de Arequipa.'
           ]
         },
         {
-          title: 'SEGUNDO DIA: COLCA',
+          title: 'SEGUNDO DÍA: AREQUIPA - CHIVAY',
           activities: [
-            'Salida desde Arequipa a las 8:30 am dirigiéndonos por la carretera vía Yura y posteriormente bordearemos el Volcán Chachani para luego pasar por Pampa Cañahuas y detenernos un tiempo de 10 a 15 minutos en el que los pasajeros pueden apreciar a las vicuñas que se encuentran en su ambiente natural.',
-            'Posteriormente tendremos una segunda parada para disfrutar del mate de coca y no les afecte la altura ya que nos encontraremos a los 3800 m.s.n.m. Continuaremos subiendo hasta los 4800 m.s.n.m (mirador de los volcanes).',
-            'Iniciaremos así nuestro descenso hasta el pueblo de Chivay después de 45 minutos aproximadamente.',
-            'Los acomodamos en el hospedaje, posteriormente almorzaremos. En horas de la tarde nos dirigiremos a La Calera (piscina de aguas termo medicinales). Terminando con el programa por el día, cena y pernocte en el hotel elegido.'
+            '07:30 am - 08:00 am Recojo del hotel para iniciar nuestra excursión al Valle del Colca.',
+            'Tomaremos la carretera Yura, disfrutando de vistas de los volcanes y la Reserva Nacional de Salinas y Aguada Blanca, hábitat de vicuñas, llamas y alpacas.',
+            'Parada en Patahuasi para observar formaciones geológicas y tomar infusión de coca.',
+            'Continuaremos por Bofedales y Tojra Pampa hasta el Mirador de los Andes (Patapampa) a 4910 m.s.n.m. para observar los volcanes Ampato, Sabancaya y Hualca Hualca.',
+            'Llegada al hermoso pueblo de Chivay y almuerzo buffet.',
+            'Por la tarde instalación en su hotel y visita opcional a los baños termomedicinales de Chacapi o Yanque.',
+            'Cena típica en restaurante con show folclórico y pernocte.'
           ]
         },
         {
-          title: 'TERCER DÍA: CRUZ DEL CÓNDOR',
+          title: 'TERCER DÍA: CHIVAY - CRUZ DEL CÓNDOR - AREQUIPA',
           activities: [
-            'Desayunaremos (5:30 am) y posteriormente nos dirigiremos a la Cruz del Cóndor directamente, lugar en el que podremos apreciar el Cañón del Colca y el vuelo del cóndor esperando un tiempo prudente.',
-            'Posteriormente dirigirnos a visitar los miradores de Wayrapunko, Andaguilque, Choquetico y los pueblos de Pinchollo, Maca, Achoma, Yanque y finalizar en Chivay.',
-            'Almorzaremos y nos prepararemos para retornar a la ciudad de Arequipa a la que arribaremos aproximadamente 05:00 pm.'
+            'Tiempo para el desayuno temprano.',
+            'Salida hacia el Mirador de la Cruz del Cóndor, donde se podrá contemplar el majestuoso vuelo de los cóndores a pocos metros y la profundidad del Cañón del Colca.',
+            'De retorno, visita a los pueblos tradicionales como Pinchollo, Maca y Yanque, observando iglesias coloniales, andenerías y terrazas Incas y Pre-Incas.',
+            'Llegada a Chivay para el almuerzo buffet.',
+            'Retorno a la ciudad de Arequipa.'
           ]
         },
         {
-          title: 'CUARTO DIA: CAMPIÑA TOUR AREQUIPA',
+          title: 'CUARTO DÍA: CATARATA DE PILLONES Y BOSQUE DE PIEDRAS DE PURUÑA',
           activities: [
-            'Duración del tour: 4 horas.',
-            '08:00 am Desayuno.',
-            'Iniciando el recorrido, nos dirigimos al mirador de Sachaca el cual es el más alto de toda la ciudad de Arequipa desde donde se puede ver toda la campiña arequipeña.',
-            'Luego visitaremos la Mansión del Fundador que es una casona donde vivió el hijo del fundador de la ciudad de Arequipa, el cual también en una temporada fue tomada en la guerra como un cuartel general.',
-            'Luego nos vamos hacia el pueblo de Sabandia, acá podremos apreciar el Molino Hidráulico de Sabandia, que se usaba para moler el grano, este molino es de la época colonial. Finalizando el tour pasaremos por el distrito de Paucarpata para observar sus terrazas y Andenerías Pre-Incas.',
-            '01:30 pm Almuerzo. Tarde libre para compras.',
-            'Partida a Lima desde el aeropuerto.'
+            '06:00 am - 06:20 am Recojo de los hoteles.',
+            'Inicio de la excursión por la carretera Yura con vistas a los volcanes. Visita al pueblo fantasma de Pampa de Arrieros y su antigua estación de tren.',
+            'Parada en la Reserva Nacional Salinas y Aguada Blanca y en Patahuasi para tomar un mate inca.',
+            'Llegada al Bosque de Piedras de Puruña (parada en mirador Carlitos). Caminata de 1 hora y 30 minutos interpretando las siluetas de rocas esculpidas por la erosión.',
+            'Llegada al centro poblado de Pillones y descenso hacia la Catarata de Pillones.',
+            'Tiempo libre en la caída de agua para fotos y disfrutar del paisaje.',
+            'Retorno a la ciudad de Arequipa llegando aproximadamente a las 05:00 pm.'
+          ]
+        },
+        {
+          title: 'QUINTO DÍA: RESERVA DE SALINAS Y AGUADA BLANCA - TRASLADO',
+          activities: [
+            '06:00 am Recojo del hotel. Viaje de 2 horas hacia la Reserva Nacional de Salinas y Aguada Blanca (4300 m.s.n.m.).',
+            'Paso por el pueblo de Chiguata (plaza principal, iglesia y andenes pre incas).',
+            'Ingreso a la Reserva, observación del bosque de Queñuas y espectacular vista de la parte posterior de los volcanes Misti, Chachani, Pichu Pichu y Ubinas.',
+            'Visita a la Laguna y Salar de Salinas (espejos de agua). Avistamiento de llamas, alpacas, vicuñas, y aves andinas como guayatas, patos cordilleranos y flamencos.',
+            'Caminata por el salar, observación de producción de sal y extracción de borato. Visita a fuente de aguas termales de poca profundidad.',
+            '02:00 pm Retorno a Arequipa.',
+            'Traslado hacia el aeropuerto o terminal terrestre para el viaje de regreso a Trujillo / lugar de origen.'
           ]
         }
       ]
     },
     en: {
-      title: 'Arequipa and Colca',
+      title: 'White City of Arequipa',
       subtitle: 'Discover the White City, admire its colonial architecture, and marvel at the impressive Colca Canyon.',
-      duration: '4 DAYS / 3 NIGHTS',
+      duration: '5 DAYS / 4 NIGHTS',
       services: 'Round trip tickets from place of origin. Pick up from the airport or bus terminal. Tourist transport during the whole tour. Bilingual professional guide. Accommodation in hotel of client\'s choice. Continental breakfast. Transfers, guided tours and entrance fees, full meals.',
-      note: 'Departure times and points according to prior coordination.',
+      includes: [
+        'Round trip flights Trujillo / Lima / Arequipa',
+        'Tourist transportation to all visited places',
+        'Entrance fees for all mentioned tours',
+        'Professional guide for all tours',
+        '4 nights of accommodation',
+        '5 breakfasts',
+        '5 lunches (including 2 buffet lunches on days 2 and 3)',
+        '4 dinners',
+        'First aid kit'
+      ],
+      note: 'Tour cost per person: S/ 2500.00',
       days: [
         {
-          title: 'FIRST DAY: CITY TOUR',
+          title: 'FIRST DAY: COUNTRYSIDE TOUR AND SILLAR ROUTE',
           activities: [
-            '09:00 a.m. Pick up of passengers from the airport, transfer to their hotel and breakfast.',
-            '02:00 p.m. City tour.',
-            'The Cathedral Basilica of Arequipa, where we can visit two jewels of the city, the Belgian organ and the French-origin pulpit made in Lille by a famous French artist, Buisine Rigot.',
-            'The Church of the Company of Jesus, a beautiful church and impressive mestizo baroque style facade due to the profuse ornamentation. Here we can find native and European decorative elements.',
-            'The dome of San Ignacio de Loyola and the cloisters of the company. In this dome we see a polychrome decoration made with natural dyes, we see a beautiful painting by Bernardo Bitti (Jesuit artist).',
-            'Inside the church we can appreciate the works of another interesting artist like Diego Portales, who has paintings like the entrance of Jesus to Jerusalem and the Last Supper, where in the middle of the table we find an Andean element like the guinea pig.',
-            'The Santa Catalina monastery and convent dates from the end of the 15th century which represents the Spanish influence. This place is considered a citadel within the City of Arequipa itself. Nuns still live in this place in the northern area of the convent.',
-            'We will also visit the Carmen Alto viewpoint where there are pre-Inca terraces and an excellent viewpoint to the Chilina Valley and the three volcanoes Misti, Chachani, and Pichu Pichu.',
-            '07:30 p.m. Dinner and overnight at the Hotel.'
+            'Departure from the city of Trujillo to Lima / Arequipa.',
+            'Airport pickup and transfer to the hotel.',
+            'Free time to settle in. (Check-in: 12:00 pm, Check-out: 10:00 am).',
+            '09:30 am - 01:30 pm COUNTRYSIDE TOUR: Hotel pickup.',
+            'Visit the Carmen Alto Viewpoint, Yanahuara, and Cayma. Visit the Incalpaca outlet and zoo to observe 4 varieties of camelids (Llama, Alpaca, Vicuña, and Guanaco).',
+            'Pass by the artificial lakes of Tingo and Sachaca taking the landscape route.',
+            'Entrance to the Founder\'s Mansion (colonial house with colonial and republican ornaments).',
+            'Visit the Sabandia Mill (16th-century construction), where you can optionally do extreme sports, horseback riding, ATV rides, among others.',
+            'Cross the district of Paucarpata with its beautiful pre-Inca terraces.',
+            'Return to the city of Arequipa and time for lunch.',
+            '02:30 pm - 06:00 pm SILLAR ROUTE: Pickup from the restaurant.',
+            'Transfer to the Cerro Colorado district to the famous Añashuayco Quarries. We will observe the ancestral process of elaboration and extraction of white sillar blocks.',
+            'Observation of the mega-carving on a cliff of the facade of the Church of the Company of Jesus.',
+            '20-minute walk through the enigmatic Culebrillas Ravine (virgin quarry with a narrow path formed by water and wind erosion). At the end, we will find mysterious petroglyphs.',
+            'Return to the city of Arequipa.'
           ]
         },
         {
-          title: 'SECOND DAY: COLCA',
+          title: 'SECOND DAY: AREQUIPA - CHIVAY',
           activities: [
-            'Departure from Arequipa at 8:30 a.m. heading along the road via Yura and later we will border the Chachani Volcano and then pass through Pampa Cañahuas. We will stop for 10 to 15 minutes where passengers can appreciate the vicuñas in their natural environment.',
-            'Then we will have a second stop to enjoy coca tea so the altitude doesn\'t affect you, since we will be at 3800 m.a.s.l. We will continue climbing up to 4800 m.a.s.l (volcano viewpoint).',
-            'Starting our descent to the town of Chivay after approximately 45 minutes.',
-            'We accommodate you in the lodging, later we will have lunch. In the afternoon we will go to La Calera (thermal medicinal water pool). Finishing the program for the day, dinner and overnight at the chosen hotel.'
+            '07:30 am - 08:00 am Hotel pickup to begin our excursion to the Colca Valley.',
+            'We will take the Yura road, enjoying views of the volcanoes and the Salinas and Aguada Blanca National Reserve, habitat of vicuñas, llamas, and alpacas.',
+            'Stop in Patahuasi to observe geological formations and drink coca tea.',
+            'Continue through Bofedales and Tojra Pampa to the Viewpoint of the Andes (Patapampa) at 4910 m.a.s.l. to observe the Ampato, Sabancaya, and Hualca Hualca volcanoes.',
+            'Arrival at the beautiful town of Chivay and buffet lunch.',
+            'In the afternoon, check-in at your hotel and optional visit to the thermal medicinal baths of Chacapi or Yanque.',
+            'Typical dinner in a restaurant with a folklore show and overnight stay.'
           ]
         },
         {
-          title: 'THIRD DAY: CRUZ DEL CONDOR',
+          title: 'THIRD DAY: CHIVAY - CRUZ DEL CONDOR - AREQUIPA',
           activities: [
-            'We will have breakfast (5:30 a.m.) and then we will head directly to the Cruz del Cóndor, a place where we can appreciate the Colca Canyon and the flight of the condor, waiting a prudent time.',
-            'Then we will go to visit the viewpoints of Wayrapunko, Andaguilque, Choquetico and the towns of Pinchollo, Maca, Achoma, Yanque and finish in Chivay.',
-            'We will have lunch and prepare to return to the city of Arequipa, arriving approximately at 05:00 p.m.'
+            'Time for an early breakfast.',
+            'Departure to the Cruz del Condor Viewpoint, where you can contemplate the majestic flight of the condors a few meters away and the depth of the Colca Canyon.',
+            'On the way back, visit traditional towns like Pinchollo, Maca, and Yanque, observing colonial churches, pre-Inca and Inca terraces.',
+            'Arrival in Chivay for a buffet lunch.',
+            'Return to the city of Arequipa.'
           ]
         },
         {
-          title: 'FOURTH DAY: AREQUIPA COUNTRYSIDE TOUR',
+          title: 'FOURTH DAY: PILLONES WATERFALL AND PURUÑA STONE FOREST',
           activities: [
-            'Tour duration: 4 hours.',
-            '08:00 a.m. Breakfast.',
-            'Starting the tour, we head to the Sachaca viewpoint which is the highest in the entire city of Arequipa from where you can see the whole Arequipa countryside.',
-            'Then we will visit the Founder\'s Mansion, a large house where the son of the founder of the city of Arequipa lived.',
-            'Then we go to the town of Sabandia, here we can appreciate the Sabandia Hydraulic Mill, which was used to grind grain, this mill is from colonial times. Finishing the tour we will pass through the Paucarpata district to observe its pre-Inca terraces.',
-            '01:30 p.m. Lunch. Free afternoon for shopping.',
-            'Departure to Lima from the airport.'
+            '06:00 am - 06:20 am Hotel pickups.',
+            'Start the excursion via the Yura road with views of the volcanoes. Visit the ghost town of Pampa de Arrieros and its old train station.',
+            'Stop at the Salinas and Aguada Blanca National Reserve and Patahuasi for an Inca tea.',
+            'Arrival at the Puruña Stone Forest (stop at Carlitos viewpoint). 1 hour and 30-minute walk interpreting the rock silhouettes sculpted by erosion.',
+            'Arrival at the town of Pillones and descent to the Pillones Waterfall.',
+            'Free time at the waterfall for photos and enjoying the landscape.',
+            'Return to the city of Arequipa arriving at approximately 05:00 pm.'
+          ]
+        },
+        {
+          title: 'FIFTH DAY: SALINAS AND AGUADA BLANCA RESERVE - TRANSFER',
+          activities: [
+            '06:00 am Hotel pickup. 2-hour trip to the Salinas and Aguada Blanca National Reserve (4300 m.a.s.l.).',
+            'Pass through the town of Chiguata (main square, church, and pre-Inca terraces).',
+            'Enter the Reserve, observe the Queñuas forest, and get a spectacular view of the back of the Misti, Chachani, Pichu Pichu, and Ubinas volcanoes.',
+            'Visit the Salinas Lagoon and Salt Flat (water mirrors). Sighting of llamas, alpacas, vicuñas, and Andean birds such as guayatas, Andean ducks, and flamingos.',
+            'Walk through the salt flat, observing salt production and borate extraction. Visit a shallow thermal water source.',
+            '02:00 pm Return to Arequipa.',
+            'Transfer to the airport or bus terminal for the return trip to Trujillo / place of origin.'
           ]
         }
       ]
@@ -839,109 +1146,240 @@ export const itineraries: Record<string, PackageDetails> = {
     image: '/img/paquetes_recomendados/trujillo.avif',
     heroImage: '/img/paquetes_recomendados/trujillo.avif',
     es: {
-      title: 'Tours en Trujillo: Chan Chan, Huacas y Huanchaco | Salidas Diarias',
-      subtitle: 'Explora la majestuosidad de Chan Chan, descubre los misterios de la Dama de Cao y relájate en las playas de Huanchaco con nuestros guías certificados.',
+      title: 'Trujillo Primaveral y Aventurero',
+      subtitle: 'Descubre la majestuosidad de Chan Chan, maravíllate con la Dama de Cao, vive la aventura en Cascas y Conache, y relájate en Huanchaco.',
       duration: '4 DÍAS / 3 NOCHES',
-      services: 'Pasajes de ida y vuelta desde lugar de origen. Dos noches de hospedaje en el hotel a elección del cliente en base a habitaciones dobles o triples con baño privado, agua caliente, tv cable, wifi. Alimentación completa. Traslados y entradas a los lugares turísticos.',
-      note: 'Horarios y punto de salida según coordinación previa.',
+      services: 'Recojo del terminal o aeropuerto y traslado al hotel. Tres noches de hospedaje en los hoteles mencionados en base a habitaciones matrimoniales, dobles o triples con baño privado, agua caliente, tv cable, wifi. Movilidad turística a los lugares mencionados. Traslados, guiados y entradas a los lugares turísticos.',
+      includes: [
+        'Recojo del terminal o aeropuerto y traslado al hotel',
+        '3 noches de hospedaje en los hoteles mencionados en base a habitaciones matrimoniales, dobles o triples con baño privado, agua caliente, tv cable, wifi',
+        'Movilidad turística a los lugares mencionados',
+        '3 desayunos',
+        'Traslados, guiados y entradas a los lugares turísticos'
+      ],
+      note: 'Precio por persona: S/ 680.00',
       days: [
         {
-          title: 'PRIMER DIA: HUACA DE LA LUNA',
+          title: 'PRIMER DÍA: HUACA DE LA LUNA, CABALLOS DE PASO Y HUANCHACO',
           activities: [
-            '7:00 am Llegada e instalación en el hotel elegido.',
-            '8:30 am Desayuno.',
-            '10:30 am Iniciaremos el tour conociendo la campiña de Moche, visitando el museo de sitio de Huaca de la Luna y la imponente Huaca de la Luna desde donde también podrán ver la Huaca del Sol (aún no abierta al turismo).',
-            '1:00 pm Tiempo para almorzar.',
-            '2:30 pm Empezamos el tour visitando la Huaca Arco Iris.',
-            '3:30 pm Visita a la ciudadela Nikan o Chan Chan la ciudad de barro más grande del mundo.',
-            '5:00 pm Partida al balneario turístico de Huanchaco tiempo para pasear por el balneario y conocer los caballitos de totora.',
-            '6:00 pm Retorno a Trujillo.'
+            'Llegada e instalación en el hotel céntrico a cuatro cuadras de la plaza mayor.',
+            'Desayuno.',
+            'Iniciaremos el tour conociendo la campiña de moche, visitando la huaca de la luna.',
+            'Tiempo para almuerzo en Restaurant Turístico.',
+            'Función de caballos de paso.',
+            'Visita a la ciudadela de Chan chan.',
+            'Partida al balneario turístico de Huanchaco.',
+            'Retorno a Trujillo y pernocte en el hotel.'
           ]
         },
         {
-          title: 'SEGUNDO DIA: TOUR EL BRUJO',
+          title: 'SEGUNDO DÍA: RUTA DEL VINO (CASCAS)',
           activities: [
-            '8:30 am Desayuno.',
-            '10:30 am Salida al valle Chicama lugar donde se encuentra el pueblo de Magdalena de Cao y podremos conocer el museo de sitio del complejo arqueológico El Brujo y podremos conocer a la Señora de Cao, un gobernante Moche que es una prueba de que existió el matriarcado en la cultura mochica.',
-            'Luego subiremos a la Huaca Cao Viejo donde podremos conocer el lugar donde fue hallada la Señora de Cao y los frisos hechos por los Moches.',
-            '2:30 pm Retorno a Trujillo.'
+            'Recojo del hotel y partida a Cascas, la ciudad vitivinícola de la Libertad.',
+            'Llegada a Cascas y visita a la cascada el Molino, un hermoso paisaje natural.',
+            'Visita a la piscigranja Corlas.',
+            'Tiempo para almorzar.',
+            'Visita al árbol de las mil raíces.',
+            'Visita al Cristo de las rocas.',
+            'Llegada al viñedo de don Manuelito donde conoceremos cómo es la elaboración de sus deliciosos vinos y tendremos tiempo para compra de vinos.',
+            'Retorno a Trujillo.'
           ]
         },
         {
-          title: 'TERCER DIA: CITY TOUR',
+          title: 'TERCER DÍA: DAMA DE CAO Y MIRABUS',
           activities: [
-            '8:00 am Desayuno.',
-            '9:00 am Visita a las lagunas de Conache y prácticas de sandboard.',
-            '03:00 pm City tour en el mirabus conociendo los puntos principales de nuestra ciudad.',
-            '9:00 pm Retorno a su ciudad.'
+            'Desayuno.',
+            'Partida a Magdalena de Cao e ingreso al Museo Dama de Cao.',
+            'Recorrido por el centro arqueológico El Brujo.',
+            'Tiempo en la plaza de Magdalena de Cao y almuerzo.',
+            'Por la tarde, city tour en Mirabus, conociendo las principales calles de la ciudad, observando zonas coloniales, murales y mucho más.'
           ]
         },
         {
-          title: 'CUARTO DIA: CAÑONCILLO – PACASMAYO',
+          title: 'CUARTO DÍA: CONACHE AVENTURERO',
           activities: [
-            '8:30 am Desayuno.',
-            '9:15 am Partida a San Pedro.',
-            '10:30 am Llegada a San Pedro en donde tomaremos el desvío para las lagunas de Cañoncillo y Gallinazo conociendo un hermoso ecosistema y podrán darse un chapuzón en la laguna.',
-            '12:30 pm Almuerzo.',
-            '1:15 pm Partida al balneario de Pacasmayo y visita a su mirador, malecón, paseo de la amistad y su hermosa playa.',
-            '4:00 pm Retorno a Trujillo.',
-            '5:30 pm Llegada al hotel.',
-            '7:00 pm Cena.',
-            '9:00 pm Retorno a su ciudad.'
+            'Desayuno.',
+            'Partida a un paraíso natural llamado Lagunas de Conache donde podrán practicar Sandboard en las dunas y usar los botes pedalones en la laguna.',
+            'Almuerzo en Conache.',
+            'Retorno y llegada a Trujillo.',
+            'Retorno a su ciudad de origen.'
           ]
         }
       ]
     },
     en: {
-      title: 'Trujillo Tours: Chan Chan, Huacas and Huanchaco | Daily Departures',
-      subtitle: 'Explore the majesty of Chan Chan, discover the mysteries of the Lady of Cao, and relax on the beaches of Huanchaco with our certified guides.',
+      title: 'Spring and Adventurous Trujillo',
+      subtitle: 'Discover the majesty of Chan Chan, marvel at the Lady of Cao, live the adventure in Cascas and Conache, and relax in Huanchaco.',
       duration: '4 DAYS / 3 NIGHTS',
-      services: 'Round trip tickets from place of origin. Two nights of accommodation in hotel of client\'s choice based on double or triple rooms with private bathroom, hot water, cable TV, Wi-Fi. Full meals. Transfers and entrance fees to tourist places.',
-      note: 'Departure times and points according to prior coordination.',
+      services: 'Pickup from the bus terminal or airport and transfer to the hotel. Three nights of accommodation in mentioned hotels based on double or triple rooms with private bathroom, hot water, cable TV, Wi-Fi. Tourist mobility to the mentioned places. Transfers, guided tours and entrance fees to tourist places.',
+      includes: [
+        'Pickup from the bus terminal or airport and transfer to the hotel',
+        '3 nights of accommodation in mentioned hotels based on matrimonial, double or triple rooms with private bathroom, hot water, cable TV, Wi-Fi',
+        'Tourist mobility to the mentioned places',
+        '3 breakfasts',
+        'Transfers, guided tours and entrance fees to tourist places'
+      ],
+      note: 'Tour cost per person: S/ 680.00',
       days: [
         {
-          title: 'FIRST DAY: HUACA DE LA LUNA',
+          title: 'FIRST DAY: HUACA DE LA LUNA, PASO HORSES AND HUANCHACO',
           activities: [
-            '7:00 a.m. Arrival and installation at the chosen hotel.',
-            '8:30 a.m. Breakfast.',
-            '10:30 a.m. We will start the tour knowing the Moche countryside, visiting the site museum of Huaca de la Luna and the imposing Huaca de la Luna from where you can also see the Huaca del Sol (not yet open to tourism).',
-            '1:00 p.m. Time for lunch.',
-            '2:30 p.m. We start the tour visiting the Huaca Arco Iris.',
-            '3:30 p.m. Visit to the Nikan citadel or Chan Chan, the largest mud city in the world.',
-            '5:00 p.m. Departure to the tourist resort of Huanchaco, time to walk around the resort and see the "caballitos de totora" (reed watercrafts).',
-            '6:00 p.m. Return to Trujillo.'
+            'Arrival and check-in at the downtown hotel located four blocks from the main square.',
+            'Breakfast.',
+            'We will start the tour exploring the Moche countryside, visiting the Huaca de la Luna.',
+            'Time for lunch at a Tourist Restaurant.',
+            'Peruvian Paso Horse Show.',
+            'Visit to the Chan Chan citadel.',
+            'Departure to the tourist beach resort of Huanchaco.',
+            'Return to Trujillo and overnight stay at the hotel.'
           ]
         },
         {
-          title: 'SECOND DAY: EL BRUJO TOUR',
+          title: 'SECOND DAY: WINE ROUTE (CASCAS)',
           activities: [
-            '8:30 a.m. Breakfast.',
-            '10:30 a.m. Departure to the Chicama valley, place where the town of Magdalena de Cao is located and we will be able to visit the site museum of the El Brujo archaeological complex and we will be able to know the Lady of Cao, a Moche ruler who is proof that matriarchy existed in the Mochica culture.',
-            'Then we will go up to the Huaca Cao Viejo where we can see the place where the Lady of Cao was found and the friezes made by the Moches.',
-            '2:30 p.m. Return to Trujillo.'
+            'Hotel pickup and departure to Cascas, the wine city of La Libertad.',
+            'Arrival in Cascas and visit to the El Molino waterfall, a beautiful natural landscape.',
+            'Visit to the Corlas fish farm.',
+            'Time for lunch.',
+            'Visit to the tree of a thousand roots.',
+            'Visit to the Christ of the Rocks.',
+            'Arrival at Don Manuelito\'s vineyard where we will learn about the elaboration of their delicious wines and have time to purchase wines.',
+            'Return to Trujillo.'
           ]
         },
         {
-          title: 'THIRD DAY: CITY TOUR',
+          title: 'THIRD DAY: LADY OF CAO AND MIRABUS',
           activities: [
-            '8:00 a.m. Breakfast.',
-            '9:00 a.m. Visit to the Conache lagoons and sandboard practice.',
-            '03:00 p.m. City tour in the mirabus visiting the main points of our city.',
-            '9:00 p.m. Return to your city.'
+            'Breakfast.',
+            'Departure to Magdalena de Cao and entrance to the Lady of Cao Museum.',
+            'Tour through the El Brujo archaeological complex.',
+            'Time at the Magdalena de Cao square and lunch.',
+            'In the afternoon, city tour on the Mirabus, getting to know the main streets of the city, observing colonial areas, murals, and much more.'
           ]
         },
         {
-          title: 'FOURTH DAY: CAÑONCILLO – PACASMAYO',
+          title: 'FOURTH DAY: ADVENTUROUS CONACHE',
           activities: [
-            '8:30 a.m. Breakfast.',
-            '9:15 a.m. Departure to San Pedro.',
-            '10:30 a.m. Arrival in San Pedro where we will take the detour to the Cañoncillo and Gallinazo lagoons knowing a beautiful ecosystem and you can take a dip in the lagoon.',
-            '12:30 p.m. Lunch.',
-            '1:15 p.m. Departure to the Pacasmayo resort and visit to its viewpoint, boardwalk, Paseo de la Amistad and its beautiful beach.',
-            '4:00 p.m. Return to Trujillo.',
-            '5:30 p.m. Arrival at the hotel.',
-            '7:00 p.m. Dinner.',
-            '9:00 p.m. Return to your city.'
+            'Breakfast.',
+            'Departure to a natural paradise called Conache Lagoons where you can practice sandboarding on the dunes and use the pedal boats on the lagoon.',
+            'Lunch in Conache.',
+            'Return and arrival in Trujillo.',
+            'Return trip to your city of origin.'
+          ]
+        }
+      ]
+    }
+  },
+  'trujillo-chiclayo': {
+    id: 'trujillo-chiclayo',
+    image: '/img/paquetes/trujillo_chiclayo.avif',
+    heroImage: '/img/paquetes/trujillo_chiclayo.avif',
+    es: {
+      title: 'Trujillo y Chiclayo',
+      subtitle: 'Descubre los tesoros Moche, Chimú y Sipán en un viaje por dos fascinantes destinos norteños.',
+      duration: '3 DÍAS / 2 NOCHES',
+      services: 'Bus completamente a disposición Trujillo/Chiclayo/Trujillo. Bus equipado con asientos reclinables, TV, DVD, Música ambiental, Botiquín. 02 conductores profesionales y ayudante conocedores de la ruta. Alojamiento de Hotel céntrico. Dos desayunos. Entradas a los lugares turísticos y museos. Guía de turismo.',
+      includes: [
+        'Bus completamente a disposición (equipo completo: asientos reclinables, TV, DVD, Música, Botiquín)',
+        '02 conductores profesionales y ayudante',
+        'Alojamiento en hotel céntrico',
+        '2 desayunos',
+        'Entradas a los lugares turísticos y museos',
+        'Guía de turismo'
+      ],
+      note: 'Precio por persona: S/ 850.00',
+      days: [
+        {
+          title: 'PRIMER DÍA: FULL DAY TOUR MOCHE - CHIMÚ',
+          activities: [
+            'Llegada e instalación en Hotel Colonial a una cuadra del centro histórico.',
+            'Desayuno.',
+            'Iniciaremos el tour conociendo la campiña de moche, visitando la casa del artesano y la imponente Huaca de la Luna (vista panorámica a la Huaca del Sol).',
+            'Tiempo para almuerzo.',
+            'Función de caballos de paso en casa campo Alcor.',
+            'Visita a la ciudadela Nikan o Chan Chan, la ciudad de barro más grande del mundo.',
+            'Partida al balneario turístico de Huanchaco, tiempo para pasear por el balneario y conocer los caballitos de totora.',
+            'Retorno a Trujillo y pernocte en el hotel.'
+          ]
+        },
+        {
+          title: 'SEGUNDO DÍA: FULL DAY CHICLAYO',
+          activities: [
+            'Salida directa a Chiclayo.',
+            'Llegada a Chiclayo donde empezarán conociendo el fascinante paseo Yortuque, un paseo peatonal que nos cuenta su historia a través de murales tipo mosaico.',
+            'Visita a fábrica de King Kongs donde les mostrarán cómo se hace este tradicional dulce lambayecano.',
+            'Llegada a Lambayeque y tiempo para almorzar.',
+            'Ingreso al Museo Tumbas Reales del Señor de Sipán, donde se encuentran los hallazgos originales del Complejo Arqueológico Sipán (Señor de Sipán, Sacerdote, Viejo Señor).',
+            'Partida al balneario de Pimentel, el más turístico de Chiclayo. Parada en el criadero de aves gigantes (Ñandús y avestruces) donde les explicarán sobre la crianza de estas aves.',
+            'Tiempo de playa en Pimentel.',
+            'Tiempo de visita en Monsefú.',
+            'Retorno a Trujillo.'
+          ]
+        },
+        {
+          title: 'TERCER DÍA: TOUR EL BRUJO',
+          activities: [
+            'Desayuno.',
+            'Salida hacia el Valle de Chicama para visitar el Complejo El Brujo y el Museo de la Señora de Cao (gobernante de la cultura mochica del siglo IV d.C.).',
+            'Almuerzo en Magdalena de Cao.',
+            'Retorno a Trujillo.',
+            'City tour en el mirabus.',
+            'Retorno a su ciudad de origen.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Trujillo and Chiclayo',
+      subtitle: 'Discover the Moche, Chimu and Sipan treasures on a journey through two fascinating northern destinations.',
+      duration: '3 DAYS / 2 NIGHTS',
+      services: 'Bus completely available Trujillo/Chiclayo/Trujillo. Bus equipped with reclining seats, TV, DVD, Music, First aid kit. 2 professional drivers and assistant. Downtown hotel accommodation. Two breakfasts. Entrance fees to tourist places and museums. Tour guide.',
+      includes: [
+        'Bus completely available (fully equipped: reclining seats, TV, DVD, Music, First aid kit)',
+        '2 professional drivers and assistant',
+        'Downtown hotel accommodation',
+        '2 breakfasts',
+        'Entrance fees to tourist places and museums',
+        'Tour guide'
+      ],
+      note: 'Tour cost per person: S/ 850.00',
+      days: [
+        {
+          title: 'FIRST DAY: FULL DAY MOCHE - CHIMU TOUR',
+          activities: [
+            'Arrival and check-in at a Colonial Hotel one block from the historic center.',
+            'Breakfast.',
+            'We will start the tour exploring the Moche countryside, visiting the artisan\'s house and the imposing Huaca de la Luna (panoramic view of Huaca del Sol).',
+            'Time for lunch.',
+            'Peruvian Paso Horse Show at Alcor country house.',
+            'Visit to the Nikan citadel or Chan Chan, the largest mud city in the world.',
+            'Departure to the tourist beach resort of Huanchaco, time to walk around the resort and see the "caballitos de totora" (reed watercrafts).',
+            'Return to Trujillo and overnight stay at the hotel.'
+          ]
+        },
+        {
+          title: 'SECOND DAY: FULL DAY CHICLAYO',
+          activities: [
+            'Direct departure to Chiclayo.',
+            'Arrival in Chiclayo where we will visit the fascinating Yortuque promenade, a pedestrian walkway that tells its history through mosaic-style murals.',
+            'Visit to the King Kong factory where they will show you how this traditional Lambayeque sweet is made.',
+            'Arrival in Lambayeque and time for lunch.',
+            'Entrance to the Royal Tombs of Sipan Museum, home to the original findings of the Sipan Archaeological Complex (Lord of Sipan, Priest, Old Lord).',
+            'Departure to the Pimentel beach resort, the most touristic in Chiclayo. Stop at the giant bird farm (Rhea and ostriches) where they will explain the breeding of these birds.',
+            'Beach time in Pimentel.',
+            'Visit time in Monsefu.',
+            'Return to Trujillo.'
+          ]
+        },
+        {
+          title: 'THIRD DAY: EL BRUJO TOUR',
+          activities: [
+            'Breakfast.',
+            'Departure to the Chicama Valley to visit the El Brujo Complex and the Museum of the Lady of Cao (Moche culture ruler from the 4th century A.D.).',
+            'Lunch in Magdalena de Cao.',
+            'Return to Trujillo.',
+            'City tour on the mirabus.',
+            'Return trip to your city of origin.'
           ]
         }
       ]
@@ -1131,8 +1569,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'ruta-del-vino': {
     id: 'ruta-del-vino',
-    image: '/img/paquetes_recomendados/ruta-del-vino.avif',
-    heroImage: '/img/paquetes_recomendados/ruta-del-vino.avif',
+    image: '/img/paquetes/rutas_del_vino.avif',
+    heroImage: '/img/paquetes/rutas_del_vino.avif',
     es: {
       title: 'Ruta del Vino',
       subtitle: 'Descubre la Piedra El Gavilán, la Cascada El Molino y los viñedos de Cascas.',
@@ -1144,7 +1582,7 @@ export const itineraries: Record<string, PackageDetails> = {
           title: 'ITINERARIO',
           activities: [
             'Piedra El Gavilán.',
-            'Vinos La Volet.',
+            'Vinos Lavalet.',
             'Viñedos.',
             'Árbol de las mil raíces.',
             'Cristo de las Rocas.',
@@ -1164,7 +1602,7 @@ export const itineraries: Record<string, PackageDetails> = {
           title: 'ITINERARY',
           activities: [
             'El Gavilan Stone.',
-            'La Volet Wines.',
+            'Lavalet Wines.',
             'Vineyards.',
             'Tree of a thousand roots.',
             'Christ of the Rocks.',

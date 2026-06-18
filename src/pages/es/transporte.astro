@@ -1,0 +1,13 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TransportSection from '../../components/TransportSection';
+import TransportGallery from '../../components/TransportGallery';
+---
+
+<Layout 
+	title="Nuestra Flota de Transporte | Tour Peruvian Service"
+	description="Conoce nuestra flota de vehículos modernos y seguros para tus viajes: Buses de turismo VIP, minivans y camionetas 4x4 disponibles para ti."
+>
+	<TransportSection client:visible lang="es" />
+	<TransportGallery client:visible lang="es" />
+</Layout>

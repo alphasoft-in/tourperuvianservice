@@ -164,6 +164,8 @@ export default function AboutSection({ lang }: Props) {
             <img 
               src="/trujillo.avif" 
               alt="Turismo Peruvian Service" 
+              loading="lazy"
+              decoding="async"
               className="relative rounded-3xl w-full h-[400px] md:h-[500px] xl:h-[700px] object-cover shadow-[0_20px_50px_rgba(0,0,0,0.3)] z-10"
             />
             {/* Overlay Gradient */}
@@ -263,6 +265,8 @@ export default function AboutSection({ lang }: Props) {
                 <img 
                   src="/pdf/constancia_inscripcion.avif" 
                   alt="Constancia DIRCETUR"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
                 />
               </a>
@@ -283,6 +287,8 @@ export default function AboutSection({ lang }: Props) {
                 <img 
                   src="/pdf/licencia.avif" 
                   alt="Autorización Marca Perú"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
                 />
               </a>

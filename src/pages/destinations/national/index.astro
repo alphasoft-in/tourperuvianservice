@@ -1,0 +1,13 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import FeaturedPackages from '../../../components/FeaturedPackages';
+---
+
+<Layout
+  title="National Destinations | Peru | Tour Peruvian Service"
+  description="Discover the most beautiful destinations in Peru. Trips to Cusco, Huaraz, Ica, Arequipa, and more."
+>
+  <div class="pt-20">
+    <FeaturedPackages client:visible lang="en" category="destino" locationType="nacional" title="National Destinations" subtitle="Discover the wonderful attractions that Peru has to offer." />
+  </div>
+</Layout>

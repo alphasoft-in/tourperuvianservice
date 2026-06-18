@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import ReCAPTCHAModule from 'react-google-recaptcha';
+
+// Workaround for Astro/Vite SSR CJS interop
+const ReCAPTCHA = (ReCAPTCHAModule as any).default || ReCAPTCHAModule;
 
 interface ContactSectionProps {
   language?: 'es' | 'en';
@@ -7,6 +11,7 @@ interface ContactSectionProps {
 
 export default function ContactSection({ language = 'es' }: ContactSectionProps) {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
 
   const content = {
     es: {
@@ -53,10 +58,19 @@ export default function ContactSection({ language = 'es' }: ContactSectionProps)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!recaptchaToken) {
+      alert(language === 'es' ? 'Por favor completa el reCAPTCHA' : 'Please complete the reCAPTCHA');
+      return;
+    }
+    
     setStatus('submitting');
 
     const form = e.currentTarget;
     const data = new FormData(form);
+    
+    // Optional: You could append the token to FormData if FormSubmit supported it, 
+    // but here we just use it to block spam on the frontend.
+    // data.append('g-recaptcha-response', recaptchaToken);
 
     try {
       // Usamos el endpoint de FormSubmit para AJAX
@@ -225,11 +239,16 @@ export default function ContactSection({ language = 'es' }: ContactSectionProps)
               </div>
             )}
 
-            <div className="pt-2 text-center">
+            <div className="pt-2 flex flex-col items-center gap-4">
+              <ReCAPTCHA
+                sitekey="6LclLyctAAAAABTfJbpHGe_j1dhDVXz2s9aMz0Vl"
+                onChange={(token: string | null) => setRecaptchaToken(token)}
+                hl={language}
+              />
               <button 
                 type="submit" 
-                disabled={status === 'submitting'}
-                className="inline-flex items-center justify-center px-8 py-3 bg-orange-500 hover:bg-orange-600 text-slate-900 rounded-full font-bold text-sm shadow-xl shadow-orange-500/30 hover:-translate-y-1 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0 w-full sm:w-auto min-w-[200px]"
+                disabled={status === 'submitting' || !recaptchaToken}
+                className="inline-flex items-center justify-center px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-bold text-sm shadow-xl shadow-orange-500/30 hover:-translate-y-1 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0 w-full sm:w-auto min-w-[200px]"
               >
                 <Send className="w-4 h-4 mr-2.5" />
                 {status === 'submitting' ? t.sending : t.sendButton}

@@ -96,7 +96,7 @@ export default function HeroSlider({ lang }: Props) {
                 {t(slides[current].descKey)}
               </p>
               
-              <button className="px-8 py-3.5 text-sm font-bold text-white rounded-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 hover:shadow-lg hover:shadow-orange-500/40 hover:-translate-y-0.5 transition-all duration-300 uppercase tracking-wider">
+              <button className="cursor-pointer px-8 py-3.5 text-sm font-bold text-white rounded-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 hover:shadow-lg hover:shadow-orange-500/40 hover:-translate-y-0.5 transition-all duration-300 uppercase tracking-wider">
                 {t('slider.btn')}
               </button>
             </motion.div>
@@ -107,14 +107,14 @@ export default function HeroSlider({ lang }: Props) {
       {/* Navigation Arrows */}
       <button 
         onClick={prevSlide}
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full bg-black/30 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 transition-all z-20"
+        className="cursor-pointer absolute left-4 md:left-8 top-1/2 -translate-y-1/2 min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full bg-black/30 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 transition-all z-20"
         aria-label="Anterior slide"
       >
         <ChevronLeft className="w-6 h-6 md:w-8 md:h-8" />
       </button>
       <button 
         onClick={nextSlide}
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full bg-black/30 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 transition-all z-20"
+        className="cursor-pointer absolute right-4 md:right-8 top-1/2 -translate-y-1/2 min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full bg-black/30 hover:bg-black/50 text-white backdrop-blur-md border border-white/20 transition-all z-20"
         aria-label="Siguiente slide"
       >
         <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
@@ -127,7 +127,7 @@ export default function HeroSlider({ lang }: Props) {
             key={index}
             onClick={() => setCurrent(index)}
             aria-label={`Ir al slide ${index + 1}`}
-            className="w-12 h-12 flex items-center justify-center group focus:outline-none"
+            className="cursor-pointer w-12 h-12 flex items-center justify-center group focus:outline-none"
           >
             <span className={`transition-all duration-300 rounded-full ${
               current === index ? 'w-8 h-2 bg-orange-500' : 'w-2 h-2 bg-white/50 group-hover:bg-white'

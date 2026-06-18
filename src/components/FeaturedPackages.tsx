@@ -17,18 +17,20 @@ export const packageData = [
   { id: 'tarapoto', name: 'Tarapoto', days: 4, nights: 3, image: '/img/paquetes_recomendados/tarapoto.avif', category: 'destino', isFeatured: true, locationType: 'nacional' },
   { id: 'cajamarca', name: 'Cajamarca', days: 3, nights: 2, image: '/img/paquetes_recomendados/cajamarca.avif', category: 'destino', isFeatured: true, locationType: 'nacional' },
   { id: 'chachapoyas', name: 'Chachapoyas', days: 3, nights: 2, image: '/img/paquetes_recomendados/chachapoyas.avif', category: 'destino', isFeatured: true, locationType: 'nacional' },
+  { id: 'selva-central', name: 'Tour Selva Central', days: 4, nights: 3, image: '/img/paquetes_recomendados/selva_central.avif', category: 'destino', isFeatured: true, locationType: 'nacional' },
   { id: 'cusco', name: 'Cusco', days: 5, nights: 4, image: '/img/paquetes_recomendados/cusco.avif', category: 'destino', isFeatured: true, locationType: 'nacional' },
-  { id: 'arequipa', name: 'Arequipa', days: 4, nights: 3, image: '/img/paquetes_recomendados/arequipa.avif', category: 'destino', isFeatured: true, locationType: 'nacional' },
+  { id: 'arequipa', name: 'Arequipa', days: 5, nights: 4, image: '/img/paquetes_recomendados/arequipa.avif', category: 'destino', isFeatured: true, locationType: 'nacional' },
   { id: 'ica', name: 'Ica', days: 3, nights: 2, image: '/img/paquetes_recomendados/ica.avif', category: 'destino', isFeatured: true, locationType: 'nacional' },
   { id: 'lima', name: 'Lima', days: 3, nights: 2, image: '/img/paquetes_recomendados/lima.avif', category: 'destino', isFeatured: true, locationType: 'nacional' },
   { id: 'trujillo', name: 'Trujillo', days: 4, nights: 3, image: '/img/paquetes_recomendados/trujillo.avif', category: 'destino', isFeatured: true, locationType: 'nacional' },
   { id: 'salpo', name: 'Salpo', days: 1, nights: 0, image: '/img/paquetes/salpo.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
   { id: 'full-day-trujillo', name: 'Full Day Trujillo', days: 1, nights: 0, image: '/img/paquetes/trujillo-fullday.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
+  { id: 'trujillo-chiclayo', name: 'Trujillo y Chiclayo', days: 3, nights: 2, image: '/img/paquetes/chiclayo.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
   { id: 'caleta-colorada', name: 'Caleta Colorada', days: 1, nights: 0, image: '/img/paquetes/caleta_colorada.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
   { id: 'explora-jequetepeque', name: 'Explora Jequetepeque', days: 1, nights: 0, image: '/img/paquetes/explora_jequetepeque.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
   { id: 'ruta-del-vino', name: 'Ruta del Vino', days: 1, nights: 0, image: '/img/paquetes/rutas_del_vino.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
-  { id: 'mayascon', name: 'Mayascón', days: 1, nights: 1, image: '/img/paquetes/mayascon.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
-  { id: 'ruta-chancay-medieval', name: 'Ruta Chancay Medieval', days: 1, nights: 1, image: '/img/paquetes/chancay_medieval.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
+  { id: 'mayascon', name: 'Mayascón', days: 1, nights: 0, image: '/img/paquetes/mayascon.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
+  { id: 'ruta-chancay-medieval', name: 'Ruta Chancay Medieval', days: 1, nights: 0, image: '/img/paquetes/chancay_medieval.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
   { id: 'rio-de-janeiro-new-year', name: 'Rio de Janeiro', days: 4, nights: 3, image: '/img/paquetes_internacionales/rio-janeiro.avif', category: 'destino', isFeatured: false, locationType: 'internacional' },
   { id: 'punta-cana', name: 'Punta Cana', days: 5, nights: 4, image: '/img/paquetes_internacionales/punta-cana.avif', category: 'destino', isFeatured: false, locationType: 'internacional' },
   { id: 'cartagena-new-year', name: 'Cartagena', days: 5, nights: 4, image: '/img/paquetes_internacionales/cartagena.avif', category: 'destino', isFeatured: false, locationType: 'internacional' },
@@ -96,6 +98,8 @@ export default function FeaturedPackages({ lang, category, locationType, title, 
                 <img
                   src={pkg.image}
                   alt={pkg.name}
+                  loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 rounded-t-2xl md:rounded-t-3xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1E2B4D]/80 via-transparent to-transparent"></div>
@@ -117,7 +121,7 @@ export default function FeaturedPackages({ lang, category, locationType, title, 
                     <Clock className="w-4 h-4 md:w-5 md:h-5 text-orange-500 mr-2 md:mr-3 flex-shrink-0" />
                     <div className="flex space-x-2 text-xs md:text-sm font-bold text-[#1E2B4D]">
                       {pkg.nights === 0 ? (
-                        <span>{lang === 'es' ? 'FULL DÍA' : 'FULL DAY'}</span>
+                        <span>FULL DAY</span>
                       ) : (
                         <>
                           <span>{pkg.days} {t('packages.days')}</span>
@@ -132,10 +136,10 @@ export default function FeaturedPackages({ lang, category, locationType, title, 
                 <div className="flex flex-col gap-2.5 mt-2">
                   <a
                     href={lang === 'es'
-                      ? (pkg.category === 'destino' ? `/destinos/${pkg.id}` : `/paquetes/${pkg.id}`)
-                      : (pkg.category === 'destino' ? `/en/destinations/${pkg.id}` : `/en/packages/${pkg.id}`)
+                      ? (pkg.category === 'destino' ? `/es/destinos/${pkg.id}` : `/es/paquetes/${pkg.id}`)
+                      : (pkg.category === 'destino' ? `/destinations/${pkg.id}` : `/packages/${pkg.id}`)
                     }
-                    className="flex items-center justify-center w-full py-2 md:py-2.5 text-[10px] md:text-xs font-bold text-[#1E2B4D] bg-white border-2 border-slate-200 rounded-full hover:border-orange-500 hover:text-white hover:bg-gradient-to-r hover:from-yellow-400 hover:via-orange-500 hover:to-red-500 hover:shadow-lg transition-all duration-300 uppercase tracking-wider"
+                    className="flex items-center justify-center w-full py-2 md:py-2.5 text-[10px] md:text-xs font-bold text-[#1E2B4D] bg-white border-2 border-slate-200 rounded-full hover:border-orange-500 hover:text-white hover:bg-orange-500 hover:shadow-lg transition-all duration-300 uppercase tracking-wider"
                     aria-label={lang === 'es' ? `Ver más detalles sobre ${pkg.name}` : `View more details about ${pkg.name}`}
                   >
                     {t('packages.btn')}

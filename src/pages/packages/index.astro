@@ -1,0 +1,13 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FeaturedPackages from '../../components/FeaturedPackages';
+---
+
+<Layout
+  title="Recommended Tour Packages | Tour Peruvian Service"
+  description="Discover our recommended tour packages. Unforgettable experiences designed for you."
+>
+  <div class="pt-20">
+    <FeaturedPackages client:visible lang="en" category="paquete" title="Our Packages" subtitle="Discover our full day and tour options designed to live unforgettable adventures." />
+  </div>
+</Layout>

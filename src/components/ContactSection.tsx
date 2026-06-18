@@ -241,7 +241,7 @@ export default function ContactSection({ language = 'es' }: ContactSectionProps)
 
             <div className="pt-2 flex flex-col items-center gap-4">
               <ReCAPTCHA
-                sitekey="6LclLyctAAAAABTfJbpHGe_j1dhDVXz2s9aMz0Vl"
+                sitekey="6LcoOCctAAAAAJq2D6m3ESN9d7eLLD6Q7xCaXhJA"
                 onChange={(token: string | null) => setRecaptchaToken(token)}
                 hl={language}
               />

@@ -77,6 +77,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || Astro.url);
 		<main>
 			<slot />
 		</main>
-		<Footer lang={lang} client:visible />
+		<Footer lang={lang} client:idle />
 	</body>
 </html>

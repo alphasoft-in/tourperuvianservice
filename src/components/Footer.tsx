@@ -130,7 +130,7 @@ export default function Footer({ lang }: Props) {
           {/* Brand & About */}
           <div className="col-span-1 sm:col-span-2 xl:col-span-4 xl:pr-6">
             <a href={lang === 'es' ? '/' : '/en/'} className="inline-block mb-4 md:mb-6">
-              <img src="/logo.avif" alt="Turismo Peruvian Service" width={200} height={80} className="h-14 md:h-20 lg:h-24 brightness-0 invert opacity-90 object-contain" />
+              <img src="/logo.avif" alt="Turismo Peruvian Service" width={200} height={80} className="w-auto h-14 md:h-20 lg:h-24 brightness-0 invert opacity-90 object-contain" />
             </a>
             <p className="text-white/70 text-xs md:text-sm leading-relaxed mb-6 md:mb-0">
               {t('footer.about')}
@@ -220,12 +220,12 @@ export default function Footer({ lang }: Props) {
                 {t('footer.accepts')}
               </h4>
               <div className="flex flex-wrap gap-3 md:gap-4 mt-2">
-                <img src="/img/pagos/visa.avif" alt="Visa" width={40} height={24} className="h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/img/pagos/mastercard.avif" alt="Mastercard" width={40} height={24} className="h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/img/pagos/amex.avif" alt="American Express" width={40} height={24} className="h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/img/pagos/dinners.avif" alt="Diners Club" width={40} height={24} className="h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/img/pagos/yape.avif" alt="Yape" width={40} height={24} className="h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
-                <img src="/img/pagos/efectivo.avif" alt="Pago en Efectivo" width={40} height={24} className="h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/img/pagos/visa.avif" alt="Visa" width={40} height={24} className="w-auto h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/img/pagos/mastercard.avif" alt="Mastercard" width={40} height={24} className="w-auto h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/img/pagos/amex.avif" alt="American Express" width={40} height={24} className="w-auto h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/img/pagos/dinners.avif" alt="Diners Club" width={40} height={24} className="w-auto h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/img/pagos/yape.avif" alt="Yape" width={40} height={24} className="w-auto h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/img/pagos/efectivo.avif" alt="Pago en Efectivo" width={40} height={24} className="w-auto h-6 md:h-7 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
               </div>
             </div>
           </div>

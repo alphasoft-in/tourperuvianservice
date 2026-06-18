@@ -117,7 +117,7 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
             loading="eager"
             fetchPriority="high"
             decoding="sync"
-            className={`object-contain ${isHomePage ? 'transition-all duration-300' : ''} ${
+            className={`w-auto object-contain ${isHomePage ? 'transition-all duration-300' : ''} ${
               isScrolled 
                 ? 'h-12 md:h-14' 
                 : 'h-16 md:h-20 brightness-0 invert opacity-90 group-hover:opacity-100'

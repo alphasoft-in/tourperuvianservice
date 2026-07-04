@@ -22,6 +22,20 @@ const vehicles = [
     descKey: 'transport.bus30.desc',
   },
   {
+    id: 'sprinter19',
+    img: '/img/vehiculos/sprinter_19.jpeg',
+    titleKey: 'transport.sprinter19.title',
+    capKey: 'transport.sprinter19.cap',
+    descKey: 'transport.sprinter19.desc',
+  },
+  {
+    id: 'sprinter14',
+    img: '/img/vehiculos/sprinter_14.jpeg',
+    titleKey: 'transport.sprinter14.title',
+    capKey: 'transport.sprinter14.cap',
+    descKey: 'transport.sprinter14.desc',
+  },
+  {
     id: 'minivan',
     img: '/img/vehiculos/minivan.jpeg',
     titleKey: 'transport.minivan.title',

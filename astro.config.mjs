@@ -11,6 +11,7 @@ export default defineConfig({
   trailingSlash: 'ignore',
   build: {
     format: 'directory',
+    inlineStylesheets: 'always',
   },
   vite: {
     plugins: [tailwindcss()]

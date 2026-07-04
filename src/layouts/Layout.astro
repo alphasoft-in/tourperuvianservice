@@ -21,7 +21,12 @@ const {
 
 const lang = getLangFromUrl(Astro.url);
 const currentRoute = getRouteFromUrl(Astro.url);
-const canonicalURL = new URL(Astro.url.pathname, Astro.site || Astro.url);
+
+let canonicalPathname = Astro.url.pathname;
+if (!canonicalPathname.endsWith('/')) {
+  canonicalPathname += '/';
+}
+const canonicalURL = new URL(canonicalPathname, Astro.site || Astro.url);
 ---
 
 <!doctype html>

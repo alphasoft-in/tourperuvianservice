@@ -44,8 +44,8 @@ export default function LanguagePicker({ currentLang, currentRoute = '', isScrol
           translatedRoute = translatedRoute.replace(/^\/?terms\/?$/, '/terminos');
         }
 
-        // Native Astro routing: English is root ('/'), Spanish is '/es/'
-        const href = lang === 'en' ? `/${translatedRoute}` : `/${lang}/${translatedRoute}`;
+        // Native Astro routing: Spanish is root ('/'), English is '/en/'
+        const href = lang === 'es' ? `/${translatedRoute}` : `/${lang}/${translatedRoute}`;
 
         return (
           <a

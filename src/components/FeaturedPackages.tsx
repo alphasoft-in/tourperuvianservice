@@ -146,8 +146,8 @@ export default function FeaturedPackages({ lang, category, locationType, title, 
                 <div className="flex flex-col gap-2.5 mt-2">
                   <a
                     href={lang === 'es'
-                      ? (pkg.category === 'destino' ? `/es/destinos/${pkg.id}` : `/es/paquetes/${pkg.id}`)
-                      : (pkg.category === 'destino' ? `/destinations/${pkg.id}` : `/packages/${pkg.id}`)
+                      ? (pkg.category === 'destino' ? `/destinos/${pkg.id}` : `/paquetes/${pkg.id}`)
+                      : (pkg.category === 'destino' ? `/en/destinations/${pkg.id}` : `/en/packages/${pkg.id}`)
                     }
                     className="flex items-center justify-center w-full py-2 md:py-2.5 text-[10px] md:text-xs font-bold text-[#1E2B4D] bg-white border-2 border-slate-200 rounded-full hover:border-orange-500 hover:text-white hover:bg-orange-500 hover:shadow-lg transition-all duration-300 uppercase tracking-wider"
                     aria-label={lang === 'es' ? `Ver más detalles sobre ${pkg.name}` : `View more details about ${pkg.name}`}

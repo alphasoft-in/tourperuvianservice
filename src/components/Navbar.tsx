@@ -14,7 +14,7 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = useTranslations(lang);
 
-  const isHomePage = currentRoute === '/' || currentRoute === '/es/' || currentRoute === '';
+  const isHomePage = currentRoute === '/' || currentRoute === '/en/' || currentRoute === '';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,20 +29,20 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
   const isScrolled = !isHomePage || scrolledVal;
 
   const links = [
-    { name: t('nav.home'), href: lang === 'es' ? '/es/' : '/' },
+    { name: t('nav.home'), href: lang === 'es' ? '/' : '/en/' },
     { 
       name: t('nav.destinations'), 
-      href: lang === 'es' ? '/es/destinos' : '/destinations',
+      href: lang === 'es' ? '/destinos/' : '/en/destinations/',
       dropdown: [
-        { name: lang === 'es' ? 'Nacionales' : 'National', href: lang === 'es' ? '/es/destinos/nacionales' : '/destinations/national' },
-        { name: lang === 'es' ? 'Internacionales' : 'International', href: lang === 'es' ? '/es/destinos/internacionales' : '/destinations/international' }
+        { name: lang === 'es' ? 'Nacionales' : 'National', href: lang === 'es' ? '/destinos/nacionales/' : '/en/destinations/national/' },
+        { name: lang === 'es' ? 'Internacionales' : 'International', href: lang === 'es' ? '/destinos/internacionales/' : '/en/destinations/international/' }
       ]
     },
-    { name: t('nav.packages'), href: lang === 'es' ? '/es/paquetes' : '/packages' },
-    { name: t('nav.transport'), href: lang === 'es' ? '/es/transporte' : '/transport' },
-    { name: t('nav.about'), href: lang === 'es' ? '/es/nosotros' : '/about' },
-    { name: t('nav.gallery'), href: lang === 'es' ? '/es/galeria' : '/gallery' },
-    { name: t('nav.contact'), href: lang === 'es' ? '/es/contacto' : '/contact' },
+    { name: t('nav.packages'), href: lang === 'es' ? '/paquetes/' : '/en/packages/' },
+    { name: t('nav.transport'), href: lang === 'es' ? '/transporte/' : '/en/transport/' },
+    { name: t('nav.about'), href: lang === 'es' ? '/nosotros/' : '/en/about/' },
+    { name: t('nav.gallery'), href: lang === 'es' ? '/galeria/' : '/en/gallery/' },
+    { name: t('nav.contact'), href: lang === 'es' ? '/contacto/' : '/en/contact/' },
   ];
 
   const isActive = (href: string) => {
@@ -71,8 +71,10 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
         }
       }
 
-      if (lang !== 'en') {
-        effectiveCurrentPath = effectiveCurrentPath === '/' ? `/${lang}/` : `/${lang}/${effectiveCurrentPath}`;
+      if (lang === 'en') {
+        effectiveCurrentPath = effectiveCurrentPath === '/' ? `/en/` : `/en/${effectiveCurrentPath}`;
+      } else {
+        effectiveCurrentPath = effectiveCurrentPath === '/' ? `/` : `/${effectiveCurrentPath}`;
       }
       
       const normalize = (p: string) => {
@@ -108,7 +110,7 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         
         {/* Logo */}
-        <a href={lang === 'es' ? '/es/' : '/'} className="flex items-center group">
+        <a href={lang === 'es' ? '/' : '/en/'} className="flex items-center group">
           <img 
             src="/logo.png" 
             alt="Tour Peruvian Service" 

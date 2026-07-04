@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import ComplaintsForm from '../components/ComplaintsForm';
+---
+
+<Layout title="Libro de Reclamaciones | Turismo Peruvian Service">
+  <main class="pt-24 pb-16 bg-slate-50 min-h-screen">
+    <ComplaintsForm client:visible language="es" />
+  </main>
+</Layout>

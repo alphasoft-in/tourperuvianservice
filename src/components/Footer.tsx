@@ -129,7 +129,7 @@ export default function Footer({ lang }: Props) {
           
           {/* Brand & About */}
           <div className="col-span-1 sm:col-span-2 xl:col-span-4 xl:pr-6">
-            <a href={lang === 'es' ? '/es/' : '/'} className="inline-block mb-4 md:mb-6">
+            <a href={lang === 'es' ? '/' : '/en/'} className="inline-block mb-4 md:mb-6">
               <img src="/logo.png" alt="Turismo Peruvian Service" width={200} height={80} loading="lazy" decoding="async" className="w-auto h-14 md:h-20 lg:h-24 brightness-0 invert opacity-90 object-contain" />
             </a>
             <p className="text-white/80 text-xs md:text-sm leading-relaxed mb-6 md:mb-0">
@@ -144,12 +144,12 @@ export default function Footer({ lang }: Props) {
               {t('footer.links')}
             </h4>
             <ul className="space-y-3 md:space-y-4">
-              <li><a href={lang === 'es' ? '/es/' : '/'} className="text-white/80 hover:text-orange-400 transition-colors text-xs md:text-sm inline-block py-1">{t('nav.home')}</a></li>
-              <li><a href={lang === 'es' ? '/es/destinos' : '/destinations'} className="text-white/80 hover:text-orange-400 transition-colors text-xs md:text-sm inline-block py-1">{t('nav.destinations')}</a></li>
-              <li><a href={lang === 'es' ? '/es/paquetes' : '/packages'} className="text-white/80 hover:text-orange-400 transition-colors text-xs md:text-sm inline-block py-1">{t('nav.packages')}</a></li>
-              <li><a href={lang === 'es' ? '/es/nosotros' : '/about'} className="text-white/80 hover:text-orange-400 transition-colors text-xs md:text-sm inline-block py-1">{t('nav.about')}</a></li>
-              <li><a href={lang === 'es' ? '/es/esnna' : '/esnna'} className="text-white/80 hover:text-orange-400 transition-colors text-xs md:text-sm inline-block py-1">{t('nav.esnna')}</a></li>
-              <li><a href={lang === 'es' ? '/es/libro-de-reclamaciones' : '/complaints-book'} className="text-white/80 hover:text-orange-400 transition-colors text-xs md:text-sm inline-block py-1">{t('nav.complaints')}</a></li>
+              <li><a href={lang === 'es' ? '/' : '/en/'} className="text-white/80 hover:text-orange-400 transition-colors text-xs md:text-sm inline-block py-1">{t('nav.home')}</a></li>
+              <li><a href={lang === 'es' ? '/destinos/' : '/en/destinations/'} className="text-white/80 hover:text-orange-400 transition-colors text-xs md:text-sm inline-block py-1">{t('nav.destinations')}</a></li>
+              <li><a href={lang === 'es' ? '/paquetes/' : '/en/packages/'} className="text-white/80 hover:text-orange-400 transition-colors text-xs md:text-sm inline-block py-1">{t('nav.packages')}</a></li>
+              <li><a href={lang === 'es' ? '/nosotros/' : '/en/about/'} className="text-white/80 hover:text-orange-400 transition-colors text-xs md:text-sm inline-block py-1">{t('nav.about')}</a></li>
+              <li><a href={lang === 'es' ? '/esnna/' : '/en/esnna/'} className="text-white/80 hover:text-orange-400 transition-colors text-xs md:text-sm inline-block py-1">{t('nav.esnna')}</a></li>
+              <li><a href={lang === 'es' ? '/libro-de-reclamaciones/' : '/en/complaints-book/'} className="text-white/80 hover:text-orange-400 transition-colors text-xs md:text-sm inline-block py-1">{t('nav.complaints')}</a></li>
             </ul>
           </div>
 
@@ -237,9 +237,9 @@ export default function Footer({ lang }: Props) {
             &copy; {currentYear} Turismo Peruvian Service - Todos los derechos reservados. | RUC: 20601386144
           </p>
           <div className="flex space-x-2">
-            <a href={lang === 'es' ? '/es/privacidad' : '/privacy'} className="text-white/70 hover:text-white/90 text-xs transition-colors p-2">{lang === 'es' ? 'Privacidad' : 'Privacy Policy'}</a>
+            <a href={lang === 'es' ? '/privacidad/' : '/en/privacy/'} className="text-white/70 hover:text-white/90 text-xs transition-colors p-2">{lang === 'es' ? 'Privacidad' : 'Privacy Policy'}</a>
             <span className="text-white/30 text-xs px-1">|</span>
-            <a href={lang === 'es' ? '/es/terminos' : '/terms'} className="text-white/70 hover:text-white/90 text-xs transition-colors p-2">{lang === 'es' ? 'Términos' : 'Terms & Conditions'}</a>
+            <a href={lang === 'es' ? '/terminos/' : '/en/terms/'} className="text-white/70 hover:text-white/90 text-xs transition-colors p-2">{lang === 'es' ? 'Términos' : 'Terms & Conditions'}</a>
           </div>
         </div>
       </div>

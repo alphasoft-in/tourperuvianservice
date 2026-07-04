@@ -51,13 +51,10 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
       let effectiveCurrentPath = currentPath;
 
       // Handle package details page active state
-      let match = currentPath.match(/^paquetes\/([^\/]+)/);
-      if (!match && lang !== 'es') {
-        match = currentPath.match(/^packages\/([^\/]+)/);
-      }
+      let match = currentPath.match(/^\/?(paquetes|packages|destinos|destinations)\/([^\/]+)/);
       
       if (match) {
-        const id = match[1];
+        const id = match[2];
         const pkg = packageData.find(p => p.id === id);
         if (pkg) {
           if (pkg.category === 'destino') {
@@ -79,6 +76,7 @@ export default function Navbar({ lang, currentRoute = '' }: Props) {
       
       const normalize = (p: string) => {
         if (!p) return '';
+        p = p.replace(/\/+/g, '/');
         if (!p.startsWith('/')) p = '/' + p;
         if (p.endsWith('/') && p.length > 1) p = p.slice(0, -1);
         return p;

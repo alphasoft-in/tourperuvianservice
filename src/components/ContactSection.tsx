@@ -248,7 +248,7 @@ export default function ContactSection({ language = 'es' }: ContactSectionProps)
               <button 
                 type="submit" 
                 disabled={status === 'submitting' || !recaptchaToken}
-                className="inline-flex items-center justify-center px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-bold text-sm shadow-xl shadow-orange-500/30 hover:-translate-y-1 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0 w-full sm:w-auto min-w-[200px]"
+                className="inline-flex items-center justify-center px-8 py-3 bg-orange-500 hover:bg-orange-600 text-slate-900 rounded-full font-bold text-sm shadow-xl shadow-orange-500/30 hover:-translate-y-1 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0 w-full sm:w-auto min-w-[200px]"
               >
                 <Send className="w-4 h-4 mr-2.5" />
                 {status === 'submitting' ? t.sending : t.sendButton}

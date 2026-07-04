@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock, Calendar, Users, Package, ChevronDown } from 'lucide-react';
-import { FaFacebookF, FaInstagram, FaTiktok, FaTripadvisor, FaYoutube } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTiktok, FaTripadvisor } from 'react-icons/fa';
 import { useTranslations } from '../i18n/utils';
 import { packageData } from './FeaturedPackages';
 import { itineraries } from '../data/itineraries';

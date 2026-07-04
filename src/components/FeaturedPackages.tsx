@@ -34,6 +34,16 @@ export const packageData = [
   { id: 'rio-de-janeiro-new-year', name: 'Rio de Janeiro', days: 4, nights: 3, image: '/img/paquetes_internacionales/rio-janeiro.avif', category: 'destino', isFeatured: false, locationType: 'internacional' },
   { id: 'punta-cana', name: 'Punta Cana', days: 5, nights: 4, image: '/img/paquetes_internacionales/punta-cana.avif', category: 'destino', isFeatured: false, locationType: 'internacional' },
   { id: 'cartagena-new-year', name: 'Cartagena', days: 5, nights: 4, image: '/img/paquetes_internacionales/cartagena.avif', category: 'destino', isFeatured: false, locationType: 'internacional' },
+  { id: 'ica-paracas-fullday', name: 'Full Day Ica Paracas', days: 1, nights: 0, image: '/img/paquetes/ica_paracas.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
+  { id: 'churin-fullday', name: 'Full Day Churín', days: 1, nights: 0, image: '/img/paquetes/churin.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
+  { id: 'churin-2d1n', name: 'Churín Mágico', days: 2, nights: 1, image: '/img/paquetes/churin_magico.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
+  { id: 'chancay-fullday', name: 'Full Day Castillo de Chancay', days: 1, nights: 0, image: '/img/paquetes/castillo_fullday.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
+  { id: 'chancay-2d1n', name: 'Chancay Histórico', days: 2, nights: 1, image: '/img/paquetes/chancay_historico.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
+  { id: 'huancaya-fullday', name: 'Full Day Huancaya y Vilca', days: 1, nights: 0, image: '/img/paquetes/huancaya_vilca.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
+  { id: 'huancaya-2d1n', name: 'Reserva Nor Yauyos: Huancaya', days: 2, nights: 1, image: '/img/paquetes/nor_yauyos_huancaya.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
+  { id: 'city-tour-lima', name: 'City Tour Lima', days: 1, nights: 0, image: '/img/paquetes/city_tour_lima_fullday.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
+  { id: 'antioquia-fullday', name: 'Full Day Antioquía', days: 1, nights: 0, image: '/img/paquetes/antioquia.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
+  { id: 'ica-2d1n', name: 'Ica y Paracas', days: 2, nights: 1, image: '/img/paquetes/ica_paracas.avif', category: 'paquete', isFeatured: false, locationType: 'nacional' },
 ];
 
 const containerVariants: Variants = {

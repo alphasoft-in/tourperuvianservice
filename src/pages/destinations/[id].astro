@@ -7,7 +7,7 @@ import BookingActions from '../../components/BookingActions';
 
 export function getStaticPaths() {
   const paquetesIds = packageData.filter(p => p.category === 'destino').map(p => p.id);
-  return paquetesIds.map((id) => {
+  return paquetesIds.map((id: string) => {
     return {
       params: { id },
       props: { pkg: itineraries[id] },
@@ -105,7 +105,7 @@ const schema = {
       <div class="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-orange-500 via-orange-300 to-transparent -translate-x-1/2 z-0"></div>
       
       <div class="space-y-12">
-        {data.days.map((day, index) => (
+        {data.days.map((day: any, index: number) => (
           <div class="relative flex flex-col items-center md:flex-row md:items-center w-full group">
             
             {/* Desktop Left Side (Empty for even, Card for odd) */}
@@ -115,7 +115,7 @@ const schema = {
                   <div class="absolute top-0 left-0 w-full h-1.5 md:h-2 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500"></div>
                   <h3 class="font-bold text-orange-500 text-base md:text-xl mb-3 md:mb-5 leading-snug">{day.title}</h3>
                   <ul class="space-y-4">
-                    {day.activities.map(activity => (
+                    {day.activities.map((activity: string) => (
                       <li class="flex items-start text-slate-600 text-sm md:text-base">
                         <span class="w-2 h-2 rounded-full bg-orange-400 mt-1.5 md:mt-2 mr-2 md:mr-3 shrink-0"></span>
                         <span class="leading-relaxed">{activity}</span>
@@ -138,7 +138,7 @@ const schema = {
                   <div class="absolute top-0 left-0 w-full h-1.5 md:h-2 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500"></div>
                   <h3 class="font-bold text-orange-500 text-base md:text-xl mb-3 md:mb-5 leading-snug">{day.title}</h3>
                   <ul class="space-y-4">
-                    {day.activities.map(activity => (
+                    {day.activities.map((activity: string) => (
                       <li class="flex items-start text-slate-600 text-sm md:text-base">
                         <span class="w-2 h-2 rounded-full bg-orange-400 mt-1.5 md:mt-2 mr-2 md:mr-3 shrink-0"></span>
                         <span class="leading-relaxed">{activity}</span>

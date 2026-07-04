@@ -74,19 +74,22 @@ export default function ComplaintsForm({ language = 'es' }: ComplaintsFormProps)
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="md:col-span-2">
               <label htmlFor="Nombre" className="block text-sm font-semibold text-slate-700 mb-1">{t.fullName} *</label>
-              <input id="Nombre" type="text" name="Nombre" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
+              <input id="Nombre" type="text" name="Nombre" placeholder={t.fullName} required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
             </div>
             <div className="md:col-span-2">
               <label htmlFor="Domicilio" className="block text-sm font-semibold text-slate-700 mb-1">{t.address} *</label>
-              <input id="Domicilio" type="text" name="Domicilio" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
+              <input id="Domicilio" type="text" name="Domicilio" placeholder={t.address} required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
             </div>
             <div>
               <label htmlFor="TipoDocumento" className="block text-sm font-semibold text-slate-700 mb-1">{t.docType} *</label>
               <div className="relative">
-                <select id="TipoDocumento" name="TipoDocumento" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 pr-10 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none appearance-none">
-                  <option value="DNI">DNI / ID</option>
-                  <option value="CE">CE / Alien Registration</option>
-                  <option value="Pasaporte">Pasaporte / Passport</option>
+                <select id="TipoDocumento" name="TipoDocumento" required defaultValue="" className="w-full bg-white border border-slate-300 rounded-lg p-2.5 pr-10 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none appearance-none">
+                  <option value="" disabled>{language === 'es' ? 'Seleccione una opción' : 'Select an option'}</option>
+                  <option value="DNI">DNI</option>
+                  <option value="RUC">RUC</option>
+                  <option value="CE">CE</option>
+                  <option value="PASAPORTE">PASAPORTE</option>
+                  <option value="OTROS">OTROS</option>
                 </select>
                 <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4">
                   <svg className="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -95,15 +98,15 @@ export default function ComplaintsForm({ language = 'es' }: ComplaintsFormProps)
             </div>
             <div>
               <label htmlFor="NumeroDocumento" className="block text-sm font-semibold text-slate-700 mb-1">{t.docNum} *</label>
-              <input id="NumeroDocumento" type="text" name="NumeroDocumento" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
+              <input id="NumeroDocumento" type="text" name="NumeroDocumento" placeholder={t.docNum} required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
             </div>
             <div>
               <label htmlFor="Telefono" className="block text-sm font-semibold text-slate-700 mb-1">{t.phone} *</label>
-              <input id="Telefono" type="tel" name="Telefono" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
+              <input id="Telefono" type="tel" name="Telefono" placeholder={t.phone} required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
             </div>
             <div>
               <label htmlFor="Email" className="block text-sm font-semibold text-slate-700 mb-1">{t.email} *</label>
-              <input id="Email" type="email" name="Email" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
+              <input id="Email" type="email" name="Email" placeholder={t.email} required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
             </div>
           </div>
         </div>
@@ -117,7 +120,8 @@ export default function ComplaintsForm({ language = 'es' }: ComplaintsFormProps)
             <div>
               <label htmlFor="TipoBien" className="block text-sm font-semibold text-slate-700 mb-1">{t.type} *</label>
               <div className="relative">
-                <select id="TipoBien" name="TipoBien" required className="w-full bg-white border border-slate-300 rounded-lg p-2.5 pr-10 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none appearance-none">
+                <select id="TipoBien" name="TipoBien" required defaultValue="" className="w-full bg-white border border-slate-300 rounded-lg p-2.5 pr-10 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none appearance-none">
+                  <option value="" disabled>{language === 'es' ? 'Seleccione una opción' : 'Select an option'}</option>
                   <option value="Servicio">{t.service}</option>
                   <option value="Producto">{t.product}</option>
                 </select>
@@ -128,11 +132,11 @@ export default function ComplaintsForm({ language = 'es' }: ComplaintsFormProps)
             </div>
             <div>
               <label htmlFor="MontoReclamado" className="block text-sm font-semibold text-slate-700 mb-1">{t.amount}</label>
-              <input id="MontoReclamado" type="number" step="0.01" name="MontoReclamado" className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
+              <input id="MontoReclamado" type="number" step="0.01" name="MontoReclamado" placeholder={t.amount} className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none" />
             </div>
             <div className="md:col-span-2">
               <label htmlFor="DescripcionBien" className="block text-sm font-semibold text-slate-700 mb-1">{t.description} *</label>
-              <textarea id="DescripcionBien" name="DescripcionBien" required rows={2} className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none resize-none"></textarea>
+              <textarea id="DescripcionBien" name="DescripcionBien" placeholder={t.description} required rows={2} className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none resize-none"></textarea>
             </div>
           </div>
         </div>
@@ -158,11 +162,11 @@ export default function ComplaintsForm({ language = 'es' }: ComplaintsFormProps)
             </div>
             <div>
               <label htmlFor="Detalle" className="block text-sm font-semibold text-slate-700 mb-1">{t.detail} *</label>
-              <textarea id="Detalle" name="Detalle" required rows={4} className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none resize-none"></textarea>
+              <textarea id="Detalle" name="Detalle" placeholder={t.detail} required rows={4} className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none resize-none"></textarea>
             </div>
             <div>
               <label htmlFor="Pedido" className="block text-sm font-semibold text-slate-700 mb-1">{t.request} *</label>
-              <textarea id="Pedido" name="Pedido" required rows={3} className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none resize-none"></textarea>
+              <textarea id="Pedido" name="Pedido" placeholder={t.request} required rows={3} className="w-full bg-white border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none resize-none"></textarea>
             </div>
           </div>
         </div>
@@ -172,7 +176,7 @@ export default function ComplaintsForm({ language = 'es' }: ComplaintsFormProps)
         </div>
 
         <div className="flex justify-center mt-8">
-          <button type="submit" className="bg-orange-500 hover:bg-orange-600 text-slate-900 font-bold py-3.5 px-10 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 uppercase tracking-wide">
+          <button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3.5 px-10 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 uppercase tracking-wide">
             {t.submit}
           </button>
         </div>

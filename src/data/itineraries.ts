@@ -1387,8 +1387,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   salpo: {
     id: 'salpo',
-    image: '/img/paquetes_recomendados/salpo.avif',
-    heroImage: '/img/paquetes_recomendados/salpo.avif',
+    image: '/img/paquetes/salpo.avif',
+    heroImage: '/img/paquetes/salpo.avif',
     es: {
       title: 'Salpo Inolvidable',
       subtitle: 'Descubre el Balcón del Cielo, el Bosque de Piedras y el Dique de Carabamba.',
@@ -1432,8 +1432,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'full-day-trujillo': {
     id: 'full-day-trujillo',
-    image: '/img/paquetes_recomendados/full-day-trujillo.avif',
-    heroImage: '/img/paquetes_recomendados/full-day-trujillo.avif',
+    image: '/img/paquetes/trujillo-fullday.avif',
+    heroImage: '/img/paquetes/trujillo-fullday.avif',
     es: {
       title: 'Full Day Trujillo: Chan Chan y Huaca de la Luna',
       subtitle: 'Descubre la Huaca de la Luna, Chan Chan y el encantador Balneario de Huanchaco en un solo día con guías certificados y salidas diarias.',
@@ -1477,8 +1477,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'caleta-colorada': {
     id: 'caleta-colorada',
-    image: '/img/paquetes_recomendados/caleta-colorada.avif',
-    heroImage: '/img/paquetes_recomendados/caleta-colorada.avif',
+    image: '/img/paquetes/caleta_colorada.avif',
+    heroImage: '/img/paquetes/caleta_colorada.avif',
     es: {
       title: 'Caleta Colorada',
       subtitle: 'Disfruta de las playas, paseos en bote y los encantos de Chimbote y Nuevo Chimbote.',
@@ -1524,8 +1524,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'explora-jequetepeque': {
     id: 'explora-jequetepeque',
-    image: '/img/paquetes_recomendados/explora-jequetepeque.avif',
-    heroImage: '/img/paquetes_recomendados/explora-jequetepeque.avif',
+    image: '/img/paquetes/explora_jequetepeque.avif',
+    heroImage: '/img/paquetes/explora_jequetepeque.avif',
     es: {
       title: 'Explora Jequetepeque',
       subtitle: 'Descubre San Pedro de Lloc, Pacasmayo y el imponente reservorio de Gallito Ciego.',
@@ -1614,8 +1614,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'mayascon': {
     id: 'mayascon',
-    image: '/img/paquetes_recomendados/mayascon.avif',
-    heroImage: '/img/paquetes_recomendados/mayascon.avif',
+    image: '/img/paquetes/mayascon.avif',
+    heroImage: '/img/paquetes/mayascon.avif',
     es: {
       title: 'Mayascón',
       subtitle: 'Disfruta de las piscinas naturales de Mayascón, el criadero de avestruces y Pimentel.',
@@ -1661,8 +1661,8 @@ export const itineraries: Record<string, PackageDetails> = {
   },
   'ruta-chancay-medieval': {
     id: 'ruta-chancay-medieval',
-    image: '/img/paquetes_recomendados/ruta-chancay-medieval.avif',
-    heroImage: '/img/paquetes_recomendados/ruta-chancay-medieval.avif',
+    image: '/img/paquetes/chancay_medieval.avif',
+    heroImage: '/img/paquetes/chancay_medieval.avif',
     es: {
       title: 'Ruta Chancay Medieval',
       subtitle: 'Descubre el Castillo de Chancay, Eco Truly Park y disfruta de shows en vivo.',
@@ -1992,6 +1992,522 @@ export const itineraries: Record<string, PackageDetails> = {
             'Breakfast at the hotel.',
             'Free time to pack and do some last-minute shopping (coffee, souvenirs).',
             'At the agreed time, transfer to the airport for your return flight via Latam Airlines.'
+          ]
+        }
+      ]
+    }
+  },
+  'ica-paracas-fullday': {
+    id: 'ica-paracas-fullday',
+    image: '/img/paquetes/ica_paracas.avif',
+    heroImage: '/img/paquetes/ica_paracas.avif',
+    es: {
+      title: 'Full Day Ica Paracas',
+      subtitle: 'Disfruta de las Islas Ballestas, la Reserva de Paracas y los emocionantes tubulares en la Huacachina.',
+      duration: 'FULL DAY',
+      services: 'Transporte turístico ida y vuelta, paseo en deslizador a las Islas Ballestas, paseo en tubulares (buggies) y sandboard, degustación de vinos y piscos, guía de turismo.',
+      days: [
+        {
+          title: 'DÍA ÚNICO',
+          activities: [
+            'Salida desde Lima muy temprano hacia el sur.',
+            'Llegada a Paracas y embarque en los deslizadores para el tour a las Islas Ballestas. Apreciación del Candelabro y fauna marina (lobos marinos, pingüinos, aves guaneras).',
+            'Traslado a Ica. Visita a vitivinícola para conocer el proceso de elaboración del vino y pisco con degustación.',
+            'Almuerzo.',
+            'Visita al Oasis de la Huacachina. Paseo emocionante en tubulares (Buggies) y práctica de Sandboard en las dunas.',
+            'Retorno a la ciudad de Lima en la noche.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Full Day Ica Paracas',
+      subtitle: 'Enjoy the Ballestas Islands, Paracas Reserve, and the thrilling dune buggies in Huacachina.',
+      duration: 'FULL DAY',
+      services: 'Round trip tourist transport, speedboat ride to the Ballestas Islands, dune buggies and sandboarding, wine and pisco tasting, tour guide.',
+      days: [
+        {
+          title: 'SINGLE DAY',
+          activities: [
+            'Early departure from Lima heading south.',
+            'Arrival in Paracas and boarding the speedboats for the Ballestas Islands tour. Observation of the Candelabra and marine fauna (sea lions, penguins, guano birds).',
+            'Transfer to Ica. Visit to a winery to learn about the wine and pisco making process with tasting.',
+            'Lunch.',
+            'Visit to the Huacachina Oasis. Thrilling ride in dune buggies and Sandboarding practice in the dunes.',
+            'Return to the city of Lima at night.'
+          ]
+        }
+      ]
+    }
+  },
+  'churin-fullday': {
+    id: 'churin-fullday',
+    image: '/img/paquetes/churin.avif',
+    heroImage: '/img/paquetes/churin.avif',
+    es: {
+      title: 'Full Day Churín',
+      subtitle: 'Relájate en las aguas termales curativas de Churín y disfruta del paisaje andino.',
+      duration: 'FULL DAY',
+      services: 'Transporte turístico, visita a los complejos termales, guía de turismo.',
+      days: [
+        {
+          title: 'DÍA ÚNICO',
+          activities: [
+            'Salida desde Lima hacia Churín.',
+            'Llegada y visita al Complejo Termal Mamahuarmi, famoso por sus pozas al aire libre (Velo de Novia, Poza de los Novios).',
+            'City tour en la Plaza de Armas de Churín, visita a la Iglesia y tiempo para compras de dulces tradicionales (manjar blanco, alfajores).',
+            'Almuerzo con platos típicos de la región (trucha, pachamanca).',
+            'Visita al Complejo Termal de la Juventud para baños termo-medicinales.',
+            'Retorno a Lima.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Full Day Churin',
+      subtitle: 'Relax in the healing hot springs of Churin and enjoy the Andean landscape.',
+      duration: 'FULL DAY',
+      services: 'Tourist transport, visit to thermal complexes, tour guide.',
+      days: [
+        {
+          title: 'SINGLE DAY',
+          activities: [
+            'Departure from Lima to Churin.',
+            'Arrival and visit to the Mamahuarmi Thermal Complex, famous for its outdoor pools (Bridal Veil, Grooms Pool).',
+            'City tour in the Plaza de Armas of Churin, visit to the Church, and time to buy traditional sweets.',
+            'Lunch with typical regional dishes (trout, pachamanca).',
+            'Visit to the Youth Thermal Complex for thermo-medicinal baths.',
+            'Return to Lima.'
+          ]
+        }
+      ]
+    }
+  },
+  'churin-2d1n': {
+    id: 'churin-2d1n',
+    image: '/img/paquetes/churin_magico.avif',
+    heroImage: '/img/paquetes/churin_magico.avif',
+    es: {
+      title: 'Churín Mágico (2 Días / 1 Noche)',
+      subtitle: 'Desconéctate de la ciudad y sumérgete en las propiedades curativas de las aguas termales de Churín.',
+      duration: '2 DÍAS / 1 NOCHE',
+      services: 'Transporte turístico, 1 noche de alojamiento, desayunos, visita a complejos termales (Mamahuarmi, Juventud, Meseta), guía de turismo.',
+      days: [
+        {
+          title: 'DÍA 1: LIMA - CHURÍN Y COMPLEJO MAMAHUARMI',
+          activities: [
+            'Salida desde Lima.',
+            'Llegada a Churín y acomodación en el hotel.',
+            'Almuerzo libre.',
+            'Visita al Complejo Termal Mamahuarmi con hermosas caídas de agua y pozas naturales.',
+            'Paseo por la ciudad, Plaza de Armas, y compra de dulces típicos.',
+            'Cena y pernocte.'
+          ]
+        },
+        {
+          title: 'DÍA 2: COMPLEJOS TERMALES DE LA JUVENTUD Y MESETA - LIMA',
+          activities: [
+            'Desayuno en el hotel.',
+            'Visita al Complejo Termal de La Juventud, ideal para masajes y relajación muscular.',
+            'Visita al Complejo de la Meseta (baños cerrados con altas temperaturas sulfurosas).',
+            'Almuerzo con trucha de la zona.',
+            'Tarde libre para compras y paseo.',
+            'Retorno a Lima.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Magic Churin (2 Days / 1 Night)',
+      subtitle: 'Disconnect from the city and immerse yourself in the healing properties of Churin\'s hot springs.',
+      duration: '2 DAYS / 1 NIGHT',
+      services: 'Tourist transport, 1 night accommodation, breakfasts, visit to thermal complexes (Mamahuarmi, Juventud, Meseta), tour guide.',
+      days: [
+        {
+          title: 'DAY 1: LIMA - CHURIN AND MAMAHUARMI COMPLEX',
+          activities: [
+            'Departure from Lima.',
+            'Arrival in Churin and accommodation at the hotel.',
+            'Lunch on your own.',
+            'Visit to the Mamahuarmi Thermal Complex with beautiful waterfalls and natural pools.',
+            'City tour, Plaza de Armas, and shopping for typical sweets.',
+            'Dinner and overnight.'
+          ]
+        },
+        {
+          title: 'DAY 2: YOUTH AND MESETA THERMAL COMPLEXES - LIMA',
+          activities: [
+            'Breakfast at the hotel.',
+            'Visit to the Youth Thermal Complex, ideal for massages and muscle relaxation.',
+            'Visit to the Meseta Complex (indoor baths with high sulfurous temperatures).',
+            'Lunch with local trout.',
+            'Free afternoon for shopping and strolling.',
+            'Return to Lima.'
+          ]
+        }
+      ]
+    }
+  },
+  'chancay-fullday': {
+    id: 'chancay-fullday',
+    image: '/img/paquetes/castillo_fullday.avif',
+    heroImage: '/img/paquetes/castillo_fullday.avif',
+    es: {
+      title: 'Full Day Castillo de Chancay',
+      subtitle: 'Descubre la historia, misterio y entretenimiento en el majestuoso Castillo de Chancay y la Hacienda Huando.',
+      duration: 'FULL DAY',
+      services: 'Transporte turístico, ticket de ingreso al Castillo de Chancay, recorrido por la ex Hacienda Huando, guía de turismo.',
+      days: [
+        {
+          title: 'DÍA ÚNICO',
+          activities: [
+            'Partida desde Lima hacia el Norte Chico.',
+            'Parada en la Ex Casa Hacienda Huando, famosa por sus naranjas, su iglesia de estilo colonial y la historia de los terratenientes Graña.',
+            'Traslado a la ciudad de Chancay y su Plaza de Armas.',
+            'Ingreso al impresionante Castillo de Chancay. Recorrido por el museo, réplica del barco Covadonga, miradores y pasajes históricos.',
+            'Tiempo libre para disfrutar de los shows artísticos, tomarse fotos en las diversas áreas temáticas y almorzar.',
+            'Paseo por el boulevard y playas cercanas.',
+            'Retorno a Lima en la tarde.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Full Day Chancay Castle',
+      subtitle: 'Discover history, mystery, and entertainment in the majestic Chancay Castle and Huando Hacienda.',
+      duration: 'FULL DAY',
+      services: 'Tourist transport, entrance ticket to Chancay Castle, tour of the ex-Hacienda Huando, tour guide.',
+      days: [
+        {
+          title: 'SINGLE DAY',
+          activities: [
+            'Departure from Lima towards the Norte Chico.',
+            'Stop at the Ex Casa Hacienda Huando, famous for its oranges, its colonial-style church, and the history of the Graña landowners.',
+            'Transfer to the city of Chancay and its Plaza de Armas.',
+            'Entrance to the impressive Chancay Castle. Tour of the museum, replica of the Covadonga ship, viewpoints, and historical passages.',
+            'Free time to enjoy the artistic shows, take pictures in the various themed areas, and have lunch.',
+            'Walk along the boulevard and nearby beaches.',
+            'Return to Lima in the afternoon.'
+          ]
+        }
+      ]
+    }
+  },
+  'chancay-2d1n': {
+    id: 'chancay-2d1n',
+    image: '/img/paquetes/chancay_historico.avif',
+    heroImage: '/img/paquetes/chancay_historico.avif',
+    es: {
+      title: 'Chancay Histórico y Recreacional (2 Días / 1 Noche)',
+      subtitle: 'Una escapada perfecta combinando la historia del Castillo de Chancay con la ruta del vino o playas.',
+      duration: '2 DÍAS / 1 NOCHE',
+      services: 'Transporte turístico, 1 noche de alojamiento, desayunos, tickets de ingreso a los atractivos mencionados, guía.',
+      days: [
+        {
+          title: 'DÍA 1: EX HACIENDA HUANDO Y CASTILLO DE CHANCAY',
+          activities: [
+            'Salida desde Lima en la mañana.',
+            'Visita a la Ex Hacienda Huando para conocer su arquitectura colonial, iglesia y capillas.',
+            'Llegada a Chancay y acomodación en el alojamiento.',
+            'Ingreso al Castillo de Chancay. Tarde completa para recorrer sus salones, museos (Cultura Chancay), piscinas y observar el atardecer en el mar.',
+            'Noche libre para disfrutar de la gastronomía en el Castillo o en la ciudad.'
+          ]
+        },
+        {
+          title: 'DÍA 2: ECO TRÚLY PARK Y PLAYAS',
+          activities: [
+            'Desayuno.',
+            'Visita a la comunidad ecológica Eco Trúly Park, famosa por sus singulares construcciones en forma de cono y su filosofía de vida saludable.',
+            'Paseo por las playas de Chacra y Mar o circuito de viñedos cercanos.',
+            'Almuerzo (especialidades marinas o chancho al palo).',
+            'Retorno a Lima.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Historic and Recreational Chancay (2 Days / 1 Night)',
+      subtitle: 'A perfect getaway combining the history of Chancay Castle with the wine route or beaches.',
+      duration: '2 DAYS / 1 NIGHT',
+      services: 'Tourist transport, 1 night accommodation, breakfasts, entrance tickets to the mentioned attractions, guide.',
+      days: [
+        {
+          title: 'DAY 1: EX HACIENDA HUANDO AND CHANCAY CASTLE',
+          activities: [
+            'Departure from Lima in the morning.',
+            'Visit to the Ex Hacienda Huando to see its colonial architecture, church, and chapels.',
+            'Arrival in Chancay and accommodation.',
+            'Entrance to the Chancay Castle. Full afternoon to tour its halls, museums (Chancay Culture), pools, and watch the sunset over the sea.',
+            'Free evening to enjoy the gastronomy at the Castle or in the city.'
+          ]
+        },
+        {
+          title: 'DAY 2: ECO TRULY PARK AND BEACHES',
+          activities: [
+            'Breakfast.',
+            'Visit to the ecological community Eco Truly Park, famous for its unique cone-shaped buildings and healthy life philosophy.',
+            'Walk along the beaches of Chacra y Mar or nearby vineyard circuit.',
+            'Lunch (seafood specialties or chancho al palo).',
+            'Return to Lima.'
+          ]
+        }
+      ]
+    }
+  },
+  'huancaya-fullday': {
+    id: 'huancaya-fullday',
+    image: '/img/paquetes/huancaya_vilca.avif',
+    heroImage: '/img/paquetes/huancaya_vilca.avif',
+    es: {
+      title: 'Full Day Huancaya y Vilca',
+      subtitle: 'Explora la Reserva Paisajística Nor Yauyos Cochas con sus hermosas lagunas de aguas esmeraldas y cascadas infinitas.',
+      duration: 'FULL DAY',
+      services: 'Transporte turístico, visita a los miradores, cascadas y lagunas principales, ticket de ingreso a la reserva, guía de turismo.',
+      days: [
+        {
+          title: 'DÍA ÚNICO',
+          activities: [
+            'Salida desde Lima de madrugada hacia la sierra limeña.',
+            'Llegada a Huancaya, desayuno tradicional.',
+            'Inicio del trekking ligero hacia las hermosas cascadas de Cabracancha y el puente colgante.',
+            'Paseo en bote opcional por la Laguna de Huallhua, observando la flora y fauna.',
+            'Visita al poblado de Vilca (el pueblo del amor), caminata al Bosque del Amor y mirador Cantagallo.',
+            'Almuerzo típico (trucha frita, pachamanca, caldo de gallina).',
+            'Breve recorrido por la Plaza de Huancaya, sus calles empedradas y las cascadas escalonadas del río Huarco.',
+            'Retorno a Lima llegando por la noche.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Full Day Huancaya and Vilca',
+      subtitle: 'Explore the Nor Yauyos Cochas Landscape Reserve with its beautiful emerald lagoons and endless waterfalls.',
+      duration: 'FULL DAY',
+      services: 'Tourist transport, visit to viewpoints, main waterfalls and lagoons, entrance ticket to the reserve, tour guide.',
+      days: [
+        {
+          title: 'SINGLE DAY',
+          activities: [
+            'Early morning departure from Lima to the Lima highlands.',
+            'Arrival in Huancaya, traditional breakfast.',
+            'Start of light trekking to the beautiful Cabracancha waterfalls and the suspension bridge.',
+            'Optional boat ride on Huallhua Lagoon, observing flora and fauna.',
+            'Visit to the town of Vilca (the town of love), walk to the Forest of Love and Cantagallo viewpoint.',
+            'Typical lunch (fried trout, pachamanca, hen broth).',
+            'Brief tour of Huancaya Square, its cobbled streets, and the tiered waterfalls of the Huarco river.',
+            'Return to Lima arriving at night.'
+          ]
+        }
+      ]
+    }
+  },
+  'huancaya-2d1n': {
+    id: 'huancaya-2d1n',
+    image: '/img/paquetes/nor_yauyos_huancaya.avif',
+    heroImage: '/img/paquetes/nor_yauyos_huancaya.avif',
+    es: {
+      title: 'Reserva Nor Yauyos: Huancaya y Vilca (2 Días / 1 Noche)',
+      subtitle: 'Disfruta de la magia de los andes, cataratas color esmeralda y un cielo estrellado impresionante en Huancaya.',
+      duration: '2 DÍAS / 1 NOCHE',
+      services: 'Transporte, 1 noche de alojamiento/camping, desayunos, tours a la Laguna Huallhua, cascadas y Vilca, fogata, guía.',
+      days: [
+        {
+          title: 'DÍA 1: LIMA - LUNAHUANÁ - HUANCAYA - LAGUNA HUALLHUA',
+          activities: [
+            'Salida de Lima temprano en la mañana. Parada técnica en Lunahuaná.',
+            'Llegada a Huancaya, acomodación en el hospedaje.',
+            'Almuerzo en restaurante local.',
+            'Trekking hacia la hermosa Laguna Huallhua, rodeada de andenes pre-incas y cascadas escondidas. Opcional: Paseo en bote.',
+            'Caminata por los puentes de piedra coloniales y las hermosas caídas de agua de Cabracancha.',
+            'Cena y fogata de integración bajo las estrellas.'
+          ]
+        },
+        {
+          title: 'DÍA 2: VILCA Y EL BOSQUE DEL AMOR - LIMA',
+          activities: [
+            'Desayuno andino.',
+            'Viaje hacia el anexo de Vilca, situado a mayor altitud, famoso por sus paisajes de ensueño.',
+            'Caminata por el "Bosque del Amor", un lugar rodeado de quenuales, cascadas y pozas turquesas, escuchando la leyenda de los enamorados.',
+            'Ascenso al Mirador de San Cristóbal o Cantagallo para una vista panorámica del valle del río Cañete.',
+            'Almuerzo.',
+            'City tour en la plaza de Huancaya, compra de artesanías, quesos y mates burilados.',
+            'Viaje de retorno a Lima, llegando por la noche.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Nor Yauyos Reserve: Huancaya and Vilca (2 Days / 1 Night)',
+      subtitle: 'Enjoy the magic of the Andes, emerald waterfalls and a breathtaking starry sky in Huancaya.',
+      duration: '2 DAYS / 1 NIGHT',
+      services: 'Transport, 1 night accommodation/camping, breakfasts, tours to Huallhua Lagoon, waterfalls and Vilca, bonfire, guide.',
+      days: [
+        {
+          title: 'DAY 1: LIMA - LUNAHUANÁ - HUANCAYA - HUALLHUA LAGOON',
+          activities: [
+            'Early morning departure from Lima. Technical stop in Lunahuaná.',
+            'Arrival in Huancaya, accommodation at the lodge.',
+            'Lunch at a local restaurant.',
+            'Trekking to the beautiful Huallhua Lagoon, surrounded by pre-Inca terraces and hidden waterfalls. Optional: Boat ride.',
+            'Walk along the colonial stone bridges and the beautiful Cabracancha waterfalls.',
+            'Dinner and integration bonfire under the stars.'
+          ]
+        },
+        {
+          title: 'DAY 2: VILCA AND THE FOREST OF LOVE - LIMA',
+          activities: [
+            'Andean breakfast.',
+            'Trip to the annex of Vilca, located at a higher altitude, famous for its dreamy landscapes.',
+            'Walk through the "Forest of Love", a place surrounded by quenuales, waterfalls and turquoise pools, listening to the legend of the lovers.',
+            'Ascent to the San Cristóbal or Cantagallo Viewpoint for a panoramic view of the Cañete river valley.',
+            'Lunch.',
+            'City tour in the main square of Huancaya, purchase of handicrafts, cheeses and engraved gourds.',
+            'Return trip to Lima, arriving at night.'
+          ]
+        }
+      ]
+    }
+  },
+  'city-tour-lima': {
+    id: 'city-tour-lima',
+    image: '/img/paquetes/city_tour_lima_fullday.avif',
+    heroImage: '/img/paquetes/city_tour_lima_fullday.avif',
+    es: {
+      title: 'City Tour Lima',
+      subtitle: 'Descubre la magia de la capital peruana, recorriendo sus calles históricas y modernas.',
+      duration: 'FULL DAY',
+      services: 'Transporte, guía turístico, entradas a atractivos.',
+      days: [
+        {
+          title: 'ÚNICO DÍA',
+          activities: [
+            'Recojo del hotel.',
+            'Visita al Centro Histórico de Lima (Plaza de Armas, Catedral, Catacumbas de San Francisco).',
+            'Recorrido por los distritos modernos de Miraflores y San Isidro.',
+            'Visita al Parque del Amor con vista al Océano Pacífico.',
+            'Retorno al hotel.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Lima City Tour',
+      subtitle: 'Discover the magic of the Peruvian capital, exploring its historic and modern streets.',
+      duration: 'FULL DAY',
+      services: 'Transport, tour guide, entrance fees to attractions.',
+      days: [
+        {
+          title: 'SINGLE DAY',
+          activities: [
+            'Pick up from the hotel.',
+            'Visit to the Historic Center of Lima (Plaza de Armas, Cathedral, San Francisco Catacombs).',
+            'Tour through the modern districts of Miraflores and San Isidro.',
+            'Visit to the Park of Love overlooking the Pacific Ocean.',
+            'Return to the hotel.'
+          ]
+        }
+      ]
+    }
+  },
+  'antioquia-fullday': {
+    id: 'antioquia-fullday',
+    image: '/img/paquetes/antioquia.avif',
+    heroImage: '/img/paquetes/antioquia.avif',
+    es: {
+      title: 'Full Day Antioquía',
+      subtitle: 'Visita el colorido pueblo de Antioquía, famoso por sus casas pintadas con motivos andinos.',
+      duration: 'FULL DAY',
+      services: 'Transporte, guía turístico, visita al pueblo de Antioquía y alrededores.',
+      days: [
+        {
+          title: 'ÚNICO DÍA',
+          activities: [
+            'Salida desde Lima hacia Antioquía.',
+            'Parada en el camino para observar el paisaje del valle de Lurín.',
+            'Llegada a Antioquía, recorrido por sus coloridas calles y plaza principal.',
+            'Tiempo libre para almuerzo y toma de fotografías.',
+            'Visita al mirador de Antioquía para una vista panorámica.',
+            'Retorno a Lima.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Full Day Antioquia',
+      subtitle: 'Visit the colorful town of Antioquia, famous for its houses painted with Andean motifs.',
+      duration: 'FULL DAY',
+      services: 'Transport, tour guide, visit to the town of Antioquia and surroundings.',
+      days: [
+        {
+          title: 'SINGLE DAY',
+          activities: [
+            'Departure from Lima to Antioquia.',
+            'Stop on the way to observe the landscape of the Lurin valley.',
+            'Arrival in Antioquia, walk through its colorful streets and main square.',
+            'Free time for lunch and taking photos.',
+            'Visit to the Antioquia viewpoint for a panoramic view.',
+            'Return to Lima.'
+          ]
+        }
+      ]
+    }
+  },
+  'ica-2d1n': {
+    id: 'ica-2d1n',
+    image: '/img/paquetes/ica_paracas.avif',
+    heroImage: '/img/paquetes/ica_paracas.avif',
+    es: {
+      title: 'Ica y Paracas (2 Días / 1 Noche)',
+      subtitle: 'Aventura y naturaleza en el sur de Perú, disfrutando de las Islas Ballestas y el Oasis de Huacachina.',
+      duration: '2 DÍAS / 1 NOCHE',
+      services: 'Transporte, alojamiento, paseos en bote, tubulares (buggies), guía turístico.',
+      days: [
+        {
+          title: 'DÍA 1: LIMA - PARACAS - ICA',
+          activities: [
+            'Salida desde Lima hacia Paracas.',
+            'Tour en bote a las Islas Ballestas (observación de lobos marinos, pingüinos y el Candelabro).',
+            'Traslado a Ica.',
+            'Visita al Oasis de Huacachina, paseo en tubulares (buggies) y sandboard en las dunas.',
+            'Acomodación en el hotel en Ica.'
+          ]
+        },
+        {
+          title: 'DÍA 2: ICA - LIMA',
+          activities: [
+            'Desayuno en el hotel.',
+            'Visita a una vitivinícola para cata de vinos y piscos.',
+            'Almuerzo libre en Ica.',
+            'Tiempo libre para compras y explorar la ciudad.',
+            'Retorno a Lima.'
+          ]
+        }
+      ]
+    },
+    en: {
+      title: 'Ica and Paracas (2 Days / 1 Night)',
+      subtitle: 'Adventure and nature in southern Peru, enjoying the Ballestas Islands and the Huacachina Oasis.',
+      duration: '2 DAYS / 1 NIGHT',
+      services: 'Transport, accommodation, boat rides, dune buggies, tour guide.',
+      days: [
+        {
+          title: 'DAY 1: LIMA - PARACAS - ICA',
+          activities: [
+            'Departure from Lima to Paracas.',
+            'Boat tour to the Ballestas Islands (observation of sea lions, penguins, and the Candelabra).',
+            'Transfer to Ica.',
+            'Visit to the Huacachina Oasis, dune buggies and sandboarding.',
+            'Accommodation at the hotel in Ica.'
+          ]
+        },
+        {
+          title: 'DAY 2: ICA - LIMA',
+          activities: [
+            'Breakfast at the hotel.',
+            'Visit to a winery for wine and pisco tasting.',
+            'Free lunch in Ica.',
+            'Free time for shopping and exploring the city.',
+            'Return to Lima.'
           ]
         }
       ]

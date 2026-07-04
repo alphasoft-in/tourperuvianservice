@@ -69,7 +69,7 @@ export default function TransportSection({ lang }: Props) {
                   <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white drop-shadow-md leading-tight">
                     {t(vehicle.titleKey as any)}
                   </h3>
-                  <div className="bg-orange-600 text-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-full flex items-center shrink-0 whitespace-nowrap text-xs sm:text-sm font-medium shadow-lg">
+                  <div className="bg-orange-700 text-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-full flex items-center shrink-0 whitespace-nowrap text-xs sm:text-sm font-medium shadow-lg">
                     <Users className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1 sm:mr-1.5 shrink-0" />
                     {t(vehicle.capKey as any)}
                   </div>

@@ -9,7 +9,7 @@ interface Props {
 const vehicles = [
   {
     id: 'bus50',
-    img: '/img/vehiculos/14.avif',
+    img: '/img/vehiculos/bus_50.jpeg',
     titleKey: 'transport.bus50.title',
     capKey: 'transport.bus50.cap',
     descKey: 'transport.bus50.desc',
